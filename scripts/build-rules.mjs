@@ -2,7 +2,7 @@ import { readdir, writeFile, stat } from 'node:fs/promises';
 import { join, relative } from 'node:path';
 
 const ROOT = process.cwd();
-const ZH = join(ROOT, 'content-zh');
+const ZH = join(ROOT, 'public', 'content-zh');
 
 async function walkJson(dir, out = []) {
   for (const name of await readdir(dir)) {

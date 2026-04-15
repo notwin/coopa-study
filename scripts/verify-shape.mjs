@@ -3,7 +3,7 @@ import { join, relative } from 'node:path';
 
 const ROOT = process.cwd();
 const SRC = join(ROOT, 'content-source');
-const ZH = join(ROOT, 'content-zh');
+const ZH = join(ROOT, 'public', 'content-zh');
 
 async function walkJson(dir, out = []) {
   for (const name of await readdir(dir)) {
