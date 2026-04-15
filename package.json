@@ -11,7 +11,8 @@
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "verify:shape": "node scripts/verify-shape.mjs",
-    "lint:types": "tsc --noEmit"
+    "lint:types": "tsc --noEmit",
+    "package": "npm run build && cd dist && zip -rq ../coopa-study-0.1.0.zip ./"
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "2.0.0-beta.25",

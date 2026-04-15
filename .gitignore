@@ -26,3 +26,4 @@ scripts/harvest/all-cues.json
 scripts/harvest/assets-scan.json
 scripts/harvest/captured-urls.json
 scripts/node_modules/
+coopa-study-*.zip
