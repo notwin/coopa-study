@@ -1,0 +1,24 @@
+{
+  "collection_id": "PlanetPage",
+  "document_id": "",
+  "left_aria_label": "上一个任务",
+  "right_aria_label": "下一个任务",
+  "quest_locked": {
+    "eyebrow": "即将推出",
+    "cta_label": "敬请期待"
+  },
+  "quest_not_started": {
+    "eyebrow": null,
+    "cta_label": "开始任务"
+  },
+  "quest_in_progress": {
+    "eyebrow": "进行中",
+    "cta_label": "继续任务"
+  },
+  "quest_complete": {
+    "eyebrow": "已完成",
+    "cta_label": "重玩任务"
+  },
+  "quest_complete_badge": "任务完成",
+  "about_cta_label": "关于"
+}
