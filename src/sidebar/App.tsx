@@ -3,6 +3,7 @@ import { render } from 'preact';
 import type { CompanionPack } from '../types';
 import { CollapseHandle } from './CollapseHandle';
 import { Header } from './Header';
+import { ChapterTabs } from './ChapterTabs';
 
 interface Props {
   pack: CompanionPack;
@@ -11,6 +12,7 @@ interface Props {
 
 export function App({ pack, initialCollapsed = true }: Props) {
   const [collapsed, setCollapsed] = useState(initialCollapsed);
+  const [currentChapterId, setCurrentChapterId] = useState(pack.chapters[0]!.id);
 
   if (collapsed) {
     return <CollapseHandle onExpand={() => setCollapsed(false)}/>;
@@ -18,7 +20,11 @@ export function App({ pack, initialCollapsed = true }: Props) {
   return (
     <aside class="coopa-sidebar">
       <Header title={pack.questTitle} onCollapse={() => setCollapsed(true)}/>
-      {/* ChapterTabs + ChapterView 由后续 task 补 */}
+      <ChapterTabs
+        chapters={pack.chapters}
+        currentId={currentChapterId}
+        onChange={setCurrentChapterId}
+      />
     </aside>
   );
 }
