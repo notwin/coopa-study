@@ -1,19 +1,26 @@
-import { useState } from 'preact/hooks';
+import { useEffect, useState } from 'preact/hooks';
 import { render } from 'preact';
 import type { CompanionPack } from '../types';
 import { CollapseHandle } from './CollapseHandle';
 import { Header } from './Header';
 import { ChapterTabs } from './ChapterTabs';
 import { ChapterView } from './ChapterView';
+import { readCollapsed, writeCollapsed } from './storage';
 
 interface Props {
   pack: CompanionPack;
   initialCollapsed?: boolean;
 }
 
-export function App({ pack, initialCollapsed = true }: Props) {
-  const [collapsed, setCollapsed] = useState(initialCollapsed);
+export function App({ pack, initialCollapsed }: Props) {
+  const [collapsed, setCollapsed] = useState(
+    initialCollapsed !== undefined ? initialCollapsed : readCollapsed()
+  );
   const [currentChapterId, setCurrentChapterId] = useState(pack.chapters[0]!.id);
+
+  useEffect(() => {
+    if (initialCollapsed === undefined) writeCollapsed(collapsed);
+  }, [collapsed, initialCollapsed]);
 
   if (collapsed) {
     return <CollapseHandle onExpand={() => setCollapsed(false)}/>;
