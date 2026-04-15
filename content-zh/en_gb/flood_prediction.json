@@ -1,0 +1,1506 @@
+{
+  "collection_id": "FloodPrediction",
+  "document_id": "",
+  "general": {
+    "forecast_key": {
+      "heading": "预报图例：",
+      "low_key": "危险水位",
+      "mid_key": "警告水位",
+      "high_key": "正常水位"
+    },
+    "labels": {
+      "continue_cta": "继续"
+    },
+    "learning_ticket_video_call": {
+      "media": {
+        "webm": {
+          "url": "quests/prof-skye-idle.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "quests/prof-skye-poster.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "quests/prof-skye-idle.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      },
+      "transmission_text": "视频传输",
+      "speaker": "斯凯教授"
+    }
+  },
+  "inventory_bar": {
+    "data_label": "关于此数据",
+    "missing_data_label": "未找到数据？？",
+    "missing_data_heading": "缺失",
+    "missing_data_body": "你还没有找到所有数据。返回森林继续搜索。",
+    "missing_data_cta": "返回森林"
+  },
+  "intro": {
+    "video": {
+      "webm": {
+        "url": "marshes/en_gb/floodhub-intro.webm",
+        "file_name": ""
+      },
+      "poster": {
+        "url": "marshes/intro-video.webp",
+        "file_name": ""
+      },
+      "mp4": {
+        "url": "marshes/en_gb/floodhub-intro.mp4",
+        "file_name": ""
+      },
+      "subtitles": "WEBVTT\n\n00:00:00.000 --&gt; 00:00:02.600\n糟糕……我们麻烦大了。\n\n00:00:02.600 --&gt; 00:00:07.600\n嗨我是露娜，市场摊位的管理员。\n\n00:00:07.600 --&gt; 00:00:10.360\n我们的生活围绕着萨萨河。\n\n00:00:10.360 --&gt; 00:00:14.480\n但河水说涨就涨，没有预警。\n\n00:00:14.520 --&gt; 00:00:17.800\n我们连收摊的时间都没有。\n\n00:00:17.800 --&gt; 00:00:22.360\n我们想预测洪水，可惜天气预报不够准。\n\n00:00:22.360 --&gt; 00:00:27.480\n听说 AI 可以预测洪水这种极端天气。\n\n00:00:27.480 --&gt; 00:00:29.840\n有了准确的预警，\n\n00:00:29.840 --&gt; 00:00:32.720\n我们就能保护市场，不用这么狼狈。\n\n00:00:32.720 --&gt; 00:00:35.160\n所以，你能帮我们吗？"
+    },
+    "learning_ticket": [
+      {
+        "id": "introticket",
+        "question": "Welcome, I'm Professor Skye, your AI mentor! I'm here to guide you as you make crucial decisions about your AI.",
+        "answers": [
+          {
+            "text": "Sounds good!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "First things first! To build your AI flood prediction tool, you need data that helps predict floods. Head into the forest and collect the data.",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": null
+      }
+    ]
+  },
+  "collect_tokens": {
+    "instructions": {
+      "eyebrow_task_number": "Task 1",
+      "eyebrow_text": "Find the data",
+      "heading": "Search the forest",
+      "description": "The data you'll need to train a flood forecasting AI model is hidden in objects throughout the forest. Can you find and collect the missing data?",
+      "interaction_slot_text": "Click and drag to explore",
+      "continue_cta_text": "Continue"
+    },
+    "objective_reminder": {
+      "heading_title": "Task 1",
+      "heading_description": "Find the data",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-magnifier.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "body": "Scroll through the forest to find the 12 objects containing the data you need.",
+      "video": {
+        "webm": {
+          "url": "marshes/1.0-data-collection-tutorial.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "marshes/1.0-data-collection-tutorial.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "marshes/1.0-data-collection-tutorial.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "has_enough_tokens": {
+      "prompt": "You have enough data to proceed to the next task, but collecting more data might help make it more accurate",
+      "cta": "Proceed to next task"
+    },
+    "token_transfer_modal": {
+      "transfer_cta": "Drag to transfer data",
+      "transfer_complete": "Transfer complete",
+      "info_eyebrow": "New data unlocked",
+      "info_cta": "Collect data"
+    },
+    "learning_ticket": [
+      {
+        "id": "collecttokens",
+        "question": "Good job! My system has flagged some possible errors in the data. Can you spot them?",
+        "answers": [
+          {
+            "text": "Sure thing",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "Let's go!",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": null
+      }
+    ],
+    "easter_eggs": [
+      {
+        "id": "newt",
+        "hover_text": "What's this?",
+        "click_text": "What, you've never met a talking lizard before?"
+      },
+      {
+        "id": "rocky",
+        "hover_text": "What's this?",
+        "click_text": "The only thing I'm catching here is a cold!"
+      }
+    ]
+  },
+  "select_tokens": {
+    "instructions": {
+      "eyebrow_task_number": "Task 3",
+      "eyebrow_text": "A QUESTION OF RELEVANCE",
+      "heading": "Select your data",
+      "description": "From the data you found in the forest, pick the ones you think will be most helpful for generating an accurate prediction.",
+      "interaction_slot_text": "Pick four data chips",
+      "continue_cta_text": "Continue"
+    },
+    "objective_reminder": {
+      "heading_title": "Task 3",
+      "heading_description": "Select the data",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-chip.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "body": "From the data you found in the forest, pick the ones you think will be most helpful for predicting flooding.",
+      "video": {
+        "webm": {
+          "url": "marshes/2.0-data-selection-tutorial.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "marshes/2.0-data-selection-tutorial.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "marshes/2.0-data-selection-tutorial.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "learning_ticket_final": [
+      {
+        "id": "aftermodeltraininganimation",
+        "question": "Incredible! You've trained your AI! 🎉 What do you want to do next?",
+        "answers": [
+          {
+            "text": "Let Luna know that our job here is done, and she can now use the AI to predict floods.",
+            "isCorrect": false
+          },
+          {
+            "text": "Test it first to see how accurate it is.",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "Good approach! We need to test the AI to make sure it will make accurate predictions before we let Luna use it.",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "Before we let Luna use it, we need to test the AI to make sure it will make accurate predictions.",
+          "media": null,
+          "emoji": null
+        }
+      }
+    ],
+    "learning_ticket": [
+      {
+        "id": "token_selection_q",
+        "question": "Your AI will learn patterns from the data you chose. What happens if we missed some crucial data?",
+        "answers": [
+          {
+            "text": "It would cause more rain and worse flooding.",
+            "isCorrect": false
+          },
+          {
+            "text": "It would be harder for the AI to find useful patterns, leading to inaccurate flood forecasts.",
+            "isCorrect": true
+          },
+          {
+            "text": "AI is smart. It doesn't really matter what data we give it. It will figure it out.",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "Yeah, that’s right. Your choices impact the model’s accuracy.",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "If we miss crucial details, it becomes much harder for the AI to find useful patterns, and our flood forecasts won't be accurate. This is why our human decisions are so important in designing AI effectively!",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "token_selection_q2",
+        "question": "Now to the main event - it's time to train the AI model! Watch as it learns from all that data, starting to spot patterns and make predictions.",
+        "answers": [
+          {
+            "text": "I'm ready!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "Let's train your model!",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "Not quite. AI models are only as accurate as the data we give them. Your data choices can't change how much it rains but they can impact how well the model predicts floods. Let's see how your model predicts floods.",
+          "media": null,
+          "emoji": null
+        }
+      }
+    ],
+    "title": "Select your data",
+    "slot_empty_label": "Empty",
+    "slot_remove_label": "Remove",
+    "slot_number_label": "Slot {number}",
+    "confirm_cta_label": "Confirm data selection",
+    "hint_relevant": "Highly relevant",
+    "hint_somewhat_relevant": "Somewhat relevant",
+    "hint_irrelevant": "Least relevant"
+  },
+  "data_cleaning": {
+    "instructions": {
+      "eyebrow_task_number": "Task 2",
+      "eyebrow_text": "ERROR ELIMINATION",
+      "heading": "Clean the data",
+      "description": "AI models rely on data being error-free to generate a reliable prediction. Let's clean the data we want to use.",
+      "interaction_slot_text": "Tap the data that doesn't look right",
+      "continue_cta_text": "Continue"
+    },
+    "objective_reminder": {
+      "heading_title": "Task 2",
+      "heading_description": "Tap the data that doesn't look right.",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-pointer.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "body": "Look at the data and tap any that don’t look right to you.",
+      "video": {
+        "webm": {
+          "url": "marshes/3.0-clean-the-data-tutorial.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "marshes/3.0-clean-the-data-tutorial.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "marshes/3.0-clean-the-data-tutorial.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "learning_ticket": [
+      {
+        "id": "data_cleaning_q",
+        "question": "We have so much more data to clean! Can you teach Luna how to do it so she can do the rest?",
+        "answers": [
+          {
+            "text": "Just get some soap Luna!",
+            "isCorrect": false
+          },
+          {
+            "text": "Look at the data to see if any values look unusual or are missing.",
+            "isCorrect": true
+          },
+          {
+            "text": "Call an AI agent to do this for you.",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "Exactly!",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "Neither soap nor an AI agent will work for this. It's crucial for a human to examine the data themselves to catch anything that could mess up our predictions.",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "data_cleaning_guidance",
+        "question": "In your next task, consider: which data sources would be most useful for predicting floods?",
+        "answers": [
+          {
+            "text": "I'm all in!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "Let's do it!",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": null
+      }
+    ],
+    "game": {
+      "title": "Clean the data",
+      "data": {
+        "headers": [
+          "Month",
+          "Year",
+          "Location",
+          "Temperature",
+          "Precipitation"
+        ],
+        "locations": [
+          "Marshes"
+        ],
+        "inches_label": "inches",
+        "missing_label": "missing"
+      }
+    },
+    "model_training_video": {
+      "webm": {
+        "url": "",
+        "file_name": ""
+      },
+      "poster": {
+        "url": "",
+        "file_name": ""
+      },
+      "mp4": null,
+      "subtitles": null
+    }
+  },
+  "testing_training": {
+    "learning_ticket": [
+      {
+        "id": "intro-1",
+        "question": "Now, we’ll use your data to train our AI model to make a flood forecast. This forecast will show how likely flooding is for a specific area at a specific time.",
+        "answers": [
+          {
+            "text": "Let’s do it!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "intro-2",
+        "question": "This is Luna's market at Market Marshes. Let’s start by looking at what a flood forecast for this area would look like.",
+        "answers": [
+          {
+            "text": "Let's see",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "intro-3",
+        "question": "Our forecast will be on the left. The market area is divided into sections to show which parts might flood. The forecast will use colour to show flood risk.",
+        "answers": [
+          {
+            "text": "Show me",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "intro-4",
+        "question": "Colours show the expected flood risk: Blue - no flood expected,  Yellow - mild flood expected, Red - severe flood expected.",
+        "answers": [
+          {
+            "text": "Continue",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "intro-5",
+        "question": "What do you think this means for the market stalls in blue areas?",
+        "answers": [
+          {
+            "text": "Market stalls in the blue areas should be moved to a safer place.",
+            "isCorrect": false
+          },
+          {
+            "text": "Market stalls in the blue areas are safe where they are.",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "That's right! Stalls in the blue areas are safe for the time of this forecast.",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "Not quite. Based on this forecast, stalls in blue areas are safe.",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "intro-6",
+        "question": "Now that you know what a forecast looks like, let's train our AI model so it can create forecasts to help Luna and her community.",
+        "answers": [
+          {
+            "text": "Let's train the model!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "intro-7",
+        "question": "First, we give the AI model the input data you picked.",
+        "answers": [
+          {
+            "text": "Okay",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "From the data, the AI starts learning. Its job is to find all the different patterns that floods can follow.",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": null
+      },
+      {
+        "id": "intro-8",
+        "question": "Which data source should it use to learn patterns?",
+        "answers": [
+          {
+            "text": "All of them together",
+            "isCorrect": true
+          },
+          {
+            "text": "Only the first one",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "That's right! To identify accurate flood patterns, the AI needs to investigate and learn from different types of data.",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "Not quite. To identify accurate patterns of floods, the AI needs to investigate and learn from different types of data.",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "intro-9",
+        "question": "After learning patterns, the model makes flood predictions. For each set of conditions, it predicts when floods might happen and how severe they will be.",
+        "answers": [
+          {
+            "text": "Continue",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "intro-10",
+        "question": "To check how well the model works, we'll test it on data from past floods that it hasn't seen before.",
+        "answers": [
+          {
+            "text": "Okay",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "We kept these aside just for this moment!",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": null
+      },
+      {
+        "id": "intro-11",
+        "question": "To truly test our AI, should we use data it's already seen during training?",
+        "answers": [
+          {
+            "text": "Yes",
+            "isCorrect": false
+          },
+          {
+            "text": "No",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "Exactly! We test with new data to get a true picture of how well our AI can predict. Otherwise it may only work for data it already knows.",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "Not quite. If the AI has already seen the data, it's like giving it the answers to a test. We need to see if it can figure out new problems before we use it in the real world.",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "interaction-1",
+        "question": "Move the slider to compare your model's predictions to what actually happened on those days. At the end, you'll see your model's final accuracy score.",
+        "answers": [
+          {
+            "text": "Continue",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "testing-perfect",
+        "question": "You did it! Your model's accuracy score is 90%! This is the highest possible score, as no real-world forecast can ever be 100% certain. You're ready to go—let's generate a forecast!",
+        "answers": [],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "testing-good",
+        "question": "Your model's accuracy score is in the 70-90% range, which is great! This means your model is accurate enough for real-world use. The maximum possible score is 90% because no forecast can ever be 100% certain. You can now move on to generating a forecast, or, if you'd like, you can try to improve it even more.",
+        "answers": [],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "testing-bad",
+        "question": "Your model’s accuracy score is under 70%, but you can improve it! Our goal is to reach an accuracy of 70-90%, and you can achieve that by going back and selecting a different combination of data.",
+        "answers": [],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "outro-pass",
+        "question": "Your AI model has successfully generated its very first flood forecast. And what a forecast! It indicates a high risk of flooding... in five days! This is our chance to get ahead of the storm. We need to alert Luna and her team right away so they can start preparing!",
+        "answers": [],
+        "success_response": null,
+        "failure_response": null
+      }
+    ],
+    "speaker": "Professor Skye",
+    "videos": [
+      {
+        "id": "training-1",
+        "video": {
+          "webm": {
+            "url": "marshes/en_gb/01-training-testing.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "marshes/en_gb/01-training-testing.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "marshes/en_gb/01-training-testing.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      },
+      {
+        "id": "training-2",
+        "video": {
+          "webm": {
+            "url": "marshes/en_gb/02-training-testing.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "marshes/en_gb/02-training-testing.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "marshes/en_gb/02-training-testing.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      },
+      {
+        "id": "training-3",
+        "video": {
+          "webm": {
+            "url": "marshes/en_gb/03-training-testing.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "marshes/en_gb/03-training-testing.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "marshes/en_gb/03-training-testing.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      },
+      {
+        "id": "training-4",
+        "video": {
+          "webm": {
+            "url": "marshes/en_gb/04-training-testing.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "marshes/en_gb/04-training-testing.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "marshes/en_gb/04-training-testing.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      },
+      {
+        "id": "training-5",
+        "video": {
+          "webm": {
+            "url": "marshes/en_gb/05-training-testing.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "marshes/en_gb/05-training-testing.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "marshes/en_gb/05-training-testing.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      },
+      {
+        "id": "training-6",
+        "video": {
+          "webm": {
+            "url": "marshes/en_gb/06-training-testing.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "marshes/en_gb/06-training-testing.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "marshes/en_gb/06-training-testing.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      },
+      {
+        "id": "training-7",
+        "video": {
+          "webm": {
+            "url": "marshes/en_gb/07-training-testing.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "marshes/en_gb/07-training-testing.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "marshes/en_gb/07-training-testing.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      },
+      {
+        "id": "interaction-intro",
+        "video": {
+          "webm": {
+            "url": "marshes/en_gb/flood-interaction-intro.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "marshes/en_gb/flood-interaction-intro.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "marshes/en_gb/flood-interaction-intro.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      },
+      {
+        "id": "interaction-processing",
+        "video": {
+          "webm": {
+            "url": "marshes/en_gb/08-training-testing.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "marshes/en_gb/08-training-testing.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "marshes/en_gb/08-training-testing.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      }
+    ],
+    "ipsa_labels": {
+      "testing_accuracy": "Testing Forecast Accuracy",
+      "model_training": "AI Model Training",
+      "model_testing": "AI Model Testing"
+    },
+    "accuracy": {
+      "cta_adjust_data": "Improve forecast accuracy",
+      "chart_title": "Your AI prediction",
+      "cta_generate_forecast": "GENERATE FORECAST",
+      "score_accuracy_title": "Accuracy",
+      "score_slider_accuracy": "Accuracy",
+      "score_slider_sufficient": "Sufficient:",
+      "title": "AI model testing results"
+    },
+    "forecast": {
+      "graph_warning": "Warning: River expected to rise in 5 days",
+      "take_action_cta": "Take action",
+      "title": "Your AI Prediction",
+      "card": {
+        "date": "TOMORROW",
+        "title": "Generated Forecast",
+        "image": {
+          "file": {
+            "url": "marshes/generated-forecast-map-2.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "forecast-card"
+        }
+      }
+    },
+    "slider": {
+      "cta": "DRAG TO TEST MODEL",
+      "complete": "TESTING COMPLETE",
+      "sub_progress": "TESTING AI MODEL..."
+    }
+  },
+  "stalls_game": {
+    "instructions": {
+      "eyebrow_task_number": "Task 5",
+      "eyebrow_text": "RISING WATERS",
+      "heading": "Save the market",
+      "description": "Use your forecast to find the safest spots to set up the market stalls to avoid flooding.",
+      "interaction_slot_text": null,
+      "continue_cta_text": "Continue"
+    },
+    "objective_reminder": {
+      "heading_title": "TASK 5",
+      "heading_description": "Using your forecast, place the stalls in the safest areas of the market",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-sorbet-stall.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "body": "Note that normal stalls can only be placed where no flooding is expected (blue zones), while tall stalls are safe to place where mild floods are expected (yellow zones)",
+      "video": {
+        "webm": {
+          "url": "marshes/6.0-market-stall-placement-tutorial-compressed.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "marshes/6.0-market-stall-placement-tutorial.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "marshes/6.0-market-stall-placement-tutorial-compressed.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "safe_label": "Safe",
+    "label_safe": "Safe",
+    "label_not_quite": "Not Quite...",
+    "label_unsafe": "Warning",
+    "label_stall_tall": "Tall",
+    "label_stall_normal": "Normal",
+    "assess_safety_cta": "Assess flood safety",
+    "diagram": {
+      "date": "LATER TODAY",
+      "title": "Generated forecast",
+      "image": {
+        "file": {
+          "url": "marshes/generated-forecast-map-2.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      }
+    },
+    "fail_message": "Some market stalls aren’t positioned safely. Take a look at your forecast and try again."
+  },
+  "complete": {
+    "luna_outro_video": {
+      "webm": {
+        "url": "marshes/en_gb/flood-hub-outro.webm",
+        "file_name": ""
+      },
+      "poster": {
+        "url": "marshes/en_gb/flood-hub-outro.webp",
+        "file_name": ""
+      },
+      "mp4": {
+        "url": "marshes/en_gb/flood-hub-outro.mp4",
+        "file_name": ""
+      },
+      "subtitles": "WEBVTT\n\n00:00:00.000 --&gt; 00:00:02.840\n你好啊。真高兴再见到你。\n\n00:00:02.840 --&gt; 00:00:04.080\n猜猜怎么了？\n\n00:00:04.080 --&gt; 00:00:06.120\n你的系统在运转！\n\n00:00:06.120 --&gt; 00:00:08.720\n上次洪水来临时，\n我们得到了足够的预警\n\n00:00:08.720 --&gt; 00:00:12.640\n并在受损之前成功收拾好了市场。\n\n00:00:12.640 --&gt; 00:00:16.320\n有了更准确的预测，我们可以随时做好准备。\n\n00:00:16.320 --&gt; 00:00:19.120\n非常感谢你的帮助！\n再见啦。"
+    },
+    "real_world_video": {
+      "webm": {
+        "url": "marshes/Floodhub-real-world-video.webm",
+        "file_name": ""
+      },
+      "poster": {
+        "url": "marshes/Floodhub-real-world-video.webp",
+        "file_name": ""
+      },
+      "mp4": {
+        "url": "marshes/Floodhub-real-world-video.mp4",
+        "file_name": ""
+      },
+      "subtitles": "WEBVTT\n\n00:00:05.000 --&gt; 00:00:07.000\nThanks, Professor Skye. Hey everyone, I'm\n\n00:00:07.000 --&gt; 00:00:09.000\nTal and I'm Grey. We work at Google\n\n00:00:09.000 --&gt; 00:00:10.000\nResearch on the flood forecasting team.\n\n00:00:18.000 --&gt; 00:00:20.000\nOur team uses AI to predict where floods\n\n00:00:20.000 --&gt; 00:00:23.000\noccur around the world so that we can get people warnings and help them stay\n\n00:00:23.000 --&gt; 00:00:25.000\nsafe. The quest you just took was\n\n00:00:25.000 --&gt; 00:00:27.000\ninspired by our journey. What I love\n\n00:00:27.000 --&gt; 00:00:30.000\nmost about our work is that we're using science and technology to make a real\n\n00:00:30.000 --&gt; 00:00:34.000\ndifference in the lives of millions of people, especially in places where\n\n00:00:34.000 --&gt; 00:00:35.000\nfloods can be devastating.\n\n00:00:35.000 --&gt; 00:00:37.000\nFloods are serious. They can destroy\n\n00:00:37.000 --&gt; 00:00:39.000\nhomes and cut off communities. But with\n\n00:00:39.000 --&gt; 00:00:43.000\nthe right data and the right tools, we can help reduce the impact and minimise\n\n00:00:43.000 --&gt; 00:00:45.000\ndamage. As a result, communities can\n\n00:00:45.000 --&gt; 00:00:47.000\nrecover faster after a flood.\n\n00:00:47.000 --&gt; 00:00:49.000\nSo, here's how it works. This should\n\n00:00:49.000 --&gt; 00:00:53.000\nsound familiar because it's very similar to what you've just done during your\n\n00:00:53.000 --&gt; 00:00:55.000 line:65%\nquest. First, we gather tons of publicly\n\n00:00:55.000 --&gt; 00:00:59.000 line:65%\navailable data. Things like rainfall, water levels, weather forecast, and\n\n00:00:59.000 --&gt; 00:01:01.000 line:65%\nsatellite images. We review the quality\n\n00:01:01.000 --&gt; 00:01:03.000\nof the data and clean it if necessary.\n\n00:01:03.000 --&gt; 00:01:07.000\nThen, we use AI to create detailed simulations of how water moves through\n\n00:01:07.000 --&gt; 00:01:09.000\nthe environment. Think of it like a\n\n00:01:09.000 --&gt; 00:01:10.000\nvirtual model of the real world.\n\n00:01:10.000 --&gt; 00:01:15.000\nWe train the AI model to predict when and where water will rise, how fast, and\n\n00:01:15.000 --&gt; 00:01:17.000\nwho may be affected. This kind of\n\n00:01:17.000 --&gt; 00:01:20.000\nprediction is called flood modelling\n\n00:01:20.000 --&gt; 00:01:24.000\nbecause even small changes in rainfall can completely change how flood behaves.\n\n00:01:24.000 --&gt; 00:01:25.000\nOnce our models are trained, we test\n\n00:01:25.000 --&gt; 00:01:28.000\nthem for accuracy. We then use our\n\n00:01:28.000 --&gt; 00:01:32.000\nmodels to send early warnings, sometimes days in advance. These alerts show up in\n\n00:01:32.000 --&gt; 00:01:36.000\nGoogle search, Google maps, and in some cases as notifications to your cell\n\n00:01:36.000 --&gt; 00:01:37.000\nphone.\n\n00:01:37.000 --&gt; 00:01:38.000\nWe also work with governments and rescue\n\n00:01:38.000 --&gt; 00:01:42.000\nteam so they can act fast, help people on the ground, and get them out of\n\n00:01:42.000 --&gt; 00:01:45.000\ndanger in time. Our system covers\n\n00:01:45.000 --&gt; 00:01:46.000\nflood-prone areas in thousands of\n\n00:01:46.000 --&gt; 00:01:48.000\nlocations around the world\n\n00:01:48.000 --&gt; 00:01:52.000\nand we are still working hard to expand to even more locations because we want\n\n00:01:52.000 --&gt; 00:01:54.000\nflood forecasting to be available to\n\n00:01:54.000 --&gt; 00:01:55.000\neveryone who needs it.\n\n00:01:55.000 --&gt; 00:01:57.000\nIt's important to remember that AI is a\n\n00:01:57.000 --&gt; 00:02:01.000\nteam effort. It involves many people from different backgrounds and different\n\n00:02:01.000 --&gt; 00:02:05.000\npoints of view. We have scientists like myself who are experts in floods and we\n\n00:02:05.000 --&gt; 00:02:07.000\nwork hand in hand with engineers like Tal\n\n00:02:07.000 --&gt; 00:02:09.000\nwho are experts in AI. We hope that this\n\n00:02:09.000 --&gt; 00:02:12.000\nvideo helped you understand how everything you have done on the quest\n\n00:02:12.000 --&gt; 00:02:13.000\nhappens in real life.\n\n00:02:13.000 --&gt; 00:02:14.000\nBack to you, Professor Sky."
+    },
+    "learning_recap": [
+      {
+        "id": "learning_recap",
+        "question": "Great job saving those market stalls, lets put together a quest report! Can you walk me through your process? What was your first step?",
+        "answers": [
+          {
+            "text": "Training the AI",
+            "isCorrect": false
+          },
+          {
+            "text": "Evaluating the AI's predictions",
+            "isCorrect": false
+          },
+          {
+            "text": "Gathering relevant data",
+            "isCorrect": true
+          },
+          {
+            "text": "Using the AI to predict floods",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "Thats right! You searched the forest for data points to learn about floods and train your model.",
+          "media": {
+            "webm": {
+              "url": "marshes/1.0-data-collection-tutorial.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "marshes/1.0-data-collection-tutorial.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "marshes/1.0-data-collection-tutorial.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "emoji": {
+            "file": {
+              "url": "icons/learning-ticket-emoji-eyes.webp",
+              "width": 0,
+              "height": 0
+            },
+            "alt": null
+          }
+        },
+        "failure_response": {
+          "text": "Not quite, first you searched the forest and gathered relevant data!",
+          "media": {
+            "webm": {
+              "url": "marshes/1.0-data-collection-tutorial.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "marshes/1.0-data-collection-tutorial.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "marshes/1.0-data-collection-tutorial.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "emoji": {
+            "file": {
+              "url": "icons/learning-ticket-emoji-eyes.webp",
+              "width": 0,
+              "height": 0
+            },
+            "alt": null
+          }
+        }
+      },
+      {
+        "id": "learning_recap2",
+        "question": "What was the second step you took?",
+        "answers": [
+          {
+            "text": "Training the AI model",
+            "isCorrect": true
+          },
+          {
+            "text": "Evaluating the AI's predictions",
+            "isCorrect": false
+          },
+          {
+            "text": "Using the AI to predict floods",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "Right! You selected the most important data you found and used it to train your model.",
+          "media": {
+            "webm": {
+              "url": "marshes/2.0-data-selection-tutorial.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "marshes/2.0-data-selection-tutorial.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "marshes/2.0-data-selection-tutorial.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "emoji": {
+            "file": {
+              "url": "icons/learning-ticket-emoji-eyes.webp",
+              "width": 0,
+              "height": 0
+            },
+            "alt": null
+          }
+        },
+        "failure_response": {
+          "text": "Not quite, you selected the most important data you found and used it to train your model.",
+          "media": {
+            "webm": {
+              "url": "marshes/2.0-data-selection-tutorial.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "marshes/2.0-data-selection-tutorial.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "marshes/2.0-data-selection-tutorial.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "emoji": {
+            "file": {
+              "url": "icons/learning-ticket-emoji-eyes.webp",
+              "width": 0,
+              "height": 0
+            },
+            "alt": null
+          }
+        }
+      },
+      {
+        "id": "learning_recap3",
+        "question": "What was your third step?",
+        "answers": [
+          {
+            "text": "Evaluating the AI's predictions",
+            "isCorrect": true
+          },
+          {
+            "text": "Using the AI to predict floods",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "That’s right! You used historical flood information to test your AI and make sure it is accurate enough",
+          "media": {
+            "webm": {
+              "url": "marshes/4.0-model-testing-tutorial.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "marshes/4.0-model-testing-tutorial.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "marshes/4.0-model-testing-tutorial.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "emoji": {
+            "file": {
+              "url": "icons/learning-ticket-emoji-eyes.webp",
+              "width": 0,
+              "height": 0
+            },
+            "alt": null
+          }
+        },
+        "failure_response": {
+          "text": "Actually you used historical flood information to test your AI and make sure it is accurate enough",
+          "media": {
+            "webm": {
+              "url": "marshes/4.0-model-testing-tutorial.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "marshes/4.0-model-testing-tutorial.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "marshes/4.0-model-testing-tutorial.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "emoji": {
+            "file": {
+              "url": "icons/learning-ticket-emoji-eyes.webp",
+              "width": 0,
+              "height": 0
+            },
+            "alt": null
+          }
+        }
+      },
+      {
+        "id": "learning_recap4",
+        "question": "What was the final step you took?",
+        "answers": [
+          {
+            "text": "Using the AI to predict floods",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "You got it! You used your AI to predict where it would flood and placed the market stalls around it.",
+          "media": {
+            "webm": {
+              "url": "marshes/6.0-market-stall-placement-tutorial-compressed.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "marshes/6.0-market-stall-placement-tutorial.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "marshes/6.0-market-stall-placement-tutorial-compressed.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "emoji": {
+            "file": {
+              "url": "icons/learning-ticket-emoji-sparks.webp",
+              "width": 0,
+              "height": 0
+            },
+            "alt": null
+          }
+        },
+        "failure_response": {
+          "text": "",
+          "media": {
+            "webm": {
+              "url": "marshes/6.0-market-stall-placement-tutorial-compressed.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "marshes/6.0-market-stall-placement-tutorial.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "marshes/6.0-market-stall-placement-tutorial-compressed.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "emoji": {
+            "file": {
+              "url": "icons/learning-ticket-emoji-sparks.webp",
+              "width": 0,
+              "height": 0
+            },
+            "alt": null
+          }
+        }
+      },
+      {
+        "id": "learning_real_world",
+        "question": "One final thing for our report - in this quest you used AI to help predict floods and provide early warning. What was the most important thing you learned about making AI helpful for a real-world problem like this?",
+        "answers": [
+          {
+            "text": "The AI can figure out everything by itself, so humans aren't really needed.",
+            "isCorrect": false
+          },
+          {
+            "text": "Humans can solve big problems like flood prediction perfectly on their own, without any AI.",
+            "isCorrect": false
+          },
+          {
+            "text": "Humans are essential for deciding what job the AI should do, designing it, collecting the right data, and using its output to make a real impact",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "This is a fantastic insight for our report! You've captured the most important idea: humans are essential for making AI useful. We decide what the AI does, what data it uses, and how to use it to solve real-world problems.",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "AI's greatest power comes from human guidance. Humans are essential for deciding what the AI should do, giving it the right data, and using its predictions to solve real-world problems.",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "learning_recapfinal",
+        "question": "One last thing! This quest mirrored a real Google Research AI project where humans initiated and designed flood prediction tools for positive impact. You stepped into their shoes! Check out this video to hear from them.",
+        "answers": [
+          {
+            "text": "Cool, show me the video!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "Over to you, team!",
+          "media": {
+            "webm": {
+              "url": "marshes/luna-wave-in-scene.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "marshes/luna-wave-in-scene.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "marshes/luna-wave-in-scene.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "emoji": {
+            "file": {
+              "url": "icons/learning-ticket-emoji-eyes.webp",
+              "width": 0,
+              "height": 0
+            },
+            "alt": null
+          }
+        },
+        "failure_response": null
+      }
+    ],
+    "learning_recap_complete_media": {
+      "file": {
+        "url": "marshes/badge.gif",
+        "width": 0,
+        "height": 0
+      },
+      "alt": null
+    },
+    "learning_recap_complete_text": "You saved the market!",
+    "next_quest_cta": "Next quest"
+  },
+  "tokens": [
+    {
+      "id": "RAINFALL",
+      "name": "降雨量",
+      "token_name": "降雨量",
+      "token_collected_dialog": "降水量的多少。雨量越大，河里的水就越多。",
+      "eyebrow": "你找到了降雨量数据！",
+      "transfer_packets": [
+        "10MM",
+        "5MM",
+        "13MM"
+      ],
+      "icon": {
+        "file": {
+          "url": "marshes/chip-rainfall-large.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "score": 25
+    },
+    {
+      "id": "RIVER_FLOW",
+      "name": "河流流量",
+      "token_name": "河流流量",
+      "token_collected_dialog": "河水的深度和流速。",
+      "eyebrow": "你找到了河流流量数据！",
+      "transfer_packets": [
+        "10M³/s",
+        "27M³/s",
+        "64M³/s",
+        "91M³/s"
+      ],
+      "icon": {
+        "file": {
+          "url": "marshes/chip-river-flow-large.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "score": 25
+    },
+    {
+      "id": "SOIL_ANALYSIS",
+      "name": "土壤湿度",
+      "token_name": "土壤湿度",
+      "token_collected_dialog": "地面能吸收多少水分。如果土地已饱和，雨水会直接流入河中。",
+      "eyebrow": "你找到了土壤湿度数据！",
+      "transfer_packets": [
+        "0.1M³/M³",
+        "0.3M³/M³",
+        "0.5M³/M³"
+      ],
+      "icon": {
+        "file": {
+          "url": "marshes/chip-soil-moisture-large.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "score": 25
+    },
+    {
+      "id": "SATELLITE_IMAGERY",
+      "name": "卫星图像",
+      "token_name": "卫星图像",
+      "token_collected_dialog": "来自太空的图片，显示历史洪水的范围，精确记录水流到达的位置。",
+      "eyebrow": "你找到了卫星图像数据！",
+      "transfer_packets": [
+        "JPEG 1",
+        "JPEG 2",
+        "JPEG 3"
+      ],
+      "icon": {
+        "file": {
+          "url": "marshes/chip-satellite-large.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "score": 25
+    },
+    {
+      "id": "TEMPERATURE",
+      "name": "温度",
+      "token_name": "温度",
+      "token_collected_dialog": "温度显著影响融雪和蒸发等过程，直接影响河水水量。",
+      "eyebrow": "你找到了温度数据！",
+      "transfer_packets": [
+        "28°",
+        "35°",
+        "12°",
+        "14°"
+      ],
+      "icon": {
+        "file": {
+          "url": "marshes/chip-temperature-large.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "score": 10
+    },
+    {
+      "id": "EVAPORATION",
+      "name": "蒸发",
+      "token_name": "蒸发",
+      "token_collected_dialog": "水分蒸发的速度。这会使地面变干，可能影响雨水流入河流的方式。",
+      "eyebrow": "你找到了蒸发数据！",
+      "transfer_packets": [
+        "7mm",
+        "10mm",
+        "12mm"
+      ],
+      "icon": {
+        "file": {
+          "url": "marshes/chip-evaporation-large.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "score": 10
+    },
+    {
+      "id": "UV",
+      "name": "太阳辐射",
+      "token_name": "太阳辐射",
+      "token_collected_dialog": "土地接受的太阳照射量。光照越强，温度越高，地面越干燥，可能影响河流。",
+      "eyebrow": "你找到了太阳辐射数据！",
+      "transfer_packets": [
+        "500W/m²",
+        "1372W/m²",
+        "1121W/m²"
+      ],
+      "icon": {
+        "file": {
+          "url": "marshes/chip-solar-large.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "score": 10
+    },
+    {
+      "id": "HUMIDITY",
+      "name": "湿度",
+      "token_name": "湿度",
+      "token_collected_dialog": "空气湿度越高，雨水蒸发越少，意味着更多水流入河中。",
+      "eyebrow": "你找到了湿度数据！",
+      "transfer_packets": [
+        "72%",
+        "79%",
+        "65%"
+      ],
+      "icon": {
+        "file": {
+          "url": "marshes/chip-humidity-large.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "score": 10
+    },
+    {
+      "id": "SORBET_SALES",
+      "name": "冰淇淋销量",
+      "token_name": "冰淇淋销量",
+      "token_collected_dialog": "一份有趣的小记录，或许能反映某些天气状况。",
+      "eyebrow": "你找到了冰淇淋销量数据！",
+      "transfer_packets": [
+        "£1,000",
+        "£8",
+        "£497"
+      ],
+      "icon": {
+        "file": {
+          "url": "marshes/chip-sorbet-large.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "score": -10
+    },
+    {
+      "id": "TOWN_GOSSIP",
+      "name": "街头八卦",
+      "token_name": "街头八卦",
+      "token_collected_dialog": "这与河流没有直接关系，但人们可能会提到一些相关的事情。",
+      "eyebrow": "你找到了街头八卦数据！",
+      "transfer_packets": [
+        "HMM",
+        "???",
+        "!!!"
+      ],
+      "icon": {
+        "file": {
+          "url": "marshes/chip-town-gossip-large.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "score": -10
+    },
+    {
+      "id": "ELEVATION",
+      "name": "海拔",
+      "token_name": "海拔",
+      "token_collected_dialog": "地势的高低。水往低处流，这会影响河流的走向。",
+      "eyebrow": "你找到了海拔数据！",
+      "transfer_packets": [
+        "4000M",
+        "3800M",
+        "3900M"
+      ],
+      "icon": {
+        "file": {
+          "url": "marshes/chip-elevation-large.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "score": 10
+    },
+    {
+      "id": "VEGETATION",
+      "name": "植被",
+      "token_name": "植被",
+      "token_collected_dialog": "植物和树木能拦截水分，可能影响流入河流的水量。",
+      "eyebrow": "你找到了植被数据！",
+      "transfer_packets": [
+        "GRASSLAND",
+        "SHRUBLAND",
+        "FOREST",
+        "FARMS"
+      ],
+      "icon": {
+        "file": {
+          "url": "marshes/chip-vegetation-large.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "score": 10
+    }
+  ]
+}
