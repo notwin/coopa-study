@@ -1,0 +1,204 @@
+{
+  "collection_id": "SiteConfig",
+  "document_id": "",
+  "id": "live",
+  "default_site_locale": "en_us",
+  "use_published": true,
+  "locales": [
+    {
+      "text": "English (US)",
+      "enabled": true,
+      "kintaro_locale": "root",
+      "site_locale": "en_us",
+      "country_codes": "US,USA",
+      "html_lang": "en",
+      "sitemap_hreflangs": "en-us",
+      "lang_dir_rtl": false,
+      "enabled_quests": [
+        "quest-flood",
+        "quest-blindness"
+      ],
+      "additional_resources_enabled": true
+    },
+    {
+      "text": "English (UK)",
+      "enabled": true,
+      "kintaro_locale": "en_gb",
+      "site_locale": "en_gb",
+      "country_codes": "GB,GBR",
+      "html_lang": "en-GB",
+      "sitemap_hreflangs": "en-gb",
+      "lang_dir_rtl": false,
+      "enabled_quests": [
+        "quest-flood",
+        "quest-blindness"
+      ],
+      "additional_resources_enabled": true
+    },
+    {
+      "text": "Bahasa Melayu",
+      "enabled": true,
+      "kintaro_locale": "ms_my",
+      "site_locale": "ms_my",
+      "country_codes": "MY",
+      "html_lang": "ms-MY",
+      "sitemap_hreflangs": "ms-MY",
+      "lang_dir_rtl": false,
+      "enabled_quests": [
+        "quest-flood",
+        "quest-blindness"
+      ],
+      "additional_resources_enabled": false
+    },
+    {
+      "text": "Español (ES)",
+      "enabled": true,
+      "kintaro_locale": "es_es",
+      "site_locale": "es_es",
+      "country_codes": "ES",
+      "html_lang": "es",
+      "sitemap_hreflangs": "es",
+      "lang_dir_rtl": false,
+      "enabled_quests": [
+        "quest-flood",
+        "quest-blindness"
+      ],
+      "additional_resources_enabled": false
+    },
+    {
+      "text": "Español (419)",
+      "enabled": true,
+      "kintaro_locale": "es-419",
+      "site_locale": "es_419",
+      "country_codes": "MX",
+      "html_lang": "es-419",
+      "sitemap_hreflangs": "es-419",
+      "lang_dir_rtl": false,
+      "enabled_quests": [
+        "quest-flood",
+        "quest-blindness"
+      ],
+      "additional_resources_enabled": false
+    },
+    {
+      "text": "Français",
+      "enabled": true,
+      "kintaro_locale": "fr_fr",
+      "site_locale": "fr_fr",
+      "country_codes": "FR",
+      "html_lang": "fr",
+      "sitemap_hreflangs": "fr",
+      "lang_dir_rtl": false,
+      "enabled_quests": [
+        "quest-flood",
+        "quest-blindness"
+      ],
+      "additional_resources_enabled": false
+    },
+    {
+      "text": "Italiano",
+      "enabled": true,
+      "kintaro_locale": "it_it",
+      "site_locale": "it_it",
+      "country_codes": "it",
+      "html_lang": "it",
+      "sitemap_hreflangs": "it",
+      "lang_dir_rtl": false,
+      "enabled_quests": [
+        "quest-flood",
+        "quest-blindness"
+      ],
+      "additional_resources_enabled": false
+    },
+    {
+      "text": "Português (PT)",
+      "enabled": true,
+      "kintaro_locale": "pt_pt",
+      "site_locale": "pt_pt",
+      "country_codes": "PT",
+      "html_lang": "pt",
+      "sitemap_hreflangs": "pt",
+      "lang_dir_rtl": false,
+      "enabled_quests": [
+        "quest-flood",
+        "quest-blindness"
+      ],
+      "additional_resources_enabled": false
+    },
+    {
+      "text": "Português (BR)",
+      "enabled": true,
+      "kintaro_locale": "pt_br",
+      "site_locale": "pt_br",
+      "country_codes": "BR",
+      "html_lang": "pt-BR",
+      "sitemap_hreflangs": "pt-BR",
+      "lang_dir_rtl": false,
+      "enabled_quests": [
+        "quest-flood",
+        "quest-blindness"
+      ],
+      "additional_resources_enabled": false
+    },
+    {
+      "text": "Türkçe",
+      "enabled": true,
+      "kintaro_locale": "tr_tr",
+      "site_locale": "tr_tr",
+      "country_codes": "TR, TUR",
+      "html_lang": "tr",
+      "sitemap_hreflangs": "tr",
+      "lang_dir_rtl": false,
+      "enabled_quests": [
+        "quest-flood",
+        "quest-blindness"
+      ],
+      "additional_resources_enabled": false
+    },
+    {
+      "text": "עברית",
+      "enabled": true,
+      "kintaro_locale": "he_il",
+      "site_locale": "he_il",
+      "country_codes": "IL,ISR",
+      "html_lang": "he-IL",
+      "sitemap_hreflangs": "he-IL",
+      "lang_dir_rtl": true,
+      "enabled_quests": [
+        "quest-flood",
+        "quest-blindness"
+      ],
+      "additional_resources_enabled": false
+    },
+    {
+      "text": "العربية",
+      "enabled": true,
+      "kintaro_locale": "ar_ALL",
+      "site_locale": "ar_ALL",
+      "country_codes": null,
+      "html_lang": "ar-ALL",
+      "sitemap_hreflangs": "ar-ALL",
+      "lang_dir_rtl": true,
+      "enabled_quests": [
+        "quest-flood",
+        "quest-blindness"
+      ],
+      "additional_resources_enabled": false
+    },
+    {
+      "text": "العربية",
+      "enabled": true,
+      "kintaro_locale": "ar",
+      "site_locale": "ar_il",
+      "country_codes": null,
+      "html_lang": "ar-IL",
+      "sitemap_hreflangs": "ar-IL",
+      "lang_dir_rtl": true,
+      "enabled_quests": [
+        "quest-flood",
+        "quest-blindness"
+      ],
+      "additional_resources_enabled": false
+    }
+  ]
+}

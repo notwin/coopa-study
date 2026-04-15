@@ -1,0 +1,140 @@
+{
+  "collection_id": "Sitewide",
+  "document_id": "",
+  "seo": {
+    "title": "AI Quests",
+    "description": "AI Quests: A game-based learning experience for middle schoolers (11-14) on AI. Code-free quests use real Google projects to solve societal issues.",
+    "image": {
+      "url": "icons/SEO image.png",
+      "width": 0,
+      "height": 0
+    }
+  },
+  "site_name": "AI Quests",
+  "modal_leave_quest": {
+    "title": "You are about to leave this quest",
+    "subtitle": null,
+    "primary_cta_label": "Leave quest",
+    "secondary_cta_label": "Stay here",
+    "tertiary_cta_label": null
+  },
+  "modal_clear_progress": {
+    "title": "Looks like you've been here before",
+    "subtitle": "Would you like to continue with your saved progress?",
+    "primary_cta_label": "Continue",
+    "secondary_cta_label": "Start over",
+    "tertiary_cta_label": "Resume"
+  },
+  "social": {
+    "title": "Follow us",
+    "twitter_cta_label": "X",
+    "youtube_cta_label": "YouTube"
+  },
+  "footer": {
+    "links": [
+      {
+        "text": "About Google",
+        "url": "https://about.google/"
+      },
+      {
+        "text": "Google products",
+        "url": "https://about.google/products/"
+      },
+      {
+        "text": "Privacy",
+        "url": "https://policies.google.com/privacy"
+      },
+      {
+        "text": "Terms",
+        "url": "https://policies.google.com/terms"
+      }
+    ],
+    "help_link": {
+      "text": "Help",
+      "url": "https://support.google.com/?hl=en"
+    },
+    "locale_dropdown_aria_label": "Language"
+  },
+  "device": {
+    "general": {
+      "open_device_aria_label": "",
+      "return_to_game_cta_label": ""
+    },
+    "ai_model": {
+      "title": "",
+      "offline_label": ""
+    },
+    "spotlight": {
+      "title": "",
+      "open_message_cta_aria_label": "",
+      "eyebrow": "",
+      "message_title": "",
+      "back_cta_label": "",
+      "popup_new_message_label": "",
+      "popup_continue_cta_label": ""
+    },
+    "explorers_log": {
+      "title": "",
+      "quest_incomplete": {
+        "label": "",
+        "pill_label": ""
+      },
+      "quest_complete": {
+        "label": "",
+        "pill_label": ""
+      }
+    },
+    "camera": {
+      "title": "",
+      "offline_label": "",
+      "photo_cta_label": ""
+    }
+  },
+  "labels": {
+    "back_cta": "Back",
+    "back_to_the_map_cta_label": "Back to quest selection",
+    "close_cta": "Close",
+    "continue_cta": "Continue",
+    "home_cta": "Home",
+    "loading_label": "Loading...",
+    "small_screen_label": "AI Quests can't be played on a screen smaller than 1240x600 px.  Try zooming out in your browser and refreshing the page.",
+    "toggle_audio_button": "Toggle audio",
+    "video_replay": "Replay",
+    "video_skip": "Skip",
+    "video_play_pause": "Play/Pause"
+  },
+  "quests": [
+    {
+      "id": "quest-flood",
+      "name": "Market Marshes",
+      "name_text": "Market\nMarshes",
+      "subtitle": "Flood Forecasting"
+    },
+    {
+      "id": "quest-blindness",
+      "name": "Dusky Dunes",
+      "name_text": "Dusky\nDunes",
+      "subtitle": "Blindness Prevention"
+    },
+    {
+      "id": "quest-education",
+      "name": "Polar Peaks",
+      "name_text": "Polar\nPeaks",
+      "subtitle": "Mapping the Brain"
+    }
+  ],
+  "nav_labels": {
+    "menu_label": "Menu",
+    "close_label": "Close",
+    "play_game_label": "Play the game",
+    "about_label": "About",
+    "faq_label": "FAQ",
+    "teacher_resources_label": "Teacher resources",
+    "privacy_notice_label": "Privacy notice"
+  },
+  "ai_quest_logo_small": {
+    "url": "icons/ai_quests_logo_small.webp",
+    "width": 0,
+    "height": 0
+  }
+}

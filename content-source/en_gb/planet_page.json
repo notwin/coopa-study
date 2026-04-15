@@ -1,0 +1,24 @@
+{
+  "collection_id": "PlanetPage",
+  "document_id": "",
+  "left_aria_label": "Previous quest",
+  "right_aria_label": "Next quest",
+  "quest_locked": {
+    "eyebrow": "Coming Soon",
+    "cta_label": "Coming Soon"
+  },
+  "quest_not_started": {
+    "eyebrow": null,
+    "cta_label": "Start Quest"
+  },
+  "quest_in_progress": {
+    "eyebrow": "In Progress",
+    "cta_label": "Resume Quest"
+  },
+  "quest_complete": {
+    "eyebrow": "Complete",
+    "cta_label": "Replay Quest"
+  },
+  "quest_complete_badge": "Quest complete",
+  "about_cta_label": "About"
+}

@@ -1,0 +1,31 @@
+{
+  "collection_id": "HomePage",
+  "document_id": "",
+  "menu_label": "Resources &amp; more",
+  "menu_close_label": "Close",
+  "text_above_title": "{{ google_logo }} | {{ partner_logo }}",
+  "accept_mission_cta_label": "Accept mission",
+  "about_cta_label": "About",
+  "faq_cta_label": "FAQ",
+  "main_title_svg": {
+    "url": "icons/ai-quests-en.svg",
+    "file_name": ""
+  },
+  "teacher_resources_cta_label": "Teacher resources",
+  "privacy_policy_cta_label": "Privacy notice",
+  "video": {
+    "webm": {
+      "url": "home/en_gb/AI-Quests-intro_video_master.webm",
+      "file_name": ""
+    },
+    "poster": {
+      "url": "home/AI-Quests-intro-master.webp",
+      "file_name": ""
+    },
+    "mp4": {
+      "url": "home/en_gb/AI-Quests-intro_video_master.mp4",
+      "file_name": ""
+    },
+    "subtitles": "WEBVTT\n\n00:00:02.000 --&gt; 00:00:04.210\nWelcome to AI Quests\n\n00:00:04.210 --&gt; 00:00:07.000\nMy name is Professor Skye\n\n00:00:07.000 --&gt; 00:00:10.000\nAn AI expert and your mentor\n\n00:00:10.000 --&gt; 00:00:12.000\nthroughout this learning experience.\n\n00:00:12.000 --&gt; 00:00:14.080\nWe’ve been waiting for someone like you!\n\n00:00:14.080 --&gt; 00:00:18.000\nYou’re about to begin a journey through our world.\n\n00:00:18.000 --&gt; 00:00:21.040\nAs you travel, you’ll meet different inhabitants\n\n00:00:21.040 --&gt; 00:00:24.000\nand learn about the challenges in their communities.\n\n00:00:24.000 --&gt; 00:00:27.000\nYour mission is to help them by applying\n\n00:00:27.000 --&gt; 00:00:30.250\npowerful AI responsibly to their problems.\n\n00:00:30.250 --&gt; 00:00:34.120\nEach quest will teach you about a real-life AI research project\n\n00:00:34.120 --&gt; 00:00:38.000\nthat’s making an impact back on Earth.\n\n00:00:38.000 --&gt; 00:00:41.000\nThe AI technology you’ll experience is amazing!\n\n00:00:41.000 --&gt; 00:00:43.000\nBut it’s not magic\n\n00:00:43.000 --&gt; 00:00:46.000\nsuccess depends on the decisions you make.\n\n00:00:46.000 --&gt; 00:00:49.000\nYou’ll need to collect good data,\n\n00:00:49.000 --&gt; 00:00:52.000\ntrain your AI to make smart choices,\n\n00:00:52.000 --&gt; 00:00:54.200\nand test it to make sure it’s reliable.\n\n00:00:54.200 --&gt; 00:00:56.100\nThe universe is counting on you!\n\n00:00:56.100 --&gt; 00:00:58.000\nAre you ready?"
+  }
+}
