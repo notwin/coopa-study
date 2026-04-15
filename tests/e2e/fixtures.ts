@@ -1,7 +1,7 @@
 import { test as base, chromium, type BrowserContext } from '@playwright/test';
-import { resolve } from 'node:path';
 
-const EXTENSION_PATH = resolve(import.meta.dirname, '../../dist');
+// Resolved at build/run time — fixtures.ts lives at tests/e2e/, dist is at project root/dist
+const EXTENSION_PATH = new URL('../../dist', import.meta.url).pathname;
 
 export const test = base.extend<{ context: BrowserContext; extensionId: string }>({
   context: async ({}, use) => {
