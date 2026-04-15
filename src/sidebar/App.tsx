@@ -6,6 +6,7 @@ import { Header } from './Header';
 import { ChapterTabs } from './ChapterTabs';
 import { ChapterView } from './ChapterView';
 import { readCollapsed, writeCollapsed } from './storage';
+import stylesRaw from './styles.css?raw';
 
 interface Props {
   pack: CompanionPack;
@@ -41,6 +42,12 @@ export function App({ pack, initialCollapsed }: Props) {
 }
 
 export async function mountApp(root: Element) {
+  const shadow = root.getRootNode();
+  if (shadow instanceof ShadowRoot) {
+    const style = document.createElement('style');
+    style.textContent = stylesRaw;
+    shadow.prepend(style);
+  }
   const pack = (await import('../companion-packs/flood-forecasting.json')).default;
   render(<App pack={pack as CompanionPack}/>, root);
 }

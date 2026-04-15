@@ -1,0 +1,119 @@
+:host { all: initial; }
+
+.coopa-collapse-handle {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 120px;
+  background: #5A6FFF;
+  color: white;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, 'PingFang SC', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: -2px 0 8px rgba(0,0,0,.15);
+  z-index: 2147483647;
+}
+
+.coopa-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 360px;
+  background: #FFFEF9;
+  color: #1A1A2E;
+  font-family: system-ui, -apple-system, 'PingFang SC', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  box-shadow: -4px 0 16px rgba(0,0,0,.2);
+  overflow-y: auto;
+  z-index: 2147483647;
+  display: flex;
+  flex-direction: column;
+}
+
+.coopa-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: #5A6FFF;
+  color: white;
+}
+.coopa-header h1 { margin: 0; font-size: 18px; }
+.coopa-collapse-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.coopa-chapter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #EEE;
+  background: #F5F5FA;
+}
+.coopa-chapter-tab {
+  padding: 6px 12px;
+  border: 1px solid #D0D0E0;
+  border-radius: 999px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.coopa-chapter-tab.is-current {
+  background: #5A6FFF;
+  color: white;
+  border-color: #5A6FFF;
+}
+
+.coopa-chapter-view { padding: 16px 20px; }
+.coopa-chapter-title { margin: 0 0 8px; font-size: 20px; }
+.coopa-chapter-summary { margin: 0 0 16px; color: #4A4A6A; }
+
+.coopa-blocks { display: flex; flex-direction: column; gap: 12px; }
+
+.coopa-block {
+  padding: 14px 16px;
+  border-radius: 12px;
+  margin: 0;
+}
+.coopa-block h3 { margin: 0 0 8px; font-size: 16px; }
+.coopa-block p { margin: 0; }
+
+.coopa-block--explainer { background: #E8F0FF; }
+.coopa-block--tip { background: #FFF7D6; border-left: 4px solid #FFC940; }
+
+.coopa-block--term {
+  background: white;
+  border: 2px solid #5A6FFF;
+  cursor: pointer;
+}
+.coopa-term-front {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.coopa-term-front strong { font-size: 18px; color: #5A6FFF; }
+.coopa-term-en { color: #8A8AA6; font-style: italic; }
+.coopa-term-back { margin-top: 8px; color: #4A4A6A; }
+.coopa-term-analogy { font-style: italic; margin-top: 6px; }
