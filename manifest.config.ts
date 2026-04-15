@@ -17,7 +17,7 @@ export default defineManifest({
       run_at: 'document_idle'
     }
   ],
-  permissions: ['declarativeNetRequest', 'storage'],
+  permissions: ['declarativeNetRequest'],
   host_permissions: ['https://research.google/*'],
   declarative_net_request: {
     rule_resources: [
