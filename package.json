@@ -1,0 +1,30 @@
+{
+  "name": "coopa-study",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build && node scripts/build-rules.mjs",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "verify:shape": "node scripts/verify-shape.mjs",
+    "lint:types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "2.0.0-beta.25",
+    "@playwright/test": "1.48",
+    "@preact/preset-vite": "^2.10.5",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/preact": "^3.2.4",
+    "@types/chrome": "^0.1.40",
+    "happy-dom": "^15.11.7",
+    "preact": "^10.29.1",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21",
+    "vitest": "^2.1.9",
+    "zod": "^3.25.76"
+  }
+}

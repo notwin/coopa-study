@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+.vite/
+.playwright-cli/
+.playwright/
+playwright-report/
+test-results/
+*.log
+.DS_Store
+scripts/harvest/stuck-*.png
+scripts/harvest/*.png
+scripts/harvest/all-cues.json
+scripts/harvest/assets-scan.json
+scripts/harvest/captured-urls.json
+scripts/node_modules/
