@@ -30,7 +30,7 @@ export default defineManifest({
   },
   web_accessible_resources: [
     {
-      resources: ['content-zh/*'],
+      resources: ['content-zh/*', 'assets/*'],
       matches: ['https://research.google/*']
     }
   ]
