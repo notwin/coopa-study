@@ -1,0 +1,53 @@
+{
+  "questId": "flood-forecasting",
+  "questTitle": "洪水预测",
+  "version": "0.1.0",
+  "chapters": [
+    {
+      "id": "intro",
+      "title": "开场：Skye 教授找到你了",
+      "summary": "Luna 的市场总被洪水淹。Skye 教授要你用 AI 做洪水预报系统。",
+      "blocks": [
+        {
+          "type": "explainer",
+          "title": "为什么要用 AI 预测洪水？",
+          "body": "传统天气预报不够准。AI 能同时看降雨、温度、土壤、河流好多种数据，综合判断。"
+        },
+        {
+          "type": "term",
+          "term": "预测",
+          "en": "prediction",
+          "definition": "根据已知信息猜未来会发生什么。",
+          "analogy": "就像看到乌云就准备收衣服——用已知判断未发生的事。"
+        },
+        {
+          "type": "tip",
+          "body": "听完 Luna 讲完背景再选 Sounds good，别急着跳过。"
+        }
+      ]
+    },
+    {
+      "id": "collect",
+      "title": "任务一：选对数据",
+      "summary": "Skye 给你 14 种数据，只有一部分对预测洪水真的有用。",
+      "blocks": [
+        {
+          "type": "explainer",
+          "title": "数据质量决定 AI 聪不聪明",
+          "body": "AI 就像一个学生，给他什么教材他就学什么。教材里塞无用的信息他会越学越糊涂。"
+        },
+        {
+          "type": "term",
+          "term": "相关性",
+          "en": "correlation",
+          "definition": "两件事一起发生的规律。",
+          "analogy": "冰淇淋销量和下雨概率一起变化，但冰淇淋不会导致下雨——它们都是被「夏天」影响。"
+        },
+        {
+          "type": "tip",
+          "body": "选数据时先问：这件事真会影响洪水吗？"
+        }
+      ]
+    }
+  ]
+}
