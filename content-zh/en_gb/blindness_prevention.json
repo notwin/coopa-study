@@ -1,0 +1,2446 @@
+{
+  "collection_id": "BlindnessPrevention",
+  "document_id": "",
+  "general": {
+    "eye_cards": {
+      "patient": "Patient",
+      "habitat": "Habitat",
+      "uv_rating": "UV Rating",
+      "diagnosis": "Diagnosis",
+      "ai_diagnosis": "AI Diagnosis",
+      "ai": "AI"
+    },
+    "labels": {
+      "uv": "UV",
+      "region": "REGION",
+      "habitat": "HABITAT"
+    },
+    "habitat": {
+      "coastal": "Coastal",
+      "forest": "Forest",
+      "grassland": "Grassland",
+      "mangrove": "Mangrove",
+      "snowland": "Snowland",
+      "desert": "Desert",
+      "subterranean": "Subterranean",
+      "valley": "Valley",
+      "volcano": "Volcano",
+      "wetland": "Wetland"
+    },
+    "uv_rating": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "very_high": "Very high"
+    },
+    "diagnosis_severity": {
+      "healthy": "Healthy",
+      "early_signs": "Early signs",
+      "moderate": "Moderate",
+      "severe": "Severe",
+      "unknown": "?????"
+    },
+    "region": {
+      "caldera_crests": "Caldera Crests",
+      "market_marshes": "Market Marshes",
+      "mineral_mines": "Mineral Mines",
+      "polar_peaks": "Polar Peaks",
+      "roots_of_renewal": "Roots of Renewal",
+      "rustic_ravines": "Rustic Ravines",
+      "sandy_seabeds": "Sandy Seabeds",
+      "the_heady_heights": "Heady Heights",
+      "traders_tide": "Traders Tide",
+      "dusky_dunes": "Dusky Dunes"
+    },
+    "field_test": {
+      "doctor_name": "Doctor Visus",
+      "volunteer_count": "Volunteer",
+      "locate_eye_label": "Locate eye",
+      "scan_retina_label": "Scan retina",
+      "scan_cta": "Press space bar to scan",
+      "scan_success_cta": "Nice one!",
+      "scan_fail_cta": "Try again",
+      "scan_eye_progress": "Scanning eye",
+      "scan_retina_progress": "Scanning retina",
+      "scan_complete_label": "Eye scan complete",
+      "scan_complete_over_volunteer_label": "Scan complete",
+      "doctor_agrees": "Doctor agrees",
+      "doctor_disagrees": "Doctor disagrees"
+    },
+    "professor_skye_video_call": {
+      "media": {
+        "webm": {
+          "url": "quests/prof-skye-idle.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "quests/prof-skye-poster.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "quests/prof-skye-idle.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      },
+      "transmission_text": "Transmission",
+      "speaker": "Professor Skye"
+    }
+  },
+  "intro": {
+    "video": {
+      "webm": {
+        "url": "dunes/en_gb/DD_Intro.webm",
+        "file_name": ""
+      },
+      "poster": {
+        "url": "dunes/DD_Intro.webp",
+        "file_name": ""
+      },
+      "mp4": {
+        "url": "dunes/en_gb/DD_Intro.mp4",
+        "file_name": ""
+      },
+      "subtitles": "WEBVTT\n\n00:00:00.000 --&gt; 00:00:04.633\nHello, I'm Doctor Visus, an eye specialist here in the Dusky Dunes.\n\n00:00:04.633 --&gt; 00:00:08.166\nMore and more people are developing eye disease and need my help.\n\n00:00:08.166 --&gt; 00:00:10.400\nJust look at all these patients waiting!\n\n00:00:10.400 --&gt; 00:00:15.666\nIf I can identify the disease, I can get them the right treatment – but I’m the only doctor here.\n\n00:00:15.666 --&gt; 00:00:20.600\nI need help figuring out which patients to see first based on how severe their problem is.\n\n00:00:20.600 --&gt; 00:00:23.233\nThe testing process involves three steps:\n\n00:00:23.233 --&gt; 00:00:25.000\nScanning the patient’s eyes\n\n00:00:25.000 --&gt; 00:00:28.666\nAnalysing a part of the eye called the “retina” for signs of disease\n\n00:00:28.666 --&gt; 00:00:31.133\nSharing what I find out with the patient\n\n00:00:31.133 --&gt; 00:00:33.033\nDo you think AI could help?\n\n00:00:33.033 --&gt; 00:00:37.033\nI’ve collected thousands of scans and their diagnoses from my work.\n\n00:00:37.033 --&gt; 00:00:43.133\nCould you use this data to build an AI model that learns from my scans and helps me prioritise patients?\n\n00:00:43.133 --&gt; 00:00:46.533\nThis is Arlo, my assistant – they can help you along the way.\n\n00:00:46.533 --&gt; 00:00:54.733\nHi, I'm Arlo. By learning AI skills with you, I can keep helping the Dusky Dunes community after you’ve finished here.\n\n00:00:58.266 --&gt; 00:01:01.566\nAh, I see you’ve met Dr Visus and Arlo.\n\n00:01:01.566 --&gt; 00:01:06.233\nGreat! You can help them use AI to speed up patient diagnosis.\n\n00:01:06.233 --&gt; 00:01:12.166\nBack on Earth, AI’s already helping doctors speed up processes and make healthcare better.\n\n00:01:12.166 --&gt; 00:01:16.033\nI trust you can do the same for Dr Visus…\n\n00:01:16.033 --&gt; 00:01:21.400\nSo, are you ready to help the Dusky Dunes community tackle this eye-opening challenge?"
+    },
+    "learning_ticket": [
+      {
+        "id": "dunes-intro-0",
+        "question": "I’m glad you’re here! Before you start, let’s get clear on the mission. What’s the problem your AI model needs to solve?",
+        "answers": [
+          {
+            "text": "To invent a cure for eye disease",
+            "isCorrect": false
+          },
+          {
+            "text": "To help predict eye problems so more patients get care",
+            "isCorrect": true
+          },
+          {
+            "text": "To give medical advice so patients don’t need a doctor",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "That’s right!",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "Not quite!",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "dunes-intro-1",
+        "question": "Your AI model will help Dr. Visus identify the patients who need care most. It will analyse eye scans to learn patterns linked with eye problems.",
+        "answers": [
+          {
+            "text": "Let's get started!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "dunes-intro-2",
+        "question": "Not so fast! We can’t build an AI model using the eye scans from Dr. Visus’ patients until their data is safe. Otherwise, private health information could be exposed. Let's check for privacy.",
+        "answers": [
+          {
+            "text": "I’m ready",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ]
+  },
+  "privacy": {
+    "objective_reminder": {
+      "heading_title": "Task 1",
+      "heading_description": "Review patient data",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-magnifier.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "body": "To see if a record can be used, check it with the magnifying glass. If it has private details like a full name, address, date of birth, or a photo of their face, stamp it ‘Deny’.",
+      "video": {
+        "webm": {
+          "url": "dunes/01_Privacy_Objective_UI.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "dunes/01-privacy-poster.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "dunes/01_Privacy_Objective_UI.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "labels": {
+      "record_progress": "{{ count }} of {{ total }}",
+      "correct": "Correct!",
+      "incorrect": "That’s not quite right. Try again.",
+      "concerns_found": "{{ count }} of {{ total }} privacy concerns found",
+      "concerns_submit": "Ready to submit?",
+      "concerns_wrong": "That’s not quite right. Try again.",
+      "concerns_highlight": "Highlight the private data",
+      "concerns_hint": "",
+      "concerns_hint_singular": "Hint: there’s {{ count }}",
+      "concerns_hint_plural": "Hint: there are {{ count }}",
+      "submit_cta_label": "Submit",
+      "approved_mark": {
+        "url": "dunes/en_gb/stamps/privacy-stamp-approved.webp",
+        "width": 0,
+        "height": 0
+      },
+      "denied_mark": {
+        "url": "dunes/en_gb/stamps/privacy-stamp-denied.webp",
+        "width": 0,
+        "height": 0
+      },
+      "medical_record": {
+        "medical_record": "Medical Record",
+        "confidential": "Confidential",
+        "name": "Name:",
+        "date_of_birth": "Date of birth:",
+        "gender": "Gender:",
+        "eye_colour": "Eye colour:",
+        "home_address": "Home address:",
+        "profession": "Profession:",
+        "left_eye_scan": "Left eye scan",
+        "right_eye_scan": "Right eye scan",
+        "doctors_notes": "Doctor’s notes:",
+        "doctors_signature": "Doctor’s signature:",
+        "sign_here": "Sign here:",
+        "approve": "Approve",
+        "deny": "Deny"
+      }
+    },
+    "medical_records": [
+      {
+        "record_id": "record-01",
+        "left_eye_card": {
+          "patient_number": "1",
+          "eye_color": "green",
+          "habitat": "desert",
+          "uv_rating": "high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "right_eye_card": {
+          "patient_number": "1",
+          "eye_color": "green",
+          "habitat": "desert",
+          "uv_rating": "high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "name": {
+          "value": "Arlo Star",
+          "is_redacted": true
+        },
+        "date_of_birth": {
+          "value": "2015/01/24",
+          "is_redacted": true
+        },
+        "gender": {
+          "value": "Female",
+          "is_redacted": true
+        },
+        "eye_colour": {
+          "value": "Green",
+          "is_redacted": false
+        },
+        "home_address": {
+          "value": "23 Sandy Mirage, Dusky Dunes",
+          "is_redacted": true
+        },
+        "profession": {
+          "value": "Dune Surveyor",
+          "is_redacted": false
+        },
+        "patient_number": {
+          "value": "1",
+          "is_redacted": false
+        },
+        "doctors_notes": {
+          "value": "Patient’s vision is out of this world! with eyes this good, they could be a deep space photographer!",
+          "is_redacted": false
+        }
+      },
+      {
+        "record_id": "record-02",
+        "left_eye_card": {
+          "patient_number": "2",
+          "eye_color": "orange-light",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "doctor"
+        },
+        "right_eye_card": {
+          "patient_number": "2",
+          "eye_color": "orange-light",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "name": {
+          "value": "Arlo Star",
+          "is_redacted": true
+        },
+        "date_of_birth": {
+          "value": "2015/01/24",
+          "is_redacted": true
+        },
+        "gender": {
+          "value": "Female",
+          "is_redacted": true
+        },
+        "eye_colour": {
+          "value": "Orange",
+          "is_redacted": false
+        },
+        "home_address": {
+          "value": "42 Sandy Mirage, Dusky Dunes",
+          "is_redacted": false
+        },
+        "profession": {
+          "value": "Geologist",
+          "is_redacted": true
+        },
+        "patient_number": {
+          "value": "2",
+          "is_redacted": false
+        },
+        "doctors_notes": {
+          "value": "Eye caramba! From excessive UV exposure, patient has developed early signs of eye damage.",
+          "is_redacted": false
+        }
+      },
+      {
+        "record_id": "record-03",
+        "left_eye_card": {
+          "patient_number": "3",
+          "eye_color": "purple",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "moderate",
+          "diagnosis_type": "doctor"
+        },
+        "right_eye_card": {
+          "patient_number": "3",
+          "eye_color": "purple",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "name": {
+          "value": "Arlo Star",
+          "is_redacted": true
+        },
+        "date_of_birth": {
+          "value": "2015/01/24",
+          "is_redacted": true
+        },
+        "gender": {
+          "value": "Male",
+          "is_redacted": true
+        },
+        "eye_colour": {
+          "value": "Purple",
+          "is_redacted": false
+        },
+        "home_address": {
+          "value": "24 Sandy Mirage, Dusky Dunes",
+          "is_redacted": true
+        },
+        "profession": {
+          "value": "Lead Magma Analyst",
+          "is_redacted": false
+        },
+        "patient_number": {
+          "value": "3",
+          "is_redacted": false
+        },
+        "doctors_notes": {
+          "value": "Years of magma analysis has left patient with eye-watering retina damage!",
+          "is_redacted": false
+        }
+      },
+      {
+        "record_id": "record-04",
+        "left_eye_card": {
+          "patient_number": "4",
+          "eye_color": "multi",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "doctor"
+        },
+        "right_eye_card": {
+          "patient_number": "4",
+          "eye_color": "multi",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "name": {
+          "value": "Arlo Star",
+          "is_redacted": false
+        },
+        "date_of_birth": {
+          "value": "2020/03/22",
+          "is_redacted": true
+        },
+        "gender": {
+          "value": "Male",
+          "is_redacted": true
+        },
+        "eye_colour": {
+          "value": "Multicoloured",
+          "is_redacted": false
+        },
+        "home_address": {
+          "value": "55 Rocky Nook, Dusky Dunes",
+          "is_redacted": true
+        },
+        "profession": {
+          "value": "Geologist",
+          "is_redacted": true
+        },
+        "patient_number": {
+          "value": "4",
+          "is_redacted": false
+        },
+        "doctors_notes": {
+          "value": "Patient has pretty good eyesight for someone with glasses.",
+          "is_redacted": false
+        }
+      },
+      {
+        "record_id": "record-05",
+        "left_eye_card": {
+          "patient_number": "5",
+          "eye_color": "yellow",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "right_eye_card": {
+          "patient_number": "5",
+          "eye_color": "yellow",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "name": {
+          "value": "Arlo Star",
+          "is_redacted": true
+        },
+        "date_of_birth": {
+          "value": "2020/02/18",
+          "is_redacted": true
+        },
+        "gender": {
+          "value": "Female",
+          "is_redacted": true
+        },
+        "eye_colour": {
+          "value": "Yellow",
+          "is_redacted": false
+        },
+        "home_address": {
+          "value": "21 Sandy Mirage, Dusky Dunes",
+          "is_redacted": true
+        },
+        "profession": {
+          "value": "Gardener",
+          "is_redacted": false
+        },
+        "patient_number": {
+          "value": "5",
+          "is_redacted": false
+        },
+        "doctors_notes": {
+          "value": "Retinas appear fine. But something needs to be done about those irises.",
+          "is_redacted": false
+        }
+      }
+    ],
+    "teachable_agent": {
+      "speaker": "Arlo",
+      "intro": {
+        "id": "intro",
+        "question": "I've been watching you work, and I think I've got the hang of it! I’ll take over checking the rest of the scans. First, can you help me check the steps so I don’t mess anything up?",
+        "answers": [
+          {
+            "text": "Let’s do it!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      "fill_blanks": [
+        {
+          "heading": "Fill in the blanks",
+          "paragraph": "Before training an AI model, we need to clean the data and {{ remove }} personal details.",
+          "distractors": [
+            "share"
+          ],
+          "submit_cta_label": "Continue",
+          "feedback_correct": "Well done!",
+          "feedback_incorrect": "Not quite..."
+        },
+        {
+          "heading": "Fill in the blanks",
+          "paragraph": "Examples of personal info include names, birthdates, and {{ addresses }}.",
+          "distractors": [
+            "allergies",
+            "symptoms"
+          ],
+          "submit_cta_label": "Continue",
+          "feedback_correct": "Well done!",
+          "feedback_incorrect": "Not quite..."
+        },
+        {
+          "heading": "Fill in the blanks",
+          "paragraph": "If we share private data, there’s a risk someone could be {{ identified | impersonated }} or {{ identified | impersonated }}.",
+          "distractors": [
+            "hidden"
+          ],
+          "submit_cta_label": "Continue",
+          "feedback_correct": "Well done!",
+          "feedback_incorrect": "Not quite..."
+        }
+      ],
+      "outro": {
+        "id": "outro",
+        "question": "Got it! I can check the rest now!",
+        "answers": [
+          {
+            "text": "Good luck, Arlo!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    }
+  },
+  "model_training": {
+    "labels": {
+      "input": "TODO",
+      "ai_model_training": "Model Training",
+      "ai_machine": "Model Testing",
+      "output": "TODO",
+      "drop_scans_here": "TODO",
+      "no_output": "TODO",
+      "generating": "TODO",
+      "eye_scans_to_check": "Eye scans to check"
+    },
+    "learning_ticket": [
+      {
+        "id": "training-0",
+        "question": "Now that we’ve checked for privacy, we’re ready to train the AI model! We train a model by giving it examples so it can find patterns in the data.",
+        "answers": [
+          {
+            "text": "Okay",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "training-1",
+        "question": "After training, the AI model can check new eye scans and make predictions about the level of eye disease.",
+        "answers": [
+          {
+            "text": "Let’s train the model",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "training-2",
+        "question": "We start training by giving the model input data to learn from. Where do we get this data?",
+        "answers": [
+          {
+            "text": "Dr. Visus’ eye scans",
+            "isCorrect": true
+          },
+          {
+            "text": "A textbook about vision",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "Exactly! We used the eye scans from Dr. Visus’ patients, labeled with the level of eye disease.",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "Not quite… Remember? We used the eye scans from Dr. Visus' patients, labeled with the level of eye disease.",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "training-3",
+        "question": "But AI models don’t see scans like we do. Instead, AI works with things like numbers. So we convert our inputs and scans into a form AI can use.",
+        "answers": [
+          {
+            "text": "Interesting",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "training-4",
+        "question": "During training, the model gets many examples of scans of healthy eyes and eyes with problems. Bit by bit, it learns patterns in the scans that help it tell them apart.",
+        "answers": [
+          {
+            "text": "Got it",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "training-5",
+        "question": "This requires a lot of calculations. But when it is done, the AI model is “trained” to predict if an eye scan looks healthy or shows early, moderate, or severe signs of disease.",
+        "answers": [
+          {
+            "text": "Great",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "training-6",
+        "question": "So now that the model can make predictions, is it ready to be used on real patients?",
+        "answers": [
+          {
+            "text": "No, it still needs testing",
+            "isCorrect": true
+          },
+          {
+            "text": "Yes, it’s ready",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "That’s right! Before using it in the real world, we need to test the model with new eye scans to make sure its predictions are accurate.",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "Not quite. Making predictions alone isn’t enough! They could be wrong! We have to make sure the model works with eye scans it hasn’t seen before.",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "testing-0",
+        "question": "Time to test our AI model!",
+        "answers": [
+          {
+            "text": "Let's do it",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "testing-1",
+        "question": "We set aside some scans for testing. Click each eye scan to add it to the input. The model will use the patterns it learned to make a prediction.",
+        "answers": [
+          {
+            "text": "Got it",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "testing-2",
+        "question": "Now, I’ll compare the AI's prediction to the doctor’s diagnosis for that same scan. This tells us if the AI model is accurate.",
+        "answers": [
+          {
+            "text": "Understood",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "testing-3",
+        "question": "Great! The AI model made accurate predictions on the test scans! But in healthcare, lab tests are just the first step. Let's help Arlo and Dr. Visus test it with real patients to make sure the AI model works with all sorts of different people and conditions. We call this field testing.",
+        "answers": [
+          {
+            "text": "Okay!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ],
+    "video": [
+      {
+        "id": "intro-diagram",
+        "video": {
+          "webm": {
+            "url": "dunes/en_gb/training-01.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "dunes/en_gb/training-01.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "dunes/en_gb/training-01.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      },
+      {
+        "id": "training-2",
+        "video": {
+          "webm": {
+            "url": "dunes/en_gb/training-02.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "dunes/en_gb/training-02.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "dunes/en_gb/training-02.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      },
+      {
+        "id": "training-3",
+        "video": {
+          "webm": {
+            "url": "dunes/en_gb/training-03.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "dunes/en_gb/training-03.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "dunes/en_gb/training-03.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      },
+      {
+        "id": "training-4",
+        "video": {
+          "webm": {
+            "url": "dunes/en_gb/training-04.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "dunes/en_gb/training-04.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "dunes/en_gb/training-04.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      },
+      {
+        "id": "testing-processing",
+        "video": {
+          "webm": {
+            "url": "dunes/en_gb/training-05.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "dunes/en_gb/training-05.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "dunes/en_gb/training-05.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      }
+    ],
+    "eye_scans": [
+      {
+        "patient_number": "1",
+        "eye_color": "purple",
+        "habitat": "desert",
+        "uv_rating": "very_high",
+        "diagnosis_severity": "healthy",
+        "diagnosis_type": "doctor"
+      },
+      {
+        "patient_number": "2",
+        "eye_color": "pink",
+        "habitat": "forest",
+        "uv_rating": "medium",
+        "diagnosis_severity": "moderate",
+        "diagnosis_type": "doctor"
+      },
+      {
+        "patient_number": "3",
+        "eye_color": "green",
+        "habitat": "desert",
+        "uv_rating": "high",
+        "diagnosis_severity": "early_signs",
+        "diagnosis_type": "doctor"
+      }
+    ]
+  },
+  "field_test_1": {
+    "objective_reminder": {
+      "heading_title": "Task 2",
+      "heading_description": "Scan the volunteers' eyes",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-magnifier.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": "magnifier"
+      },
+      "body": "Tap a volunteer to scan their eyes. In your device, you’ll see a target. When it locks onto the eye, hit the spacebar to start scanning. There are 3 volunteers.",
+      "video": {
+        "webm": {
+          "url": "dunes/02_Field_testing_Objective_UI.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "dunes/02-task-2-objective-poster.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "dunes/02_Field_testing_Objective_UI.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "patients": [
+      {
+        "name": "villager1",
+        "region": "dusky_dunes",
+        "eye_card": {
+          "patient_number": "1",
+          "eye_color": "multi",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "severe",
+          "diagnosis_type": "doctor"
+        },
+        "avatar": {
+          "file": {
+            "url": "dunes/field-villager-1.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "villager-avatar"
+        },
+        "retina": {
+          "file": {
+            "url": "dunes/field-retina-1-yellow.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "retina"
+        },
+        "doctor_approves_diagnosis": true
+      },
+      {
+        "name": "villager2",
+        "region": "dusky_dunes",
+        "eye_card": {
+          "patient_number": "2",
+          "eye_color": "orange-light",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "doctor"
+        },
+        "avatar": {
+          "file": {
+            "url": "dunes/field-villager-2.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "villager-avatar"
+        },
+        "retina": {
+          "file": {
+            "url": "dunes/field-retina-2-red.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "retina"
+        },
+        "doctor_approves_diagnosis": true
+      },
+      {
+        "name": "cooper",
+        "region": "polar_peaks",
+        "eye_card": {
+          "patient_number": "3",
+          "eye_color": "purple",
+          "habitat": "snowland",
+          "uv_rating": "high",
+          "diagnosis_severity": "severe",
+          "diagnosis_type": "doctor"
+        },
+        "avatar": {
+          "file": {
+            "url": "dunes/field-villager-3.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "cooper-avatar"
+        },
+        "retina": {
+          "file": {
+            "url": "dunes/field-retina-3-blue.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": null
+        },
+        "doctor_approves_diagnosis": false
+      }
+    ],
+    "doctor_review": [
+      {
+        "id": "intro",
+        "question": "Great work field testing the AI model! All the volunteers have been scanned now.",
+        "answers": [
+          {
+            "text": "See results",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "diagnosis",
+        "question": "Let’s compare the AI model’s prediction against my own diagnosis to see how accurate it is…",
+        "answers": [
+          {
+            "text": "Consult Dr. Visus",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "result-success",
+        "question": "Hmm! It looks like the AI model is accurate for creatures from Dusky Dunes, but not the visitor from another place.",
+        "answers": [
+          {
+            "text": "Continue",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "review-4",
+        "question": "Our AI model got two diagnoses right but missed one for someone from another region. It must work for everyone. What do you think went wrong?",
+        "answers": [
+          {
+            "text": "The software was not up-to-date and couldn't process the data",
+            "isCorrect": false
+          },
+          {
+            "text": "Some patients don't have this disease in their region",
+            "isCorrect": false
+          },
+          {
+            "text": "Our AI model was only trained on local people’s eyes, not visitors’ eyes",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "Well done, that's correct.",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "That's not quite right, our AI model was only trained on local people’s eyes, not visitors’ eyes.",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "review-5",
+        "question": "Ready to carry on?",
+        "answers": [
+          {
+            "text": "Ready!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ]
+  },
+  "diverse_data_collection": {
+    "objective_reminder": {
+      "heading_title": "Task 3",
+      "heading_description": "Collect diverse training data",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-magnifier.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "body": "The AI model needs data from different places to work well. UV levels affect how the retina looks. Try adding scans from places with different UV levels. Some combinations will help more than others.",
+      "video": {
+        "webm": {
+          "url": "dunes/03_Globe_Objective_UI.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "dunes/03_Globe_Objective_UI.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "dunes/03_Globe_Objective_UI.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "objective_reminder_revisit": {
+      "heading_title": "Task 3",
+      "heading_description": "Collect diverse training data",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-magnifier.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "body": "It looks like the data wasn’t diverse enough. You need to find data for each UV level: low, medium, high, and very high.",
+      "video": {
+        "webm": {
+          "url": "dunes/03_Globe_Objective_UI.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "dunes/03_Globe_Objective_UI.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "dunes/03_Globe_Objective_UI.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "labels": {
+      "remove_data": "Remove data",
+      "learn_more": "Learn more",
+      "slots_full": "Data slots are full",
+      "spin_globe": "SPIN GLOBE",
+      "collected_data": "collected data",
+      "slot_empty": "slot empty",
+      "empty": "Empty",
+      "uv_rating": "UV RATING",
+      "continue_cta": "Confirm data",
+      "collect_data": "Collect scans",
+      "collected_datasets": "Collected data",
+      "back": "Back",
+      "teachable_agent_speaker": "Arlo",
+      "about_this_data": "ABOUT THIS DATA",
+      "habitat": "HABITAT",
+      "rotate_left": "Rotate Left",
+      "rotate_right": "Rotate Right"
+    },
+    "default_collected_data": {
+      "uv_rating": "very_high",
+      "habitat": "desert",
+      "region": "dusky_dunes"
+    },
+    "globe_views": [
+      {
+        "uv_rating": "high",
+        "habitat": "forest",
+        "region": "the_heady_heights"
+      },
+      {
+        "uv_rating": "low",
+        "habitat": "wetland",
+        "region": "market_marshes"
+      },
+      {
+        "uv_rating": "high",
+        "habitat": "valley",
+        "region": "rustic_ravines"
+      },
+      {
+        "uv_rating": "low",
+        "habitat": "mangrove",
+        "region": "sandy_seabeds"
+      },
+      {
+        "uv_rating": "medium",
+        "habitat": "grassland",
+        "region": "roots_of_renewal"
+      },
+      {
+        "uv_rating": "medium",
+        "habitat": "subterranean",
+        "region": "mineral_mines"
+      },
+      {
+        "uv_rating": "low",
+        "habitat": "volcano",
+        "region": "caldera_crests"
+      },
+      {
+        "uv_rating": "medium",
+        "habitat": "coastal",
+        "region": "traders_tide"
+      },
+      {
+        "uv_rating": "high",
+        "habitat": "snowland",
+        "region": "polar_peaks"
+      }
+    ],
+    "teachable_agent": [
+      {
+        "id": "diverse-data-1",
+        "question": "Our AI matched two diagnoses but missed one visitor from another region. Dr. Visus says it must work for everyone. What do you think went wrong?",
+        "answers": [
+          {
+            "text": "The software was not up-to-date and couldn’t process the data",
+            "isCorrect": false
+          },
+          {
+            "text": "Some patients don’t have this disease in their region",
+            "isCorrect": false
+          },
+          {
+            "text": "Our AI was trained on locals’ eyes, not visitors’",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "Dr. Visus says you’re right! If our AI only learns from patients from one place, it can fail for others. It needs examples from a wider range of eye scans to be fair and accurate.",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "Not quite. Dr. Visus says if AI only learns from patients from one place, it won’t work well for others. It needs more diverse examples.",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "diverse-data-2",
+        "question": "I can gather more examples! This eye condition is popping up everywhere. Dr. Visus sees AI’s potential to help millions! Our AI needs to see eyes from other places! Oh! Dr. Visus also says UV exposure can really change how the retina looks in eye scans. I have enough fuel to collect data from three new regions. Given what we know, where should I go?",
+        "answers": [
+          {
+            "text": "Show me the map!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ],
+    "learning_ticket": [
+      {
+        "id": "intro",
+        "question": "Great! These new eye scans can help us retrain the AI model. The scans do not have labels yet, so we need diagnoses from doctors first.",
+        "answers": [],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "intro-2",
+        "question": "Several doctors shared their diagnoses, but they don’t always agree on the level of eye disease. We need a final label for each scan.",
+        "answers": [
+          {
+            "text": "Let’s go!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ],
+    "uv_video": {
+      "webm": {
+        "url": "dunes/en_gb/DD_Cutscene.webm",
+        "file_name": ""
+      },
+      "poster": {
+        "url": "dunes/DD_Cutscene.webp",
+        "file_name": ""
+      },
+      "mp4": {
+        "url": "dunes/en_gb/DD_Cutscene.mp4",
+        "file_name": ""
+      },
+      "subtitles": "WEBVTT\n\n\n00:00:00.000 --&gt; 00:00:01.240\nThanks for your help.\n\n\n00:00:01.240 --&gt; 00:00:02.600\nWe finished field testing the AI model\n\n\n00:00:02.600 --&gt; 00:00:04.040\non lots of patients\n\n\n00:00:04.040 --&gt; 00:00:06.160\nbut we've got a big problem!\n\n\n00:00:06.160 --&gt; 00:00:09.280\nIt's great at diagnosing people from the Dusky Dunes,\n\n\n00:00:09.280 --&gt; 00:00:12.680\nbut it's failing on patients from other regions, like Coop.\n\n\n00:00:12.680 --&gt; 00:00:14.200\nWhy do we think that is…?\n\n\n00:00:14.200 --&gt; 00:00:20.040\nIs it because we only trained the AI model using patient scans from Dusky Dunes?\n\n\n00:00:20.040 --&gt; 00:00:25.240\nYes it could be, Arlo! Our Dusky Dunes patient scans were diverse in age and eye colour,\n\n\n00:00:25.240 --&gt; 00:00:28.240\nbut the retina is also affected by UV light.\n\n\n00:00:28.240 --&gt; 00:00:31.600\nIn the Dusky Dunes, the UV level is always high\n\n\n00:00:31.600 --&gt; 00:00:38.000\nso to improve the AI's training, we need scans from other regions with different UV levels to increase diversity.\n\n\n00:00:38.000 --&gt; 00:00:40.000\nCan you help collect more scans?"
+    }
+  },
+  "labelling": {
+    "objective_reminder": {
+      "heading_title": "Task 4",
+      "heading_description": "Label new scans",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-magnifier.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": "magnifier"
+      },
+      "body": "Use the doctors' diagnoses to label each scan. If the doctors don’t all agree, use the label that most of them agree on.",
+      "video": {
+        "webm": {
+          "url": "dunes/04_Data_labelling_Objective_UI.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "dunes/04_Data_labelling_Objective_UI.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "dunes/04_Data_labelling_Objective_UI.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "labels": {
+      "card_count": "{{ count }} of {{ total }}",
+      "correct": "Correct! Well done!",
+      "incorrect": "Not quite... Try again.",
+      "labelling_remaining_scans": "Labeling remaining scans..."
+    },
+    "video_call_labels": {
+      "title": "Video call",
+      "doctors": [
+        {
+          "name": "Doctor Yaya",
+          "video_thinking": {
+            "webm": {
+              "url": "dunes/labelling-yaya-thinking.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-yaya-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-yaya-thinking.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_healthy": {
+            "webm": {
+              "url": "dunes/labelling-yaya-healthy.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-yaya-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-yaya-healthy.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_early_signs": {
+            "webm": {
+              "url": "dunes/labelling-yaya-early-signs.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-yaya-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-yaya-early-signs.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_moderate": {
+            "webm": {
+              "url": "dunes/labelling-yaya-moderate.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-yaya-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-yaya-moderate.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_severe": {
+            "webm": {
+              "url": "dunes/labelling-yaya-severe.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-yaya-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-yaya-severe.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          }
+        },
+        {
+          "name": "Doctor Visus",
+          "video_thinking": {
+            "webm": {
+              "url": "dunes/labelling-visus-thinking.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-visus-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-visus-thinking.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_healthy": {
+            "webm": {
+              "url": "dunes/labelling-visus-healthy.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-visus-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-visus-healthy.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_early_signs": {
+            "webm": {
+              "url": "dunes/labelling-visus-early-signs.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-visus-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-visus-early-signs.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_moderate": {
+            "webm": {
+              "url": "dunes/labelling-visus-moderate.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-visus-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-visus-moderate.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_severe": {
+            "webm": {
+              "url": "dunes/labelling-visus-severe.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-visus-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-visus-severe.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          }
+        },
+        {
+          "name": "Doctor Pipa",
+          "video_thinking": {
+            "webm": {
+              "url": "dunes/labelling-pipa-thinking.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-pipa-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-pipa-thinking.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_healthy": {
+            "webm": {
+              "url": "dunes/labelling-pipa-healthy.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-pipa-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-pipa-healthy.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_early_signs": {
+            "webm": {
+              "url": "dunes/labelling-pipa-early-signs.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-pipa-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-pipa-early-signs.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_moderate": {
+            "webm": {
+              "url": "dunes/labelling-pipa-moderate.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-pipa-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-pipa-moderate.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_severe": {
+            "webm": {
+              "url": "dunes/labelling-pipa-severe.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-pipa-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-pipa-severe.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          }
+        }
+      ],
+      "thinking": "Thinking..."
+    },
+    "huddle_labels": {
+      "doctors_disagree": "It looks like the doctors disagree.",
+      "invite_to_discuss": "Invite doctors to discuss",
+      "discussion_title": "The doctors are reconsidering the severity..."
+    },
+    "cards": [
+      {
+        "eye_card": {
+          "patient_number": "1",
+          "eye_color": "yellow",
+          "habitat": "mangrove",
+          "uv_rating": "medium",
+          "diagnosis_severity": "severe",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "severe"
+      },
+      {
+        "eye_card": {
+          "patient_number": "2",
+          "eye_color": "purple",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "healthy"
+      },
+      {
+        "eye_card": {
+          "patient_number": "3",
+          "eye_color": "pink",
+          "habitat": "forest",
+          "uv_rating": "medium",
+          "diagnosis_severity": "moderate",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "moderate"
+      },
+      {
+        "eye_card": {
+          "patient_number": "4",
+          "eye_color": "green",
+          "habitat": "desert",
+          "uv_rating": "high",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "early_signs"
+      },
+      {
+        "eye_card": {
+          "patient_number": "5",
+          "eye_color": "orange-dark",
+          "habitat": "wetland",
+          "uv_rating": "low",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "healthy"
+      },
+      {
+        "eye_card": {
+          "patient_number": "6",
+          "eye_color": "yellow",
+          "habitat": "mangrove",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "early_signs"
+      },
+      {
+        "eye_card": {
+          "patient_number": "7",
+          "eye_color": "pink",
+          "habitat": "desert",
+          "uv_rating": "medium",
+          "diagnosis_severity": "moderate",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "moderate"
+      },
+      {
+        "eye_card": {
+          "patient_number": "8",
+          "eye_color": "yellow",
+          "habitat": "mangrove",
+          "uv_rating": "high",
+          "diagnosis_severity": "severe",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "severe"
+      },
+      {
+        "eye_card": {
+          "patient_number": "9",
+          "eye_color": "green",
+          "habitat": "coastal",
+          "uv_rating": "medium",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "healthy"
+      },
+      {
+        "eye_card": {
+          "patient_number": "10",
+          "eye_color": "orange-light",
+          "habitat": "desert",
+          "uv_rating": "low",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "early_signs"
+      },
+      {
+        "eye_card": {
+          "patient_number": "11",
+          "eye_color": "yellow",
+          "habitat": "mangrove",
+          "uv_rating": "medium",
+          "diagnosis_severity": "severe",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "severe"
+      },
+      {
+        "eye_card": {
+          "patient_number": "12",
+          "eye_color": "purple",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "healthy"
+      },
+      {
+        "eye_card": {
+          "patient_number": "13",
+          "eye_color": "pink",
+          "habitat": "forest",
+          "uv_rating": "medium",
+          "diagnosis_severity": "moderate",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "moderate"
+      },
+      {
+        "eye_card": {
+          "patient_number": "14",
+          "eye_color": "green",
+          "habitat": "desert",
+          "uv_rating": "high",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "early_signs"
+      },
+      {
+        "eye_card": {
+          "patient_number": "15",
+          "eye_color": "orange-dark",
+          "habitat": "wetland",
+          "uv_rating": "low",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "healthy"
+      }
+    ],
+    "teachable_agent": [
+      {
+        "id": "data-labelling-1",
+        "question": "Good news! I re-trained the AI model with the new scans, and it made accurate predictions using the testing data. Should I tell Dr. Visus our AI system is ready for doctors in the real world to use?",
+        "answers": [
+          {
+            "text": "Not yet! We should test again with real diverse patients first",
+            "isCorrect": true
+          },
+          {
+            "text": "Yes, we’ve added more data, so it’s ready to go",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "You're right! Professor Skye said we need to test it in the real world with diverse groups of patients before it’s ready.",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "Uh oh! Professor Skye said it’s not ready yet. We have to test it in the real world with diverse groups of patients first.",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "data-labelling-2",
+        "question": "Ready to start testing?",
+        "answers": [
+          {
+            "text": "Let’s go!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ],
+    "teachable_agent_revisit": [
+      {
+        "id": "revisit-1",
+        "question": "Good news! I have now trained and tested the AI and labeled the scans.",
+        "answers": [
+          {
+            "text": "Great!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "It made more accurate predictions.",
+          "media": {
+            "webm": {
+              "url": "dunes/labelling-revisit-success.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-revisit-success.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-revisit-success.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "emoji": null
+        },
+        "failure_response": null
+      },
+      {
+        "id": "revisit-2",
+        "question": "Professor Skye said we need to test it in the field with diverse groups of people before it’s ready.",
+        "answers": [
+          {
+            "text": "Start field testing",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ],
+    "learning_ticket": [
+      {
+        "id": "globe-ticket-0",
+        "question": "Arlo watched you train and test the AI model, and they’ll help us out and take it over this round. Let’s see how it goes!",
+        "answers": [
+          {
+            "text": "Let’s go!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ],
+    "teachable_agent_speaker": "Arlo"
+  },
+  "field_test_2": {
+    "objective_reminder": {
+      "heading_title": "Task 5",
+      "heading_description": "Scan the volunteers’ eyes",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-magnifier.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": "magnifier"
+      },
+      "body": "Tap a volunteer to scan their eyes. In your device, you’ll see a target. When it locks onto the eye, hit the spacebar to start scanning. There are 3 volunteers.",
+      "video": {
+        "webm": {
+          "url": "dunes/05_Field_testing_2_Objective_UI.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "dunes/02-task-2-objective-poster.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "dunes/05_Field_testing_2_Objective_UI.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "patients": [
+      {
+        "name": "cooper",
+        "region": "polar_peaks",
+        "eye_card": {
+          "patient_number": "1",
+          "eye_color": "purple",
+          "habitat": "snowland",
+          "uv_rating": "high",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "ai"
+        },
+        "avatar": {
+          "file": {
+            "url": "dunes/field-villager-3.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "cooper-avatar"
+        },
+        "retina": {
+          "file": {
+            "url": "dunes/field-retina-3-blue.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "retina"
+        },
+        "doctor_approves_diagnosis": true
+      },
+      {
+        "name": "pip",
+        "region": "roots_of_renewal",
+        "eye_card": {
+          "patient_number": "2",
+          "eye_color": "green",
+          "habitat": "grassland",
+          "uv_rating": "medium",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "ai"
+        },
+        "avatar": {
+          "file": {
+            "url": "dunes/field-villager-4.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "pip-avatar"
+        },
+        "retina": {
+          "file": {
+            "url": "dunes/field-retina-4-green.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "retina"
+        },
+        "doctor_approves_diagnosis": true
+      },
+      {
+        "name": "rohan",
+        "region": "sandy_seabeds",
+        "eye_card": {
+          "patient_number": "3",
+          "eye_color": "pink",
+          "habitat": "mangrove",
+          "uv_rating": "low",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "ai"
+        },
+        "avatar": {
+          "file": {
+            "url": "dunes/field-villager-5.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "rohan-avatar"
+        },
+        "retina": {
+          "file": {
+            "url": "dunes/field-retina-5-purple.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "retina"
+        },
+        "doctor_approves_diagnosis": true
+      }
+    ],
+    "doctor_review": [
+      {
+        "id": "intro",
+        "question": "We have our volunteer eye scans.",
+        "answers": [
+          {
+            "text": "Show the AI model’s prediction",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "diagnosis",
+        "question": "Let me check the AI model’s prediction against my diagnosis to test its accuracy.",
+        "answers": [
+          {
+            "text": "Show the doctor’s diagnosis",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "intro-fail",
+        "question": "Your AI model worked for some patients, but not everyone. Training may not have included enough UV differences.",
+        "answers": [],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "result-fail",
+        "question": "Send Arlo to get scans from places representing all four UV levels - very high, high, medium and low.",
+        "answers": [
+          {
+            "text": "Let’s go!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "result-success",
+        "question": "Amazing! The AI model worked for everyone we tested from all over! It's ready to be used around the planet!  It gave accurate predictions for these three volunteers and the many more we tested.",
+        "answers": [
+          {
+            "text": "Great!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ]
+  },
+  "quest_complete": {
+    "objective_reminder": {
+      "heading_title": "Task 6",
+      "heading_description": "Create the report",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-magnifier.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "body": "Add the tasks you did in Dusky Dunes in the order you did them.",
+      "video": {
+        "webm": {
+          "url": "dunes/06_Field_report_Objective_UI.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "dunes/06_Field_report_Objective_UI.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "dunes/06_Field_report_Objective_UI.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "pre_recap_learning_ticket": [
+      {
+        "id": "pre-recap-0",
+        "question": "Before you leave, let’s create a quick report of how you built your AI so other players or even Arlo can use it if needed...",
+        "answers": [
+          {
+            "text": "Let’s create the report",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ],
+    "post_recap_learning_ticket": [
+      {
+        "id": "post-recap-0",
+        "question": "One more thing! What was the most important thing you learned about making AI helpful for a real-world problem like this?",
+        "answers": [
+          {
+            "text": "AI can figure out everything by itself, so humans aren't really needed",
+            "isCorrect": false
+          },
+          {
+            "text": "Humans can solve big problems like diagnosing eye diseases at scale without AI",
+            "isCorrect": false
+          },
+          {
+            "text": "Humans are needed to make AI useful. We decide what the system should be designed to do, provide good data, make sure it’s built responsibly, and use its results to help people",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "Exactly! Humans are essential for designing the purpose of AI systems, guiding their development, and using their results to make a real-world impact.",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "AI's greatest power often comes from humans and AI working together. Humans provide the crucial direction and meaning to make AI truly useful.",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "post-recap-1",
+        "question": "That’s the report done! You’ve built an AI model that learns from data and works for different patients from different communities!",
+        "answers": [],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "post-recap-2",
+        "question": "This quest is similar to a Google Research project in the real world. Looks like they’re calling right now!",
+        "answers": [
+          {
+            "text": "Watch real world video",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "Over to you, team!",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": null
+      }
+    ],
+    "recap_report": {
+      "submit_label": "Submit",
+      "document_headline": "field report: dusky dunes",
+      "badge_correct": {
+        "file": {
+          "url": "dunes/recap-sticker-correct.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": "badge correct"
+      },
+      "badge_incorrect": {
+        "file": {
+          "url": "dunes/recap-sticker-incorrect.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": "badge incorrect"
+      },
+      "steps": [
+        {
+          "id": "privacy",
+          "slot_index": 1,
+          "label": "Removed private info from labeled scans",
+          "video": {
+            "webm": {
+              "url": "dunes/recap-1-privacy.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/recap-1-privacy.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/recap-1-privacy.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          }
+        },
+        {
+          "id": "training-testing",
+          "slot_index": 2,
+          "label": "Trained and tested the AI model with scans from Dr. Visus’ patients",
+          "video": {
+            "webm": {
+              "url": "",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/recap-2-training.webp",
+              "file_name": ""
+            },
+            "mp4": null,
+            "subtitles": null
+          }
+        },
+        {
+          "id": "field-test-1",
+          "slot_index": 3,
+          "label": "First field test in the community",
+          "video": {
+            "webm": {
+              "url": "",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/recap-3-field-test-1.webp",
+              "file_name": ""
+            },
+            "mp4": null,
+            "subtitles": null
+          }
+        },
+        {
+          "id": "diverse-data",
+          "slot_index": 4,
+          "label": "Collected new diverse eye scans",
+          "video": {
+            "webm": {
+              "url": "",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/recap-4-diverse-data.webp",
+              "file_name": ""
+            },
+            "mp4": null,
+            "subtitles": null
+          }
+        },
+        {
+          "id": "data-labelling",
+          "slot_index": 5,
+          "label": "Labeled new scans with doctors' help",
+          "video": {
+            "webm": {
+              "url": "",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/recap-5-data-labelling.webp",
+              "file_name": ""
+            },
+            "mp4": null,
+            "subtitles": null
+          }
+        },
+        {
+          "id": "field-test-2",
+          "slot_index": 6,
+          "label": "Re-trained and found high accuracy across communities",
+          "video": {
+            "webm": {
+              "url": "",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/recap-6-field-testing-2.webp",
+              "file_name": ""
+            },
+            "mp4": null,
+            "subtitles": null
+          }
+        }
+      ]
+    },
+    "exit_video": {
+      "webm": {
+        "url": "dunes/en_gb/DD_Outro.webm",
+        "file_name": ""
+      },
+      "poster": {
+        "url": "dunes/DD_Outro.webp",
+        "file_name": ""
+      },
+      "mp4": {
+        "url": "dunes/en_gb/DD_Outro.mp4",
+        "file_name": ""
+      },
+      "subtitles": "WEBVTT\n\n00:00:03.866 --&gt; 00:00:07.466\nWow, your AI model is making a big difference!\n\n00:00:07.466 --&gt; 00:00:10.000\nIt’s made our screening process faster and easier,\n\n00:00:10.000 --&gt; 00:00:12.433\nhelping me see which patients need care first.\n\n00:00:12.433 --&gt; 00:00:17.100\nAnd it’s not just the Dusky Dunes! It's helping other doctors around the planet.\n\n00:00:20.633 --&gt; 00:00:21.766\nExcellent work.\n\n00:00:21.766 --&gt; 00:00:25.733\nIt looks like you’ve really helped the residents of the Dusky Dunes\n\n00:00:25.733 --&gt; 00:00:27.966\n– and other communities as well.\n\n00:00:27.966 --&gt; 00:00:33.066\nRemember! We must always rely on medical experts like Dr Visus\n\n00:00:33.066 --&gt; 00:00:36.533\nto ensure AI is used safely and fairly.\n\n00:00:36.533 --&gt; 00:00:40.733\nWell done making sure the AI model was trained and tested\n\n00:00:40.733 --&gt; 00:00:43.666\non data from a broad range of patients.\n\n00:00:43.666 --&gt; 00:00:47.433\nAnd I think there’s a few others that want to say thank you…\n\n00:00:50.500 --&gt; 00:00:53.400\nOur screening is so much more efficient now.\n\n00:00:53.400 --&gt; 00:00:58.033\nWe have helped many more patients treat their eyes in time.\n\n00:00:58.766 --&gt; 00:01:02.666\nThank you. I’ve learned so much. I can take it from here.\n\n00:01:02.666 --&gt; 00:01:06.633\nGood luck for your next quest!"
+    },
+    "learning_ticket": [
+      {
+        "id": "learning_recap_pre",
+        "question": "Well done! You’ve done a great job developing an AI model that can help doctors and patients from all over.",
+        "answers": [],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "learning_recap_0",
+        "question": "Before you leave, let’s create a quick report to help Arlo and others build better AI systems in the future.",
+        "answers": [
+          {
+            "text": "Let’s go!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "learning_recap_1",
+        "question": "Okay… To start off, what was the first step you took to build your model?",
+        "answers": [
+          {
+            "text": "Training and testing the AI model with labeled data",
+            "isCorrect": false
+          },
+          {
+            "text": "Getting Dr Visus’ labeled eye scans and removing private info",
+            "isCorrect": true
+          },
+          {
+            "text": "Testing in the community to check accuracy",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "That’s right! Getting Dr Visus’ data was the first step.",
+          "media": null,
+          "emoji": {
+            "file": {
+              "url": "",
+              "width": 0,
+              "height": 0
+            },
+            "alt": "eyes-emoji"
+          }
+        },
+        "failure_response": {
+          "text": "Not quite... First, we needed to get the data from Dr Visus and get it ready to use.",
+          "media": null,
+          "emoji": {
+            "file": {
+              "url": "",
+              "width": 0,
+              "height": 0
+            },
+            "alt": "eyes-emoji"
+          }
+        }
+      },
+      {
+        "id": "learning_recap_2",
+        "question": "Next we trained and tested the AI model with labeled data. Then we tested it in the community.  At first, it failed for people outside of Dusky Dunes. What’s the first thing we did then?",
+        "answers": [
+          {
+            "text": "Labeled the new scans",
+            "isCorrect": false
+          },
+          {
+            "text": "Collected more diverse eye scans from across UV levels",
+            "isCorrect": true
+          },
+          {
+            "text": "Re-trained and tested the AI model with new data",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "That’s right! We had to get more diverse data.",
+          "media": null,
+          "emoji": {
+            "file": {
+              "url": "",
+              "width": 0,
+              "height": 0
+            },
+            "alt": "eyes-emoji"
+          }
+        },
+        "failure_response": {
+          "text": "Not quite. The very first step was collecting more diverse eye scans.",
+          "media": null,
+          "emoji": {
+            "file": {
+              "url": "",
+              "width": 0,
+              "height": 0
+            },
+            "alt": "eyes-emoji"
+          }
+        }
+      },
+      {
+        "id": "learning_recap_2b",
+        "question": "Once we had the new scans, what did we do with them next?",
+        "answers": [
+          {
+            "text": "Labelled the new scans",
+            "isCorrect": true
+          },
+          {
+            "text": "Re-trained and tested the AI model with new data",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "That’s right! Labeling the data helped the AI model learn to recognize patterns of healthy eyes versus ones with disease.",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "Not exactly... We couldn't train the AI model until the new data was properly labeled by experts to say whether it showed a healthy eye or one with disease.",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "learning_recap_3a",
+        "question": "Once we had labeled the data, what did we do",
+        "answers": [
+          {
+            "text": "Re-trained and tested the AI model with new data",
+            "isCorrect": true
+          },
+          {
+            "text": "Field tested to check accuracy",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "Exactly! We had to retrain and test the AI model with all the new labeled data we had collected. Then we could test it in the community. The final field testing showed our AI model was working well for everyone! Fantastic!",
+          "media": null,
+          "emoji": {
+            "file": {
+              "url": "",
+              "width": 0,
+              "height": 0
+            },
+            "alt": "eyes-emoji"
+          }
+        },
+        "failure_response": {
+          "text": "",
+          "media": null,
+          "emoji": {
+            "file": {
+              "url": "",
+              "width": 0,
+              "height": 0
+            },
+            "alt": "eyes-emoji"
+          }
+        }
+      },
+      {
+        "id": "learning_recap_3b",
+        "question": "One more thing!. What was the most important thing you learned about making AI helpful for a real-world problem like this?",
+        "answers": [
+          {
+            "text": "AI can figure out everything by itself, so humans aren't really needed",
+            "isCorrect": false
+          },
+          {
+            "text": "Humans can solve big problems like diagnosing eye diseases at scale without AI",
+            "isCorrect": false
+          },
+          {
+            "text": "Humans are needed to make AI useful. We decide what the system should be designed to do, provide good data, make sure it’s built responsibly, and use its results to help people.",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "Exactly! Humans are essential for designing the purpose of AI systems, guiding their development, and using their results to make a real-world impact.",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "AI's greatest power often comes from humans and AI working together. Humans provide the crucial direction and meaning to make AI truly useful.",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "learning_recap_3c",
+        "question": "That’s the report done! You’ve built an AI model that learns from data and works for different patients from different communities!",
+        "answers": [],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "learning_recap_3d",
+        "question": "This quest is similar to a Google Research project in the real world. Looks like they’re calling right now!",
+        "answers": [
+          {
+            "text": "Join the call!",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "Over to you, team!",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": null
+      }
+    ],
+    "quest_complete_eyebrow": "TODO",
+    "badge_earned_title": "TODO",
+    "body": "TODO",
+    "next_quest_cta_label": "Finish quest",
+    "case_study_video": {
+      "webm": {
+        "url": "dunes/Researcher_Interviews_ARDA.webm",
+        "file_name": ""
+      },
+      "poster": {
+        "url": "dunes/Researcher_Interviews_ARDA.webp",
+        "file_name": ""
+      },
+      "mp4": {
+        "url": "dunes/Researcher_Interviews_ARDA.mp4",
+        "file_name": ""
+      },
+      "subtitles": "WEBVTT\n\n00:00:05.000 --&gt; 00:00:06.000 line:60%\nThanks, Professor Skye.\n\n00:00:06.000 --&gt; 00:00:08.000 line:60%\nHey everyone, I'm Preeti,\n\n00:00:08.000 --&gt; 00:00:09.000 line:60%\nand I'm Jon,\n\n00:00:09.000 --&gt; 00:00:11.000 line:60%\nand we work at Google Research.\n\n00:00:11.000 --&gt; 00:00:18.000\nWe're a part of a team that uses AI to help prevent vision loss by catching early signs of a condition called diabetic retinopathy.\n\n00:00:18.000 --&gt; 00:00:20.000\nThe quest you just took was inspired by our journey.\n\n00:00:20.000 --&gt; 00:00:31.000\nOne of the best parts of working in this team is that we use AI to address a real-life problem and help hundreds and thousands of people get the care they need in time.\n\n00:00:31.000 --&gt; 00:00:45.000\nBefore our model was created and deployed, many patients living in rural areas of the world had to travel long distances, sometimes for hours, to be screened and diagnosed by an eye specialist in a major city.\n\n00:00:45.000 --&gt; 00:00:51.000\nNow people can get screened easily in their local clinics and get immediate feedback from the AI.\n\n00:00:51.000 --&gt; 00:00:56.000\nIn the cases where the AI detects something concerning, they are referred to an eye specialist.\n\n00:00:57.000 --&gt; 00:00:59.000\nSo how does it work?\n\n00:00:59.000 --&gt; 00:01:05.000\nWe trained our AI model using over 128,000 retinal images of the back of the eye taken at clinics around the world.\n\n00:01:05.000 --&gt; 00:01:12.000\nFrom these images, the AI learned to recognize more than 20 different signs that patients were at risk of vision loss.\n\n00:01:12.000 --&gt; 00:01:19.000\nOnce the model was trained and tested, we started using our AI model in clinics, first in India and later in Thailand.\n\n00:01:19.000 --&gt; 00:01:27.000\nJust like you experienced in the quest, when building AI-driven solutions, it's important to make sure that they work well for everyone.\n\n00:01:27.000 --&gt; 00:01:31.000\nThis work is a powerful example of how AI can support, not replace, doctors.\n\n00:01:31.000 --&gt; 00:01:40.000\nIt helps them do their jobs faster, reach more people, and ensure that they can focus their time and attention on the people that they can help the most.\n\n00:01:40.000 --&gt; 00:01:41.000\nBack to you,\n\n00:01:41.000 --&gt; 00:01:42.000\nProfessor Skye."
+    },
+    "badge_media": {
+      "file": {
+        "url": "dunes/badge.gif",
+        "width": 0,
+        "height": 0
+      },
+      "alt": "badge"
+    },
+    "badge_description": "Outstanding work! Your report is complete, and our AI is ready to help people everywhere. You’ve built an AI that learns, adapts, and works for everyone."
+  }
+}
