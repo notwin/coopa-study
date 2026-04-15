@@ -6,6 +6,12 @@ declare global {
   }
 }
 
+const MATCH = /^https:\/\/research\.google\/ai-quests(\/|$)/;
+
+function setHostVisibility(host: HTMLElement, visible: boolean): void {
+  host.style.display = visible ? '' : 'none';
+}
+
 function mount(): void {
   if (window.__coopaStudyMounted) return;
   window.__coopaStudyMounted = true;
@@ -21,6 +27,24 @@ function mount(): void {
   shadow.appendChild(root);
 
   import('../sidebar/App').then(({ mountApp }) => mountApp(root));
+
+  const syncVisibility = () => setHostVisibility(host, MATCH.test(location.href));
+  syncVisibility();
+
+  // 监听 SPA 路由
+  const origPush = history.pushState;
+  const origReplace = history.replaceState;
+  history.pushState = function (...args) {
+    const r = origPush.apply(this, args);
+    syncVisibility();
+    return r;
+  };
+  history.replaceState = function (...args) {
+    const r = origReplace.apply(this, args);
+    syncVisibility();
+    return r;
+  };
+  window.addEventListener('popstate', syncVisibility);
 }
 
 if (document.readyState === 'loading') {
