@@ -2,6 +2,16 @@ node_modules/
 dist/
 build/
 .vite/
+*.tsbuildinfo
+# tsc -b composite 项目对 vite.config.ts / manifest.config.ts 会 emit .js/.d.ts
+/vite.config.js
+/vite.config.d.ts
+/manifest.config.js
+/manifest.config.d.ts
+/vitest.config.js
+/vitest.config.d.ts
+src/**/*.js
+src/**/*.d.ts
 .playwright-cli/
 .playwright/
 playwright-report/
