@@ -38,3 +38,14 @@ npm run package
 ```
 
 产物：`coopa-study-0.1.0.zip`，可分发。
+
+## MVP 验收清单（手工）
+
+装 `dist/` 到 Chrome 后，访问 `https://research.google/ai-quests/intl/en_gb`，逐项核对：
+
+- [ ] 首页「Accept mission」变成「接受任务」
+- [ ] 地图页的「Start Quest」变成「开始任务」
+- [ ] 点开 Flood Forecasting，开场 cinematic 第一句字幕是「糟糕……我们麻烦大了。」
+- [ ] Skye 开场独白首句是「欢迎来到 AI 探索之旅」
+- [ ] 右侧细条可见，点开展开伴读面板，能切章节、翻术语卡
+- [ ] 关闭浏览器再打开，折叠偏好保留
