@@ -4,6 +4,7 @@ import type { CompanionPack } from '../types';
 import { CollapseHandle } from './CollapseHandle';
 import { Header } from './Header';
 import { ChapterTabs } from './ChapterTabs';
+import { ChapterView } from './ChapterView';
 
 interface Props {
   pack: CompanionPack;
@@ -24,6 +25,9 @@ export function App({ pack, initialCollapsed = true }: Props) {
         chapters={pack.chapters}
         currentId={currentChapterId}
         onChange={setCurrentChapterId}
+      />
+      <ChapterView
+        chapter={pack.chapters.find(c => c.id === currentChapterId) ?? pack.chapters[0]!}
       />
     </aside>
   );
