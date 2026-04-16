@@ -17,7 +17,10 @@ export default defineManifest({
       run_at: 'document_idle'
     }
   ],
-  permissions: ['declarativeNetRequest'],
+  // declarativeNetRequestWithHostAccess 多出 modifyHeaders 能力，用来剥掉 research.google 的严格
+  // CSP（`script-src 'self'`），否则 MV3 content script 对插件内 JS 的 dynamic import 会被拦住。
+  // 权限作用域受 host_permissions 限制。
+  permissions: ['declarativeNetRequestWithHostAccess'],
   host_permissions: ['https://research.google/*'],
   declarative_net_request: {
     rule_resources: [
