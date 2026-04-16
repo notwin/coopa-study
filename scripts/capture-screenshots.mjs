@@ -2,10 +2,12 @@
 // 加载插件 + 真实访问 research.google，拍 4 张关键画面。
 import { chromium } from 'playwright';
 import { mkdir } from 'node:fs/promises';
-import path from 'node:path';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const EXT = '/Users/notwin/Code/coopa_study/dist';
-const OUT = '/Users/notwin/Code/coopa_study/docs/release/screenshots';
+const PROJECT = join(dirname(fileURLToPath(import.meta.url)), '..');
+const EXT = join(PROJECT, 'dist');
+const OUT = join(PROJECT, 'docs/release/screenshots');
 await mkdir(OUT, { recursive: true });
 
 const ctx = await chromium.launchPersistentContext('', {
@@ -52,7 +54,7 @@ const diag = await page.evaluate(() => {
 });
 log('  diag: ' + JSON.stringify(diag));
 
-await page.screenshot({ path: path.join(OUT, '01-home-accept-mission.png'), fullPage: false });
+await page.screenshot({ path: join(OUT, '01-home-accept-mission.png'), fullPage: false });
 
 // ———— 02 地图页 ————
 log('02 map');
@@ -60,7 +62,7 @@ await page.locator('button:has-text("接受任务")').click({ timeout: 10_000 })
 try { await page.locator('button[aria-label="Skip"]').click({ timeout: 8000, force: true }); } catch {}
 await page.waitForURL(/\/map$/, { timeout: 15_000 });
 await page.waitForTimeout(6000);
-await page.screenshot({ path: path.join(OUT, '02-map-start-quest.png'), fullPage: false });
+await page.screenshot({ path: join(OUT, '02-map-start-quest.png'), fullPage: false });
 
 // ———— 03 cinematic 中文字幕 ————
 log('03 cinematic');
@@ -75,7 +77,7 @@ for (let i = 0; i < 40; i++) {
 }
 // 让字幕 overlay 真正显示
 await page.waitForTimeout(6000);
-await page.screenshot({ path: path.join(OUT, '03-cinematic-subtitles.png'), fullPage: false });
+await page.screenshot({ path: join(OUT, '03-cinematic-subtitles.png'), fullPage: false });
 
 // ———— 04 伴读面板展开 ————
 log('04 sidebar');
@@ -100,7 +102,7 @@ if (beforeSide.btnExists) {
     await page.waitForTimeout(2000);
   }
 }
-await page.screenshot({ path: path.join(OUT, '04-sidebar-expanded.png'), fullPage: false });
+await page.screenshot({ path: join(OUT, '04-sidebar-expanded.png'), fullPage: false });
 
 await ctx.close();
 log('done -> ' + OUT);

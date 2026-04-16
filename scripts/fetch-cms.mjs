@@ -1,10 +1,11 @@
 // 从 Google AI Quests CMS 拉取最新英文 JSON 源文件
 // 用法：node scripts/fetch-cms.mjs
-// 输出：/Users/notwin/Code/coopa_study/content-source/
+// 输出：content-source/
 import { writeFile, mkdir } from 'node:fs/promises';
-import path from 'node:path';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const ROOT = '/Users/notwin/Code/coopa_study/content-source';
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', 'content-source');
 const API = 'https://research.google/ai-quests/content/api';
 const LOG = (m) => console.log(`[${new Date().toISOString()}] ${m}`);
 
@@ -41,13 +42,13 @@ try {
 LOG(`   snapshot=${snapshotId}`);
 
 const base = `${API}/snapshot/${snapshotId}`;
-await mkdir(path.join(ROOT, 'en_gb'), { recursive: true });
+await mkdir(join(ROOT, 'en_gb'), { recursive: true });
 
 LOG('2. fetch snapshot-level files');
 for (const name of SNAPSHOT_FILES) {
   const url = `${base}/${name}.json`;
   const data = await fetchJson(url);
-  await writeFile(path.join(ROOT, `${name}.json`), JSON.stringify(data, null, 2));
+  await writeFile(join(ROOT, `${name}.json`), JSON.stringify(data, null, 2));
   LOG(`   + ${name}.json`);
 }
 
@@ -56,12 +57,12 @@ for (const name of LOCALE_FILES) {
   const url = `${base}/en_gb/${name}.json`;
   try {
     const data = await fetchJson(url);
-    await writeFile(path.join(ROOT, 'en_gb', `${name}.json`), JSON.stringify(data, null, 2));
+    await writeFile(join(ROOT, 'en_gb', `${name}.json`), JSON.stringify(data, null, 2));
     LOG(`   + en_gb/${name}.json`);
   } catch (e) {
     LOG(`   - en_gb/${name}.json: ${e.message}`);
   }
 }
 
-await writeFile(path.join(ROOT, 'SNAPSHOT.txt'), `${snapshotId}\n${new Date().toISOString()}\n`);
+await writeFile(join(ROOT, 'SNAPSHOT.txt'), `${snapshotId}\n${new Date().toISOString()}\n`);
 LOG(`done. snapshot ${snapshotId} saved to ${ROOT}`);

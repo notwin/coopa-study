@@ -4,8 +4,10 @@
 // "sidebar 样貌"demo 图，我们渲染一个静态 HTML，复刻 sidebar 样式 + 用真实截图 01 做底。
 import { chromium } from 'playwright';
 import { readFile, writeFile } from 'node:fs/promises';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const ROOT = '/Users/notwin/Code/coopa_study';
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = `${ROOT}/docs/release/screenshots/04-sidebar-expanded.png`;
 const styles = await readFile(`${ROOT}/src/sidebar/styles.css`, 'utf8');
 const homeShot = await readFile(`${ROOT}/docs/release/screenshots/01-home-accept-mission.png`);

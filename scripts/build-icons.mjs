@@ -1,9 +1,10 @@
 // 把 public/icons/icon.svg 渲染成插件需要的各尺寸 PNG + Chrome Web Store 素材。
 import { readFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 
-const ROOT = '/Users/notwin/Code/coopa_study';
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SVG_ICON = await readFile(join(ROOT, 'public/icons/icon.svg'));
 
 // 1. 插件运行时图标 16/48/128 px
