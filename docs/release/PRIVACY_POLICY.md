@@ -38,12 +38,12 @@ Coopa Study 是一款只在本地运行的浏览器扩展。**它不收集、不
 
 ## 开源审计
 
-插件代码完全开源，任何人都可以在发布前审计实现：  
-<https://github.com/你的账号/coopa-study>（发布前请替换此占位 URL）
+插件代码完全开源，任何人都可以审计实现：  
+<https://github.com/notwin/coopa-study>
 
 ## 联系方式
 
-隐私相关问题：_发布前填入 support email_
+隐私相关问题：notwin@gmail.com
 
 ---
 
@@ -84,8 +84,8 @@ This extension is designed for 11–14-year-old learners. Because we collect **n
 ## Open source
 
 Source is fully auditable:  
-<https://github.com/YOUR_USER/coopa-study> *(replace placeholder before launch)*
+<https://github.com/notwin/coopa-study>
 
 ## Contact
 
-For any privacy question: _fill in support email before launch_
+For any privacy question: notwin@gmail.com

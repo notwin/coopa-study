@@ -79,10 +79,10 @@ Made with ❤ for kids learning AI in Chinese.
 
 ## 发布者信息（占位，你发版前填上）
 
-- Developer / Publisher: _填你的 GitHub 用户名或昵称_
-- Support email: _填 email_
-- Website: _填 repo URL 或主页_
-- Privacy policy URL: _托管 `PRIVACY_POLICY.md` 的公共 URL_
+- Developer / Publisher: notwin
+- Support email: notwin@gmail.com
+- Website: https://github.com/notwin/coopa-study
+- Privacy policy URL: https://github.com/notwin/coopa-study/blob/main/docs/release/PRIVACY_POLICY.md
 
 ## 权限理由（Permissions Justification）
 

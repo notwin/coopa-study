@@ -32,7 +32,7 @@ _待上架。_
 ### 开发者（本地加载 unpacked）
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/notwin/coopa-study.git
 cd coopa-study
 npm install
 npm run build
