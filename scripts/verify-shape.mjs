@@ -37,8 +37,9 @@ async function verify() {
     try {
       await stat(zhFile);
     } catch {
-      console.error(`MISSING zh file for ${rel}`);
-      errors++;
+      // zh 版本不存在 = 该文件不在 MVP 翻译范围，DNR 不会拦截，
+      // Angular 收到 404 回退默认 locale。可接受降级，不算 shape 错。
+      console.log(`SKIP untranslated ${rel}`);
       continue;
     }
     const src = JSON.parse(await readFile(srcFile, 'utf8'));
