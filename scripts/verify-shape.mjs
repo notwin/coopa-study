@@ -26,7 +26,8 @@ function leafPaths(obj, prefix = '', out = []) {
   return out;
 }
 
-function countArrows(s) { return (String(s ?? '').match(/-->/g) || []).length; }
+// CMS stores VTT arrows HTML-encoded as `--&gt;`, not literal `-->`. Match the encoded form.
+function countArrows(s) { return (String(s ?? '').match(/--&gt;/g) || []).length; }
 
 async function verify() {
   const srcFiles = await walkJson(SRC);
