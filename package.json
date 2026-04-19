@@ -1,7 +1,7 @@
 {
   "name": "coopa-study",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,7 +12,7 @@
     "test:e2e": "playwright test",
     "verify:shape": "node scripts/verify-shape.mjs",
     "lint:types": "tsc --noEmit",
-    "package": "npm run build && cd dist && zip -rq ../coopa-study-0.1.0.zip ./ -x '.vite/*'"
+    "package": "npm run build && cd dist && zip -rq ../coopa-study-$npm_package_version.zip ./ -x '.vite/*'"
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "2.0.0-beta.25",

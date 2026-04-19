@@ -4,7 +4,7 @@ export default defineManifest({
   manifest_version: 3,
   name: 'Coopa Study · AI Quests 中文伴读',
   description: '把 Google AI Quests 的 UI 和字幕原位汉化，并提供中文伴读面板。',
-  version: '0.1.0',
+  version: '0.2.0',
   icons: {
     '16': 'icons/icon16.png',
     '48': 'icons/icon48.png',
