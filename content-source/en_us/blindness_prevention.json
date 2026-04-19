@@ -101,7 +101,7 @@
         "url": "dunes/en_gb/DD_Intro.mp4",
         "file_name": ""
       },
-      "subtitles": "WEBVTT\n\n00:00:00.000 --&gt; 00:00:04.633\nHello, I'm Doctor Visus, an eye specialist here in the Dusky Dunes.\n\n00:00:04.633 --&gt; 00:00:08.166\nMore and more people are developing eye disease and need my help.\n\n00:00:08.166 --&gt; 00:00:10.400\nJust look at all these patients waiting!\n\n00:00:10.400 --&gt; 00:00:15.666\nIf I can identify the disease, I can get them the right treatment – but I’m the only doctor here.\n\n00:00:15.666 --&gt; 00:00:20.600\nI need help figuring out which patients to see first based on how severe their problem is.\n\n00:00:20.600 --&gt; 00:00:23.233\nThe testing process involves three steps:\n\n00:00:23.233 --&gt; 00:00:25.000\nScanning the patient’s eyes\n\n00:00:25.000 --&gt; 00:00:28.666\nAnalysing a part of the eye called the “retina” for signs of disease\n\n00:00:28.666 --&gt; 00:00:31.133\nSharing what I find out with the patient\n\n00:00:31.133 --&gt; 00:00:33.033\nDo you think AI could help?\n\n00:00:33.033 --&gt; 00:00:37.033\nI’ve collected thousands of scans and their diagnoses from my work.\n\n00:00:37.033 --&gt; 00:00:43.133\nCould you use this data to build an AI model that learns from my scans and helps me prioritise patients?\n\n00:00:43.133 --&gt; 00:00:46.533\nThis is Arlo, my assistant – they can help you along the way.\n\n00:00:46.533 --&gt; 00:00:54.733\nHi, I'm Arlo. By learning AI skills with you, I can keep helping the Dusky Dunes community after you’ve finished here.\n\n00:00:58.266 --&gt; 00:01:01.566\nAh, I see you’ve met Dr Visus and Arlo.\n\n00:01:01.566 --&gt; 00:01:06.233\nGreat! You can help them use AI to speed up patient diagnosis.\n\n00:01:06.233 --&gt; 00:01:12.166\nBack on Earth, AI’s already helping doctors speed up processes and make healthcare better.\n\n00:01:12.166 --&gt; 00:01:16.033\nI trust you can do the same for Dr Visus…\n\n00:01:16.033 --&gt; 00:01:21.400\nSo, are you ready to help the Dusky Dunes community tackle this eye-opening challenge?"
+      "subtitles": "WEBVTT\n\n00:00:00.000 --&gt; 00:00:04.633\nHello, I'm Doctor Visus, an eye specialist here in the Dusky Dunes.\n\n00:00:04.633 --&gt; 00:00:08.166\nMore and more people are developing eye disease and need my help.\n\n00:00:08.166 --&gt; 00:00:10.400\nJust look at all these patients waiting!\n\n00:00:10.400 --&gt; 00:00:15.666\nIf I can identify the disease, I can get them the right treatment – but I’m the only doctor here.\n\n00:00:15.666 --&gt; 00:00:20.600\nI need help figuring out which patients to see first based on how severe their problem is.\n\n00:00:20.600 --&gt; 00:00:23.233\nThe testing process involves three steps:\n\n00:00:23.233 --&gt; 00:00:25.000\nScanning the patient’s eyes\n\n00:00:25.000 --&gt; 00:00:28.666\nAnalyzing a part of the eye called the “retina” for signs of disease\n\n00:00:28.666 --&gt; 00:00:31.133\nSharing what I find out with the patient\n\n00:00:31.133 --&gt; 00:00:33.033\nDo you think AI could help?\n\n00:00:33.033 --&gt; 00:00:37.033\nI’ve collected thousands of scans and their diagnoses from my work.\n\n00:00:37.033 --&gt; 00:00:43.133\nCould you use this data to build an AI model that learns from my scans and helps me prioritize patients?\n\n00:00:43.133 --&gt; 00:00:46.533\nThis is Arlo, my assistant – they can help you along the way.\n\n00:00:46.533 --&gt; 00:00:54.733\nHi, I'm Arlo. By learning AI skills with you, I can keep helping the Dusky Dunes community after you’ve finished here.\n\n00:00:58.266 --&gt; 00:01:01.566\nAh, I see you’ve met Dr Visus and Arlo.\n\n00:01:01.566 --&gt; 00:01:06.233\nGreat! You can help them use AI to speed up patient diagnosis.\n\n00:01:06.233 --&gt; 00:01:12.166\nBack on Earth, AI’s already helping doctors speed up processes and make healthcare better.\n\n00:01:12.166 --&gt; 00:01:16.033\nI trust you can do the same for Dr Visus…\n\n00:01:16.033 --&gt; 00:01:21.400\nSo, are you ready to help the Dusky Dunes community tackle this eye-opening challenge?"
     },
     "learning_ticket": [
       {
@@ -134,7 +134,7 @@
       },
       {
         "id": "dunes-intro-1",
-        "question": "Your AI model will help Dr. Visus identify the patients who need care most. It will analyse eye scans to learn patterns linked with eye problems.",
+        "question": "Your AI model will help Dr. Visus identify the patients who need care most. It will analyze eye scans to learn patterns linked with eye problems.",
         "answers": [
           {
             "text": "Let's get started!",
@@ -215,7 +215,7 @@
         "name": "Name:",
         "date_of_birth": "Date of birth:",
         "gender": "Gender:",
-        "eye_colour": "Eye colour:",
+        "eye_colour": "Eye color:",
         "home_address": "Home address:",
         "profession": "Profession:",
         "left_eye_scan": "Left eye scan",
@@ -412,7 +412,7 @@
           "is_redacted": true
         },
         "eye_colour": {
-          "value": "Multicoloured",
+          "value": "Multicolored",
           "is_redacted": false
         },
         "home_address": {
@@ -1234,7 +1234,7 @@
         "url": "dunes/en_gb/DD_Cutscene.mp4",
         "file_name": ""
       },
-      "subtitles": "WEBVTT\n\n\n00:00:00.000 --&gt; 00:00:01.240\nThanks for your help.\n\n\n00:00:01.240 --&gt; 00:00:02.600\nWe finished field testing the AI model\n\n\n00:00:02.600 --&gt; 00:00:04.040\non lots of patients\n\n\n00:00:04.040 --&gt; 00:00:06.160\nbut we've got a big problem!\n\n\n00:00:06.160 --&gt; 00:00:09.280\nIt's great at diagnosing people from the Dusky Dunes,\n\n\n00:00:09.280 --&gt; 00:00:12.680\nbut it's failing on patients from other regions, like Coop.\n\n\n00:00:12.680 --&gt; 00:00:14.200\nWhy do we think that is…?\n\n\n00:00:14.200 --&gt; 00:00:20.040\nIs it because we only trained the AI model using patient scans from Dusky Dunes?\n\n\n00:00:20.040 --&gt; 00:00:25.240\nYes it could be, Arlo! Our Dusky Dunes patient scans were diverse in age and eye colour,\n\n\n00:00:25.240 --&gt; 00:00:28.240\nbut the retina is also affected by UV light.\n\n\n00:00:28.240 --&gt; 00:00:31.600\nIn the Dusky Dunes, the UV level is always high\n\n\n00:00:31.600 --&gt; 00:00:38.000\nso to improve the AI's training, we need scans from other regions with different UV levels to increase diversity.\n\n\n00:00:38.000 --&gt; 00:00:40.000\nCan you help collect more scans?"
+      "subtitles": "WEBVTT\n\n\n00:00:00.000 --&gt; 00:00:01.240\nThanks for your help.\n\n\n00:00:01.240 --&gt; 00:00:02.600\nWe finished field testing the AI model\n\n\n00:00:02.600 --&gt; 00:00:04.040\non lots of patients\n\n\n00:00:04.040 --&gt; 00:00:06.160\nbut we've got a big problem!\n\n\n00:00:06.160 --&gt; 00:00:09.280\nIt's great at diagnosing people from the Dusky Dunes,\n\n\n00:00:09.280 --&gt; 00:00:12.680\nbut it's failing on patients from other regions, like Coop.\n\n\n00:00:12.680 --&gt; 00:00:14.200\nWhy do we think that is…?\n\n\n00:00:14.200 --&gt; 00:00:20.040\nIs it because we only trained the AI model using patient scans from Dusky Dunes?\n\n\n00:00:20.040 --&gt; 00:00:25.240\nYes it could be, Arlo! Our Dusky Dunes patient scans were diverse in age and eye color,\n\n\n00:00:25.240 --&gt; 00:00:28.240\nbut the retina is also affected by UV light.\n\n\n00:00:28.240 --&gt; 00:00:31.600\nIn the Dusky Dunes, the UV level is always high\n\n\n00:00:31.600 --&gt; 00:00:38.000\nso to improve the AI's training, we need scans from other regions with different UV levels to increase diversity.\n\n\n00:00:38.000 --&gt; 00:00:40.000\nCan you help collect more scans?"
     }
   },
   "labelling": {

@@ -91,46 +91,46 @@
     }
   },
   "labels": {
-    "back_cta": "Back",
-    "back_to_the_map_cta_label": "Back to quest selection",
-    "close_cta": "Close",
-    "continue_cta": "Continue",
-    "home_cta": "Home",
-    "loading_label": "Loading...",
-    "small_screen_label": "AI Quests can't be played on a screen smaller than 1240x600 px.  Try zooming out in your browser and refreshing the page.",
-    "toggle_audio_button": "Toggle audio",
-    "video_replay": "Replay",
-    "video_skip": "Skip",
-    "video_play_pause": "Play/Pause"
+    "back_cta": "返回",
+    "back_to_the_map_cta_label": "返回任务选择",
+    "close_cta": "关闭",
+    "continue_cta": "继续",
+    "home_cta": "主页",
+    "loading_label": "加载中...",
+    "small_screen_label": "AI Quests 无法在小于 1240x600 像素的屏幕上运行。试试在浏览器里缩小页面后刷新。",
+    "toggle_audio_button": "开关声音",
+    "video_replay": "重播",
+    "video_skip": "跳过",
+    "video_play_pause": "播放 / 暂停"
   },
   "quests": [
     {
       "id": "quest-flood",
-      "name": "Market Marshes",
-      "name_text": "Market\nMarshes",
-      "subtitle": "Flood Forecasting"
+      "name": "集市沼泽",
+      "name_text": "集市\n沼泽",
+      "subtitle": "洪水预测"
     },
     {
       "id": "quest-blindness",
-      "name": "Dusky Dunes",
-      "name_text": "Dusky\nDunes",
-      "subtitle": "Blindness Prevention"
+      "name": "暮色沙丘",
+      "name_text": "暮色\n沙丘",
+      "subtitle": "失明预防"
     },
     {
       "id": "quest-education",
-      "name": "Polar Peaks",
-      "name_text": "Polar\nPeaks",
-      "subtitle": "Mapping the Brain"
+      "name": "极地之巅",
+      "name_text": "极地\n之巅",
+      "subtitle": "绘制大脑图谱"
     }
   ],
   "nav_labels": {
-    "menu_label": "Menu",
-    "close_label": "Close",
-    "play_game_label": "Play the game",
-    "about_label": "About",
-    "faq_label": "FAQ",
-    "teacher_resources_label": "Teacher resources",
-    "privacy_notice_label": "Privacy notice"
+    "menu_label": "菜单",
+    "close_label": "关闭",
+    "play_game_label": "开始游戏",
+    "about_label": "关于",
+    "faq_label": "常见问题",
+    "teacher_resources_label": "教师资源",
+    "privacy_notice_label": "隐私声明"
   },
   "ai_quest_logo_small": {
     "url": "icons/ai_quests_logo_small.webp",

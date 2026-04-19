@@ -3,7 +3,7 @@
   "document_id": "",
   "general": {
     "forecast_key": {
-      "heading": "预报图例：",
+      "heading": "预测图例：",
       "low_key": "危险水位",
       "mid_key": "警告水位",
       "high_key": "正常水位"
@@ -57,15 +57,15 @@
     "learning_ticket": [
       {
         "id": "introticket",
-        "question": "Welcome, I'm Professor Skye, your AI mentor! I'm here to guide you as you make crucial decisions about your AI.",
+        "question": "欢迎！我是斯凯教授，你的 AI 导师。接下来我会陪你一起，做出关于 AI 的关键决定。",
         "answers": [
           {
-            "text": "Sounds good!",
+            "text": "听起来不错！",
             "isCorrect": true
           }
         ],
         "success_response": {
-          "text": "First things first! To build your AI flood prediction tool, you need data that helps predict floods. Head into the forest and collect the data.",
+          "text": "先办要紧事！要搭建 AI 洪水预测工具，你需要能帮你预测洪水的数据。进入森林，去把数据收集起来吧。",
           "media": null,
           "emoji": null
         },
@@ -75,16 +75,16 @@
   },
   "collect_tokens": {
     "instructions": {
-      "eyebrow_task_number": "Task 1",
-      "eyebrow_text": "Find the data",
-      "heading": "Search the forest",
-      "description": "The data you'll need to train a flood forecasting AI model is hidden in objects throughout the forest. Can you find and collect the missing data?",
-      "interaction_slot_text": "Click and drag to explore",
-      "continue_cta_text": "Continue"
+      "eyebrow_task_number": "任务 1",
+      "eyebrow_text": "找到数据",
+      "heading": "探索森林",
+      "description": "训练洪水预测 AI 模型所需的数据，藏在森林各处的物品里。你能把缺失的数据找到并收集起来吗？",
+      "interaction_slot_text": "点击并拖拽以探索",
+      "continue_cta_text": "继续"
     },
     "objective_reminder": {
-      "heading_title": "Task 1",
-      "heading_description": "Find the data",
+      "heading_title": "任务 1",
+      "heading_description": "找到数据",
       "heading_thumbnail": {
         "file": {
           "url": "icons/objective-reminder-magnifier.webp",
@@ -93,7 +93,7 @@
         },
         "alt": null
       },
-      "body": "Scroll through the forest to find the 12 objects containing the data you need.",
+      "body": "在森林中滑动，找到藏有你所需数据的 12 件物品。",
       "video": {
         "webm": {
           "url": "marshes/1.0-data-collection-tutorial.webm",
@@ -111,27 +111,27 @@
       }
     },
     "has_enough_tokens": {
-      "prompt": "You have enough data to proceed to the next task, but collecting more data might help make it more accurate",
-      "cta": "Proceed to next task"
+      "prompt": "你已经收集到足够的数据，可以进入下一项任务了。不过再多收集一些数据，预测可能会更准确。",
+      "cta": "进入下一项任务"
     },
     "token_transfer_modal": {
-      "transfer_cta": "Drag to transfer data",
-      "transfer_complete": "Transfer complete",
-      "info_eyebrow": "New data unlocked",
-      "info_cta": "Collect data"
+      "transfer_cta": "拖动以传输数据",
+      "transfer_complete": "传输完成",
+      "info_eyebrow": "解锁了新的数据",
+      "info_cta": "收集数据"
     },
     "learning_ticket": [
       {
         "id": "collecttokens",
-        "question": "Good job! My system has flagged some possible errors in the data. Can you spot them?",
+        "question": "干得好！我的系统标出了数据里可能存在的一些错误。你能找出来吗？",
         "answers": [
           {
-            "text": "Sure thing",
+            "text": "没问题",
             "isCorrect": true
           }
         ],
         "success_response": {
-          "text": "Let's go!",
+          "text": "开始吧！",
           "media": null,
           "emoji": null
         },
@@ -141,28 +141,28 @@
     "easter_eggs": [
       {
         "id": "newt",
-        "hover_text": "What's this?",
-        "click_text": "What, you've never met a talking lizard before?"
+        "hover_text": "这是什么？",
+        "click_text": "咋啦，没见过会说话的蜥蜴？"
       },
       {
         "id": "rocky",
-        "hover_text": "What's this?",
-        "click_text": "The only thing I'm catching here is a cold!"
+        "hover_text": "这是什么？",
+        "click_text": "在这儿我啥也没钓着，就钓着一场感冒！"
       }
     ]
   },
   "select_tokens": {
     "instructions": {
-      "eyebrow_task_number": "Task 3",
-      "eyebrow_text": "A QUESTION OF RELEVANCE",
-      "heading": "Select your data",
-      "description": "From the data you found in the forest, pick the ones you think will be most helpful for generating an accurate prediction.",
-      "interaction_slot_text": "Pick four data chips",
-      "continue_cta_text": "Continue"
+      "eyebrow_task_number": "任务 3",
+      "eyebrow_text": "相关性的问题",
+      "heading": "挑选你的数据",
+      "description": "从你在森林里收集到的数据中，挑出你觉得最有助于生成准确预测的那几项。",
+      "interaction_slot_text": "挑选四块数据芯片",
+      "continue_cta_text": "继续"
     },
     "objective_reminder": {
-      "heading_title": "Task 3",
-      "heading_description": "Select the data",
+      "heading_title": "任务 3",
+      "heading_description": "挑选数据",
       "heading_thumbnail": {
         "file": {
           "url": "icons/objective-reminder-chip.webp",
@@ -171,7 +171,7 @@
         },
         "alt": null
       },
-      "body": "From the data you found in the forest, pick the ones you think will be most helpful for predicting flooding.",
+      "body": "从你在森林里收集到的数据中，挑出你觉得最有助于预测洪水的那几项。",
       "video": {
         "webm": {
           "url": "marshes/2.0-data-selection-tutorial.webm",
@@ -191,24 +191,24 @@
     "learning_ticket_final": [
       {
         "id": "aftermodeltraininganimation",
-        "question": "Incredible! You've trained your AI! 🎉 What do you want to do next?",
+        "question": "太棒了！你把你的 AI 训练好了！🎉 接下来想做什么？",
         "answers": [
           {
-            "text": "Let Luna know that our job here is done, and she can now use the AI to predict floods.",
+            "text": "告诉露娜我们这边干完了，她现在可以用 AI 来预测洪水了。",
             "isCorrect": false
           },
           {
-            "text": "Test it first to see how accurate it is.",
+            "text": "先测试一下，看看它有多准。",
             "isCorrect": true
           }
         ],
         "success_response": {
-          "text": "Good approach! We need to test the AI to make sure it will make accurate predictions before we let Luna use it.",
+          "text": "好思路！在交给露娜使用之前，我们要先测试 AI，确认它能给出准确的预测。",
           "media": null,
           "emoji": null
         },
         "failure_response": {
-          "text": "Before we let Luna use it, we need to test the AI to make sure it will make accurate predictions.",
+          "text": "在交给露娜使用之前，我们还是得先测试一下 AI，确认它能给出准确的预测。",
           "media": null,
           "emoji": null
         }
@@ -217,74 +217,74 @@
     "learning_ticket": [
       {
         "id": "token_selection_q",
-        "question": "Your AI will learn patterns from the data you chose. What happens if we missed some crucial data?",
+        "question": "你的 AI 会从你挑选的数据里学习规律。如果我们漏掉了关键数据，会发生什么？",
         "answers": [
           {
-            "text": "It would cause more rain and worse flooding.",
+            "text": "会导致降雨更多、洪水更严重。",
             "isCorrect": false
           },
           {
-            "text": "It would be harder for the AI to find useful patterns, leading to inaccurate flood forecasts.",
+            "text": "AI 会更难找到有用的规律，洪水预测也就不准了。",
             "isCorrect": true
           },
           {
-            "text": "AI is smart. It doesn't really matter what data we give it. It will figure it out.",
+            "text": "AI 很聪明，给它什么数据都无所谓，它自己能搞懂。",
             "isCorrect": false
           }
         ],
         "success_response": {
-          "text": "Yeah, that’s right. Your choices impact the model’s accuracy.",
+          "text": "没错。你的选择直接影响模型的准确度。",
           "media": null,
           "emoji": null
         },
         "failure_response": {
-          "text": "If we miss crucial details, it becomes much harder for the AI to find useful patterns, and our flood forecasts won't be accurate. This is why our human decisions are so important in designing AI effectively!",
+          "text": "如果漏掉关键细节，AI 就很难找到有用的规律，洪水预测也会不准。这就是为什么在设计 AI 时，我们人做的决定这么重要！",
           "media": null,
           "emoji": null
         }
       },
       {
         "id": "token_selection_q2",
-        "question": "Now to the main event - it's time to train the AI model! Watch as it learns from all that data, starting to spot patterns and make predictions.",
+        "question": "重头戏来了——该训练 AI 模型了！看着它从这些数据里学习，开始发现规律、做出预测。",
         "answers": [
           {
-            "text": "I'm ready!",
+            "text": "我准备好了！",
             "isCorrect": true
           }
         ],
         "success_response": {
-          "text": "Let's train your model!",
+          "text": "开始训练你的模型！",
           "media": null,
           "emoji": null
         },
         "failure_response": {
-          "text": "Not quite. AI models are only as accurate as the data we give them. Your data choices can't change how much it rains but they can impact how well the model predicts floods. Let's see how your model predicts floods.",
+          "text": "还不太对。AI 模型的准确度取决于我们给它的数据。你选的数据没法改变实际降雨量，但会影响模型预测洪水的效果。来看看你的模型预测得怎么样。",
           "media": null,
           "emoji": null
         }
       }
     ],
-    "title": "Select your data",
-    "slot_empty_label": "Empty",
-    "slot_remove_label": "Remove",
-    "slot_number_label": "Slot {number}",
-    "confirm_cta_label": "Confirm data selection",
-    "hint_relevant": "Highly relevant",
-    "hint_somewhat_relevant": "Somewhat relevant",
-    "hint_irrelevant": "Least relevant"
+    "title": "挑选你的数据",
+    "slot_empty_label": "空位",
+    "slot_remove_label": "移除",
+    "slot_number_label": "第 {number} 格",
+    "confirm_cta_label": "确认数据选择",
+    "hint_relevant": "高度相关",
+    "hint_somewhat_relevant": "有一定相关",
+    "hint_irrelevant": "相关度最低"
   },
   "data_cleaning": {
     "instructions": {
-      "eyebrow_task_number": "Task 2",
-      "eyebrow_text": "ERROR ELIMINATION",
-      "heading": "Clean the data",
-      "description": "AI models rely on data being error-free to generate a reliable prediction. Let's clean the data we want to use.",
-      "interaction_slot_text": "Tap the data that doesn't look right",
-      "continue_cta_text": "Continue"
+      "eyebrow_task_number": "任务 2",
+      "eyebrow_text": "排除错误",
+      "heading": "清洗数据",
+      "description": "AI 模型要生成可靠的预测，离不开干净、无错的数据。我们来把要用的数据清洗一下。",
+      "interaction_slot_text": "点击看起来不对的数据",
+      "continue_cta_text": "继续"
     },
     "objective_reminder": {
-      "heading_title": "Task 2",
-      "heading_description": "Tap the data that doesn't look right.",
+      "heading_title": "任务 2",
+      "heading_description": "点击看起来不对的数据。",
       "heading_thumbnail": {
         "file": {
           "url": "icons/objective-reminder-pointer.webp",
@@ -293,7 +293,7 @@
         },
         "alt": null
       },
-      "body": "Look at the data and tap any that don’t look right to you.",
+      "body": "查看数据，点击任何看起来不对劲的项。",
       "video": {
         "webm": {
           "url": "marshes/3.0-clean-the-data-tutorial.webm",
@@ -313,43 +313,43 @@
     "learning_ticket": [
       {
         "id": "data_cleaning_q",
-        "question": "We have so much more data to clean! Can you teach Luna how to do it so she can do the rest?",
+        "question": "还有一大堆数据要清洗！你能教露娜怎么做，让她来搞定剩下的吗？",
         "answers": [
           {
-            "text": "Just get some soap Luna!",
+            "text": "露娜，拿点肥皂就行啦！",
             "isCorrect": false
           },
           {
-            "text": "Look at the data to see if any values look unusual or are missing.",
+            "text": "仔细看数据，找出看起来反常或缺失的值。",
             "isCorrect": true
           },
           {
-            "text": "Call an AI agent to do this for you.",
+            "text": "叫一个 AI 智能体来替你做。",
             "isCorrect": false
           }
         ],
         "success_response": {
-          "text": "Exactly!",
+          "text": "没错！",
           "media": null,
           "emoji": null
         },
         "failure_response": {
-          "text": "Neither soap nor an AI agent will work for this. It's crucial for a human to examine the data themselves to catch anything that could mess up our predictions.",
+          "text": "肥皂和 AI 智能体都搞不定这事。关键是人要自己去检查数据，抓出任何可能把预测搞砸的地方。",
           "media": null,
           "emoji": null
         }
       },
       {
         "id": "data_cleaning_guidance",
-        "question": "In your next task, consider: which data sources would be most useful for predicting floods?",
+        "question": "在下一项任务里，你来想想：哪些数据来源最适合用来预测洪水？",
         "answers": [
           {
-            "text": "I'm all in!",
+            "text": "来吧！",
             "isCorrect": true
           }
         ],
         "success_response": {
-          "text": "Let's do it!",
+          "text": "开始！",
           "media": null,
           "emoji": null
         },
@@ -357,20 +357,20 @@
       }
     ],
     "game": {
-      "title": "Clean the data",
+      "title": "清洗数据",
       "data": {
         "headers": [
-          "Month",
-          "Year",
-          "Location",
-          "Temperature",
-          "Precipitation"
+          "月份",
+          "年份",
+          "地点",
+          "气温",
+          "降水量"
         ],
         "locations": [
-          "Marshes"
+          "沼泽"
         ],
-        "inches_label": "inches",
-        "missing_label": "missing"
+        "inches_label": "英寸",
+        "missing_label": "缺失"
       }
     },
     "model_training_video": {
@@ -390,10 +390,10 @@
     "learning_ticket": [
       {
         "id": "intro-1",
-        "question": "Now, we’ll use your data to train our AI model to make a flood forecast. This forecast will show how likely flooding is for a specific area at a specific time.",
+        "question": "接下来，我们用你挑的数据来训练 AI 模型，做一份洪水预测。这份预测会告诉我们，某个地区在某个时间发生洪水的可能性有多大。",
         "answers": [
           {
-            "text": "Let’s do it!",
+            "text": "开始吧！",
             "isCorrect": true
           }
         ],
@@ -402,10 +402,10 @@
       },
       {
         "id": "intro-2",
-        "question": "This is Luna's market at Market Marshes. Let’s start by looking at what a flood forecast for this area would look like.",
+        "question": "这是露娜在集市沼泽的市场。我们先来看看这片区域的洪水预测长什么样。",
         "answers": [
           {
-            "text": "Let's see",
+            "text": "看看吧",
             "isCorrect": true
           }
         ],
@@ -414,10 +414,10 @@
       },
       {
         "id": "intro-3",
-        "question": "Our forecast will be on the left. The market area is divided into sections to show which parts might flood. The forecast will use colour to show flood risk.",
+        "question": "我们的预测会显示在左边。市场区域被分成若干块，标出哪些地方可能会发洪水。预测用颜色来表示洪水风险。",
         "answers": [
           {
-            "text": "Show me",
+            "text": "给我看看",
             "isCorrect": true
           }
         ],
@@ -426,10 +426,10 @@
       },
       {
         "id": "intro-4",
-        "question": "Colours show the expected flood risk: Blue - no flood expected,  Yellow - mild flood expected, Red - severe flood expected.",
+        "question": "颜色代表预期的洪水风险：蓝色 — 预计无洪水；黄色 — 预计轻度洪水；红色 — 预计严重洪水。",
         "answers": [
           {
-            "text": "Continue",
+            "text": "继续",
             "isCorrect": true
           }
         ],
@@ -438,34 +438,34 @@
       },
       {
         "id": "intro-5",
-        "question": "What do you think this means for the market stalls in blue areas?",
+        "question": "你觉得这对蓝色区域里的摊位意味着什么？",
         "answers": [
           {
-            "text": "Market stalls in the blue areas should be moved to a safer place.",
+            "text": "蓝色区域里的摊位应该搬到更安全的地方。",
             "isCorrect": false
           },
           {
-            "text": "Market stalls in the blue areas are safe where they are.",
+            "text": "蓝色区域里的摊位留在原地就很安全。",
             "isCorrect": true
           }
         ],
         "success_response": {
-          "text": "That's right! Stalls in the blue areas are safe for the time of this forecast.",
+          "text": "没错！在这份预测覆盖的时段里，蓝色区域里的摊位是安全的。",
           "media": null,
           "emoji": null
         },
         "failure_response": {
-          "text": "Not quite. Based on this forecast, stalls in blue areas are safe.",
+          "text": "还不太对。根据这份预测，蓝色区域里的摊位是安全的。",
           "media": null,
           "emoji": null
         }
       },
       {
         "id": "intro-6",
-        "question": "Now that you know what a forecast looks like, let's train our AI model so it can create forecasts to help Luna and her community.",
+        "question": "现在你知道预测长什么样了。我们来训练 AI 模型，让它能为露娜和她的社区生成预测。",
         "answers": [
           {
-            "text": "Let's train the model!",
+            "text": "开始训练模型！",
             "isCorrect": true
           }
         ],
@@ -474,15 +474,15 @@
       },
       {
         "id": "intro-7",
-        "question": "First, we give the AI model the input data you picked.",
+        "question": "首先，我们把你挑选的输入数据交给 AI 模型。",
         "answers": [
           {
-            "text": "Okay",
+            "text": "好的",
             "isCorrect": true
           }
         ],
         "success_response": {
-          "text": "From the data, the AI starts learning. Its job is to find all the different patterns that floods can follow.",
+          "text": "AI 从数据里开始学习。它的任务是找出洪水可能遵循的各种规律。",
           "media": null,
           "emoji": null
         },
@@ -490,34 +490,34 @@
       },
       {
         "id": "intro-8",
-        "question": "Which data source should it use to learn patterns?",
+        "question": "它应该用哪些数据来源来学习规律？",
         "answers": [
           {
-            "text": "All of them together",
+            "text": "全部一起用",
             "isCorrect": true
           },
           {
-            "text": "Only the first one",
+            "text": "只用第一项",
             "isCorrect": false
           }
         ],
         "success_response": {
-          "text": "That's right! To identify accurate flood patterns, the AI needs to investigate and learn from different types of data.",
+          "text": "没错！要识别准确的洪水规律，AI 需要研究并从不同类型的数据里学习。",
           "media": null,
           "emoji": null
         },
         "failure_response": {
-          "text": "Not quite. To identify accurate patterns of floods, the AI needs to investigate and learn from different types of data.",
+          "text": "还不太对。要识别准确的洪水规律，AI 需要研究并从不同类型的数据里学习。",
           "media": null,
           "emoji": null
         }
       },
       {
         "id": "intro-9",
-        "question": "After learning patterns, the model makes flood predictions. For each set of conditions, it predicts when floods might happen and how severe they will be.",
+        "question": "学完规律后，模型就能做洪水预测了。对每一组条件，它会预测洪水可能在什么时候发生、有多严重。",
         "answers": [
           {
-            "text": "Continue",
+            "text": "继续",
             "isCorrect": true
           }
         ],
@@ -526,15 +526,15 @@
       },
       {
         "id": "intro-10",
-        "question": "To check how well the model works, we'll test it on data from past floods that it hasn't seen before.",
+        "question": "为了检验模型的效果，我们会用它没见过的历史洪水数据来测试它。",
         "answers": [
           {
-            "text": "Okay",
+            "text": "好的",
             "isCorrect": true
           }
         ],
         "success_response": {
-          "text": "We kept these aside just for this moment!",
+          "text": "这些数据就是专门为这一刻留下来的！",
           "media": null,
           "emoji": null
         },
@@ -542,34 +542,34 @@
       },
       {
         "id": "intro-11",
-        "question": "To truly test our AI, should we use data it's already seen during training?",
+        "question": "要真正测试 AI，我们应该用它在训练时已经见过的数据吗？",
         "answers": [
           {
-            "text": "Yes",
+            "text": "应该",
             "isCorrect": false
           },
           {
-            "text": "No",
+            "text": "不应该",
             "isCorrect": true
           }
         ],
         "success_response": {
-          "text": "Exactly! We test with new data to get a true picture of how well our AI can predict. Otherwise it may only work for data it already knows.",
+          "text": "没错！我们要用新数据测试，才能真实看出 AI 的预测水平。否则它可能只对自己见过的数据有效。",
           "media": null,
           "emoji": null
         },
         "failure_response": {
-          "text": "Not quite. If the AI has already seen the data, it's like giving it the answers to a test. We need to see if it can figure out new problems before we use it in the real world.",
+          "text": "还不太对。如果 AI 已经见过这些数据，就像考试前提前看了答案。真正投入使用前，我们得看看它能不能解决新问题。",
           "media": null,
           "emoji": null
         }
       },
       {
         "id": "interaction-1",
-        "question": "Move the slider to compare your model's predictions to what actually happened on those days. At the end, you'll see your model's final accuracy score.",
+        "question": "拖动滑块，把你模型的预测和这些日子实际发生的情况做对比。最后你会看到模型的最终准确度得分。",
         "answers": [
           {
-            "text": "Continue",
+            "text": "继续",
             "isCorrect": true
           }
         ],
@@ -578,34 +578,34 @@
       },
       {
         "id": "testing-perfect",
-        "question": "You did it! Your model's accuracy score is 90%! This is the highest possible score, as no real-world forecast can ever be 100% certain. You're ready to go—let's generate a forecast!",
+        "question": "你做到了！你模型的准确度是 90%！这是可能达到的最高分——现实里没有任何预测能做到 100% 确定。准备好了，我们来生成一份预测吧！",
         "answers": [],
         "success_response": null,
         "failure_response": null
       },
       {
         "id": "testing-good",
-        "question": "Your model's accuracy score is in the 70-90% range, which is great! This means your model is accurate enough for real-world use. The maximum possible score is 90% because no forecast can ever be 100% certain. You can now move on to generating a forecast, or, if you'd like, you can try to improve it even more.",
+        "question": "你模型的准确度在 70-90% 之间，很棒！这意味着它已经足够可靠，可以用在现实中。最高只能到 90%，因为没有哪份预测能做到 100% 确定。你可以直接去生成预测，或者如果你愿意，还可以试着再把它改进一下。",
         "answers": [],
         "success_response": null,
         "failure_response": null
       },
       {
         "id": "testing-bad",
-        "question": "Your model’s accuracy score is under 70%, but you can improve it! Our goal is to reach an accuracy of 70-90%, and you can achieve that by going back and selecting a different combination of data.",
+        "question": "你模型的准确度低于 70%——不过你可以把它提上去！我们的目标是 70-90%。你可以回去重新挑选不同的数据组合来实现。",
         "answers": [],
         "success_response": null,
         "failure_response": null
       },
       {
         "id": "outro-pass",
-        "question": "Your AI model has successfully generated its very first flood forecast. And what a forecast! It indicates a high risk of flooding... in five days! This is our chance to get ahead of the storm. We need to alert Luna and her team right away so they can start preparing!",
+        "question": "你的 AI 模型成功生成了它的第一份洪水预测。瞧这份预测！它显示——五天之后会有很高的洪水风险！这是我们抢在风暴之前行动的机会。我们得立刻通知露娜和她的团队，让他们开始准备！",
         "answers": [],
         "success_response": null,
         "failure_response": null
       }
     ],
-    "speaker": "Professor Skye",
+    "speaker": "斯凯教授",
     "videos": [
       {
         "id": "training-1",
@@ -771,54 +771,54 @@
       }
     ],
     "ipsa_labels": {
-      "testing_accuracy": "Testing Forecast Accuracy",
-      "model_training": "AI Model Training",
-      "model_testing": "AI Model Testing"
+      "testing_accuracy": "正在测试预测准确度",
+      "model_training": "AI 模型训练中",
+      "model_testing": "AI 模型测试中"
     },
     "accuracy": {
-      "cta_adjust_data": "Improve forecast accuracy",
-      "chart_title": "Your AI prediction",
-      "cta_generate_forecast": "GENERATE FORECAST",
-      "score_accuracy_title": "Accuracy",
-      "score_slider_accuracy": "Accuracy",
-      "score_slider_sufficient": "Sufficient:",
-      "title": "AI model testing results"
+      "cta_adjust_data": "提升预测准确度",
+      "chart_title": "你的 AI 预测",
+      "cta_generate_forecast": "生成预测",
+      "score_accuracy_title": "准确度",
+      "score_slider_accuracy": "准确度",
+      "score_slider_sufficient": "达标：",
+      "title": "AI 模型测试结果"
     },
     "forecast": {
-      "graph_warning": "Warning: River expected to rise in 5 days",
-      "take_action_cta": "Take action",
-      "title": "Your AI Prediction",
+      "graph_warning": "警告：预计 5 天后河水将上涨",
+      "take_action_cta": "立即行动",
+      "title": "你的 AI 预测",
       "card": {
-        "date": "TOMORROW",
-        "title": "Generated Forecast",
+        "date": "明天",
+        "title": "生成的预测",
         "image": {
           "file": {
             "url": "marshes/generated-forecast-map-2.webp",
             "width": 0,
             "height": 0
           },
-          "alt": "forecast-card"
+          "alt": "预测卡片"
         }
       }
     },
     "slider": {
-      "cta": "DRAG TO TEST MODEL",
-      "complete": "TESTING COMPLETE",
-      "sub_progress": "TESTING AI MODEL..."
+      "cta": "拖动以测试模型",
+      "complete": "测试完成",
+      "sub_progress": "正在测试 AI 模型..."
     }
   },
   "stalls_game": {
     "instructions": {
-      "eyebrow_task_number": "Task 5",
-      "eyebrow_text": "RISING WATERS",
-      "heading": "Save the market",
-      "description": "Use your forecast to find the safest spots to set up the market stalls to avoid flooding.",
+      "eyebrow_task_number": "任务 5",
+      "eyebrow_text": "水位上涨",
+      "heading": "拯救市场",
+      "description": "利用你的预测，找到最安全的位置摆放摊位，避开洪水。",
       "interaction_slot_text": null,
-      "continue_cta_text": "Continue"
+      "continue_cta_text": "继续"
     },
     "objective_reminder": {
-      "heading_title": "TASK 5",
-      "heading_description": "Using your forecast, place the stalls in the safest areas of the market",
+      "heading_title": "任务 5",
+      "heading_description": "根据你的预测，把摊位摆在市场里最安全的区域",
       "heading_thumbnail": {
         "file": {
           "url": "icons/objective-reminder-sorbet-stall.webp",
@@ -827,7 +827,7 @@
         },
         "alt": null
       },
-      "body": "Note that normal stalls can only be placed where no flooding is expected (blue zones), while tall stalls are safe to place where mild floods are expected (yellow zones)",
+      "body": "注意：普通摊位只能摆在不会发生洪水的位置（蓝色区域），加高摊位则可以摆在会有轻度洪水的位置（黄色区域）。",
       "video": {
         "webm": {
           "url": "marshes/6.0-market-stall-placement-tutorial-compressed.webm",
@@ -844,16 +844,16 @@
         "subtitles": null
       }
     },
-    "safe_label": "Safe",
-    "label_safe": "Safe",
-    "label_not_quite": "Not Quite...",
-    "label_unsafe": "Warning",
-    "label_stall_tall": "Tall",
-    "label_stall_normal": "Normal",
-    "assess_safety_cta": "Assess flood safety",
+    "safe_label": "安全",
+    "label_safe": "安全",
+    "label_not_quite": "不太对……",
+    "label_unsafe": "警告",
+    "label_stall_tall": "加高",
+    "label_stall_normal": "普通",
+    "assess_safety_cta": "评估洪水安全性",
     "diagram": {
-      "date": "LATER TODAY",
-      "title": "Generated forecast",
+      "date": "今天稍晚",
+      "title": "生成的预测",
       "image": {
         "file": {
           "url": "marshes/generated-forecast-map-2.webp",
@@ -863,7 +863,7 @@
         "alt": null
       }
     },
-    "fail_message": "Some market stalls aren’t positioned safely. Take a look at your forecast and try again."
+    "fail_message": "有些摊位摆得不安全。回头看看你的预测，再试一次。"
   },
   "complete": {
     "luna_outro_video": {
@@ -894,32 +894,32 @@
         "url": "marshes/Floodhub-real-world-video.mp4",
         "file_name": ""
       },
-      "subtitles": "WEBVTT\n\n00:00:05.000 --&gt; 00:00:07.000\nThanks, Professor Skye. Hey everyone, I'm\n\n00:00:07.000 --&gt; 00:00:09.000\nTal and I'm Grey. We work at Google\n\n00:00:09.000 --&gt; 00:00:10.000\nResearch on the flood forecasting team.\n\n00:00:18.000 --&gt; 00:00:20.000\nOur team uses AI to predict where floods\n\n00:00:20.000 --&gt; 00:00:23.000\noccur around the world so that we can get people warnings and help them stay\n\n00:00:23.000 --&gt; 00:00:25.000\nsafe. The quest you just took was\n\n00:00:25.000 --&gt; 00:00:27.000\ninspired by our journey. What I love\n\n00:00:27.000 --&gt; 00:00:30.000\nmost about our work is that we're using science and technology to make a real\n\n00:00:30.000 --&gt; 00:00:34.000\ndifference in the lives of millions of people, especially in places where\n\n00:00:34.000 --&gt; 00:00:35.000\nfloods can be devastating.\n\n00:00:35.000 --&gt; 00:00:37.000\nFloods are serious. They can destroy\n\n00:00:37.000 --&gt; 00:00:39.000\nhomes and cut off communities. But with\n\n00:00:39.000 --&gt; 00:00:43.000\nthe right data and the right tools, we can help reduce the impact and minimise\n\n00:00:43.000 --&gt; 00:00:45.000\ndamage. As a result, communities can\n\n00:00:45.000 --&gt; 00:00:47.000\nrecover faster after a flood.\n\n00:00:47.000 --&gt; 00:00:49.000\nSo, here's how it works. This should\n\n00:00:49.000 --&gt; 00:00:53.000\nsound familiar because it's very similar to what you've just done during your\n\n00:00:53.000 --&gt; 00:00:55.000 line:65%\nquest. First, we gather tons of publicly\n\n00:00:55.000 --&gt; 00:00:59.000 line:65%\navailable data. Things like rainfall, water levels, weather forecast, and\n\n00:00:59.000 --&gt; 00:01:01.000 line:65%\nsatellite images. We review the quality\n\n00:01:01.000 --&gt; 00:01:03.000\nof the data and clean it if necessary.\n\n00:01:03.000 --&gt; 00:01:07.000\nThen, we use AI to create detailed simulations of how water moves through\n\n00:01:07.000 --&gt; 00:01:09.000\nthe environment. Think of it like a\n\n00:01:09.000 --&gt; 00:01:10.000\nvirtual model of the real world.\n\n00:01:10.000 --&gt; 00:01:15.000\nWe train the AI model to predict when and where water will rise, how fast, and\n\n00:01:15.000 --&gt; 00:01:17.000\nwho may be affected. This kind of\n\n00:01:17.000 --&gt; 00:01:20.000\nprediction is called flood modelling\n\n00:01:20.000 --&gt; 00:01:24.000\nbecause even small changes in rainfall can completely change how flood behaves.\n\n00:01:24.000 --&gt; 00:01:25.000\nOnce our models are trained, we test\n\n00:01:25.000 --&gt; 00:01:28.000\nthem for accuracy. We then use our\n\n00:01:28.000 --&gt; 00:01:32.000\nmodels to send early warnings, sometimes days in advance. These alerts show up in\n\n00:01:32.000 --&gt; 00:01:36.000\nGoogle search, Google maps, and in some cases as notifications to your cell\n\n00:01:36.000 --&gt; 00:01:37.000\nphone.\n\n00:01:37.000 --&gt; 00:01:38.000\nWe also work with governments and rescue\n\n00:01:38.000 --&gt; 00:01:42.000\nteam so they can act fast, help people on the ground, and get them out of\n\n00:01:42.000 --&gt; 00:01:45.000\ndanger in time. Our system covers\n\n00:01:45.000 --&gt; 00:01:46.000\nflood-prone areas in thousands of\n\n00:01:46.000 --&gt; 00:01:48.000\nlocations around the world\n\n00:01:48.000 --&gt; 00:01:52.000\nand we are still working hard to expand to even more locations because we want\n\n00:01:52.000 --&gt; 00:01:54.000\nflood forecasting to be available to\n\n00:01:54.000 --&gt; 00:01:55.000\neveryone who needs it.\n\n00:01:55.000 --&gt; 00:01:57.000\nIt's important to remember that AI is a\n\n00:01:57.000 --&gt; 00:02:01.000\nteam effort. It involves many people from different backgrounds and different\n\n00:02:01.000 --&gt; 00:02:05.000\npoints of view. We have scientists like myself who are experts in floods and we\n\n00:02:05.000 --&gt; 00:02:07.000\nwork hand in hand with engineers like Tal\n\n00:02:07.000 --&gt; 00:02:09.000\nwho are experts in AI. We hope that this\n\n00:02:09.000 --&gt; 00:02:12.000\nvideo helped you understand how everything you have done on the quest\n\n00:02:12.000 --&gt; 00:02:13.000\nhappens in real life.\n\n00:02:13.000 --&gt; 00:02:14.000\nBack to you, Professor Sky."
+      "subtitles": "WEBVTT\n\n00:00:05.000 --&gt; 00:00:07.000\n感谢，斯凯教授。大家好，我是\n\n00:00:07.000 --&gt; 00:00:09.000\nTal，我是 Grey。我们在 Google\n\n00:00:09.000 --&gt; 00:00:10.000\nResearch 的洪水预测团队工作。\n\n00:00:18.000 --&gt; 00:00:20.000\n我们团队用 AI 预测世界各地\n\n00:00:20.000 --&gt; 00:00:23.000\n会在哪里发洪水，这样就能提前给人们发出预警，帮他们\n\n00:00:23.000 --&gt; 00:00:25.000\n保持安全。你刚完成的这个任务\n\n00:00:25.000 --&gt; 00:00:27.000\n就是受我们工作启发的。我最喜欢\n\n00:00:27.000 --&gt; 00:00:30.000\n这份工作的地方，就是我们能用科学和技术真正改变\n\n00:00:30.000 --&gt; 00:00:34.000\n千百万人的生活——尤其是在那些\n\n00:00:34.000 --&gt; 00:00:35.000\n洪水可能带来巨大灾难的地方。\n\n00:00:35.000 --&gt; 00:00:37.000\n洪水很严重。它能摧毁\n\n00:00:37.000 --&gt; 00:00:39.000\n家园、切断社区。但只要有\n\n00:00:39.000 --&gt; 00:00:43.000\n合适的数据和合适的工具，我们就能帮助减小它的影响、\n\n00:00:43.000 --&gt; 00:00:45.000\n减少损失。这样，社区也能\n\n00:00:45.000 --&gt; 00:00:47.000\n在洪水过后更快地恢复。\n\n00:00:47.000 --&gt; 00:00:49.000\n工作原理是这样的——你应该会觉得\n\n00:00:49.000 --&gt; 00:00:53.000\n很熟悉，因为这和你刚才在任务里做的非常像。\n\n00:00:53.000 --&gt; 00:00:55.000 line:65%\n首先，我们收集大量\n\n00:00:55.000 --&gt; 00:00:59.000 line:65%\n公开数据，比如降雨、水位、天气预报，还有\n\n00:00:59.000 --&gt; 00:01:01.000 line:65%\n卫星图像。我们会检查数据\n\n00:01:01.000 --&gt; 00:01:03.000\n的质量，必要时把它清洗一下。\n\n00:01:03.000 --&gt; 00:01:07.000\n然后我们用 AI 详细模拟水在\n\n00:01:07.000 --&gt; 00:01:09.000\n环境里怎么流动。可以把它想成\n\n00:01:09.000 --&gt; 00:01:10.000\n真实世界的一个虚拟模型。\n\n00:01:10.000 --&gt; 00:01:15.000\n我们训练 AI 模型去预测水什么时候、在哪里会上涨、\n\n00:01:15.000 --&gt; 00:01:17.000\n涨得多快、会影响到谁。\n\n00:01:17.000 --&gt; 00:01:20.000\n这种预测叫作洪水建模，\n\n00:01:20.000 --&gt; 00:01:24.000\n因为降雨哪怕只有一点点变化，洪水的表现都可能完全不同。\n\n00:01:24.000 --&gt; 00:01:25.000\n模型训练好之后，我们会\n\n00:01:25.000 --&gt; 00:01:28.000\n测试它的准确度。然后再用\n\n00:01:28.000 --&gt; 00:01:32.000\n这些模型发出提前预警，有时能提前好几天。这些预警会出现在\n\n00:01:32.000 --&gt; 00:01:36.000\nGoogle 搜索、Google 地图里，有时还会作为通知推送到你的\n\n00:01:36.000 --&gt; 00:01:37.000\n手机上。\n\n00:01:37.000 --&gt; 00:01:38.000\n我们也和政府、救援\n\n00:01:38.000 --&gt; 00:01:42.000\n团队合作，让他们能迅速行动，帮助现场的人们，\n\n00:01:42.000 --&gt; 00:01:45.000\n及时脱离危险。我们的系统覆盖了\n\n00:01:45.000 --&gt; 00:01:46.000\n全球数千个\n\n00:01:46.000 --&gt; 00:01:48.000\n容易发生洪水的地方，\n\n00:01:48.000 --&gt; 00:01:52.000\n而且我们还在努力把它扩展到更多地区，因为我们希望\n\n00:01:52.000 --&gt; 00:01:54.000\n任何需要洪水预测的人，\n\n00:01:54.000 --&gt; 00:01:55.000\n都能用得上。\n\n00:01:55.000 --&gt; 00:01:57.000\n有一点很重要：AI 是\n\n00:01:57.000 --&gt; 00:02:01.000\n一项团队工作，会有许多来自不同背景、不同\n\n00:02:01.000 --&gt; 00:02:05.000\n视角的人参与。我们有像我这样研究洪水的科学家，\n\n00:02:05.000 --&gt; 00:02:07.000\n也会和像 Tal 这样\n\n00:02:07.000 --&gt; 00:02:09.000\n精通 AI 的工程师紧密合作。希望这段视频\n\n00:02:09.000 --&gt; 00:02:12.000\n能帮你理解，你在任务里做的这些事\n\n00:02:12.000 --&gt; 00:02:13.000\n在现实中是怎么发生的。\n\n00:02:13.000 --&gt; 00:02:14.000\n接下来交给你啦，斯凯教授。"
     },
     "learning_recap": [
       {
         "id": "learning_recap",
-        "question": "Great job saving those market stalls, lets put together a quest report! Can you walk me through your process? What was your first step?",
+        "question": "把那些摊位救下来，干得漂亮！我们来一起做一份任务报告吧。能给我讲讲你的过程吗？第一步你做了什么？",
         "answers": [
           {
-            "text": "Training the AI",
+            "text": "训练 AI",
             "isCorrect": false
           },
           {
-            "text": "Evaluating the AI's predictions",
+            "text": "评估 AI 的预测",
             "isCorrect": false
           },
           {
-            "text": "Gathering relevant data",
+            "text": "收集相关数据",
             "isCorrect": true
           },
           {
-            "text": "Using the AI to predict floods",
+            "text": "用 AI 预测洪水",
             "isCorrect": false
           }
         ],
         "success_response": {
-          "text": "Thats right! You searched the forest for data points to learn about floods and train your model.",
+          "text": "没错！你在森林里搜寻数据点，用来了解洪水并训练你的模型。",
           "media": {
             "webm": {
               "url": "marshes/1.0-data-collection-tutorial.webm",
@@ -945,7 +945,7 @@
           }
         },
         "failure_response": {
-          "text": "Not quite, first you searched the forest and gathered relevant data!",
+          "text": "还不太对——你先是在森林里搜寻并收集了相关数据！",
           "media": {
             "webm": {
               "url": "marshes/1.0-data-collection-tutorial.webm",
@@ -973,23 +973,23 @@
       },
       {
         "id": "learning_recap2",
-        "question": "What was the second step you took?",
+        "question": "第二步你做了什么？",
         "answers": [
           {
-            "text": "Training the AI model",
+            "text": "训练 AI 模型",
             "isCorrect": true
           },
           {
-            "text": "Evaluating the AI's predictions",
+            "text": "评估 AI 的预测",
             "isCorrect": false
           },
           {
-            "text": "Using the AI to predict floods",
+            "text": "用 AI 预测洪水",
             "isCorrect": false
           }
         ],
         "success_response": {
-          "text": "Right! You selected the most important data you found and used it to train your model.",
+          "text": "没错！你把找到的数据里最重要的挑出来，用它训练了你的模型。",
           "media": {
             "webm": {
               "url": "marshes/2.0-data-selection-tutorial.webm",
@@ -1015,7 +1015,7 @@
           }
         },
         "failure_response": {
-          "text": "Not quite, you selected the most important data you found and used it to train your model.",
+          "text": "还不太对——你把找到的数据里最重要的挑出来，用它训练了你的模型。",
           "media": {
             "webm": {
               "url": "marshes/2.0-data-selection-tutorial.webm",
@@ -1043,19 +1043,19 @@
       },
       {
         "id": "learning_recap3",
-        "question": "What was your third step?",
+        "question": "第三步呢？",
         "answers": [
           {
-            "text": "Evaluating the AI's predictions",
+            "text": "评估 AI 的预测",
             "isCorrect": true
           },
           {
-            "text": "Using the AI to predict floods",
+            "text": "用 AI 预测洪水",
             "isCorrect": false
           }
         ],
         "success_response": {
-          "text": "That’s right! You used historical flood information to test your AI and make sure it is accurate enough",
+          "text": "没错！你用历史洪水数据测试了你的 AI，确认它足够准确。",
           "media": {
             "webm": {
               "url": "marshes/4.0-model-testing-tutorial.webm",
@@ -1081,7 +1081,7 @@
           }
         },
         "failure_response": {
-          "text": "Actually you used historical flood information to test your AI and make sure it is accurate enough",
+          "text": "其实——你用历史洪水数据测试了你的 AI，确认它足够准确。",
           "media": {
             "webm": {
               "url": "marshes/4.0-model-testing-tutorial.webm",
@@ -1109,15 +1109,15 @@
       },
       {
         "id": "learning_recap4",
-        "question": "What was the final step you took?",
+        "question": "最后一步是什么？",
         "answers": [
           {
-            "text": "Using the AI to predict floods",
+            "text": "用 AI 预测洪水",
             "isCorrect": true
           }
         ],
         "success_response": {
-          "text": "You got it! You used your AI to predict where it would flood and placed the market stalls around it.",
+          "text": "答对啦！你用 AI 预测了哪里会发洪水，并据此摆放市场里的摊位。",
           "media": {
             "webm": {
               "url": "marshes/6.0-market-stall-placement-tutorial-compressed.webm",
@@ -1171,43 +1171,43 @@
       },
       {
         "id": "learning_real_world",
-        "question": "One final thing for our report - in this quest you used AI to help predict floods and provide early warning. What was the most important thing you learned about making AI helpful for a real-world problem like this?",
+        "question": "报告最后一项——这次任务里你用 AI 帮助预测洪水、提前预警。把 AI 用到这种现实问题上时，你学到的最重要一件事是什么？",
         "answers": [
           {
-            "text": "The AI can figure out everything by itself, so humans aren't really needed.",
+            "text": "AI 自己什么都能搞定，其实不怎么需要人。",
             "isCorrect": false
           },
           {
-            "text": "Humans can solve big problems like flood prediction perfectly on their own, without any AI.",
+            "text": "像洪水预测这种大问题，人完全可以自己搞定，根本不需要 AI。",
             "isCorrect": false
           },
           {
-            "text": "Humans are essential for deciding what job the AI should do, designing it, collecting the right data, and using its output to make a real impact",
+            "text": "人不可或缺——决定 AI 做什么、怎么设计、收集正确的数据，并利用它的结果去产生真正的影响。",
             "isCorrect": true
           }
         ],
         "success_response": {
-          "text": "This is a fantastic insight for our report! You've captured the most important idea: humans are essential for making AI useful. We decide what the AI does, what data it uses, and how to use it to solve real-world problems.",
+          "text": "这是这份报告里非常棒的见解！你抓住了最重要的一点：让 AI 变得有用，离不开人。是我们决定 AI 做什么、用什么数据、以及如何用它去解决现实问题。",
           "media": null,
           "emoji": null
         },
         "failure_response": {
-          "text": "AI's greatest power comes from human guidance. Humans are essential for deciding what the AI should do, giving it the right data, and using its predictions to solve real-world problems.",
+          "text": "AI 最大的力量来自人的引导。决定 AI 做什么、给它正确的数据、用它的预测去解决现实问题——这些都离不开人。",
           "media": null,
           "emoji": null
         }
       },
       {
         "id": "learning_recapfinal",
-        "question": "One last thing! This quest mirrored a real Google Research AI project where humans initiated and designed flood prediction tools for positive impact. You stepped into their shoes! Check out this video to hear from them.",
+        "question": "最后一件事！这个任务借鉴了 Google Research 的一个真实 AI 项目——由人发起并设计洪水预测工具，去创造积极的影响。你刚刚就站到了他们的位置上。来看看这段视频，听他们亲口讲讲。",
         "answers": [
           {
-            "text": "Cool, show me the video!",
+            "text": "酷，把视频放出来！",
             "isCorrect": true
           }
         ],
         "success_response": {
-          "text": "Over to you, team!",
+          "text": "交给你们啦，团队！",
           "media": {
             "webm": {
               "url": "marshes/luna-wave-in-scene.webm",
@@ -1243,8 +1243,8 @@
       },
       "alt": null
     },
-    "learning_recap_complete_text": "You saved the market!",
-    "next_quest_cta": "Next quest"
+    "learning_recap_complete_text": "你拯救了市场！",
+    "next_quest_cta": "下一项任务"
   },
   "tokens": [
     {
@@ -1318,9 +1318,9 @@
       "token_collected_dialog": "来自太空的图片，显示历史洪水的范围，精确记录水流到达的位置。",
       "eyebrow": "你找到了卫星图像数据！",
       "transfer_packets": [
-        "JPEG 1",
-        "JPEG 2",
-        "JPEG 3"
+        "照片 1",
+        "照片 2",
+        "照片 3"
       ],
       "icon": {
         "file": {
@@ -1487,10 +1487,10 @@
       "token_collected_dialog": "植物和树木能拦截水分，可能影响流入河流的水量。",
       "eyebrow": "你找到了植被数据！",
       "transfer_packets": [
-        "GRASSLAND",
-        "SHRUBLAND",
-        "FOREST",
-        "FARMS"
+        "草地",
+        "灌木带",
+        "森林",
+        "农田"
       ],
       "icon": {
         "file": {
