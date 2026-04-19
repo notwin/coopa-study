@@ -31,7 +31,7 @@ await page.waitForTimeout(3500);
 
 // ———— 01 主页 ————
 log('01 home');
-await page.goto('https://research.google/ai-quests/intl/en_gb', { waitUntil: 'networkidle' });
+await page.goto('https://research.google/ai-quests/intl/en_us', { waitUntil: 'networkidle' });
 try { await page.locator('button:has-text("OK, got it")').click({ timeout: 3000, force: true }); } catch {}
 await page.waitForTimeout(7000); // 等 3D 场景 + DOM overlay 完全就位
 
@@ -81,7 +81,7 @@ await page.screenshot({ path: join(OUT, '03-cinematic-subtitles.png'), fullPage:
 
 // ———— 04 伴读面板展开 ————
 log('04 sidebar');
-await page.goto('https://research.google/ai-quests/intl/en_gb');
+await page.goto('https://research.google/ai-quests/intl/en_us');
 await page.waitForTimeout(6000);
 const beforeSide = await page.evaluate(() => {
   const host = document.getElementById('coopa-study-host');

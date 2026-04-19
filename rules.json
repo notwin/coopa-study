@@ -5,11 +5,11 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/content-zh/en_gb/flood_prediction.json"
+        "extensionPath": "/content-zh/en_us/flood_prediction.json"
       }
     },
     "condition": {
-      "regexFilter": "^.*/content/api/snapshot/[^/]+/en_gb/flood_prediction\\.json(\\?.*)?$",
+      "regexFilter": "^.*/content/api/snapshot/[^/]+/[^/]+/flood_prediction\\.json(\\?.*)?$",
       "resourceTypes": [
         "xmlhttprequest",
         "other"
@@ -22,11 +22,11 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/content-zh/en_gb/home_page.json"
+        "extensionPath": "/content-zh/en_us/home_page.json"
       }
     },
     "condition": {
-      "regexFilter": "^.*/content/api/snapshot/[^/]+/en_gb/home_page\\.json(\\?.*)?$",
+      "regexFilter": "^.*/content/api/snapshot/[^/]+/[^/]+/home_page\\.json(\\?.*)?$",
       "resourceTypes": [
         "xmlhttprequest",
         "other"
@@ -39,11 +39,11 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/content-zh/en_gb/planet_page.json"
+        "extensionPath": "/content-zh/en_us/planet_page.json"
       }
     },
     "condition": {
-      "regexFilter": "^.*/content/api/snapshot/[^/]+/en_gb/planet_page\\.json(\\?.*)?$",
+      "regexFilter": "^.*/content/api/snapshot/[^/]+/[^/]+/planet_page\\.json(\\?.*)?$",
       "resourceTypes": [
         "xmlhttprequest",
         "other"
@@ -56,11 +56,11 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/content-zh/en_gb/sitewide.json"
+        "extensionPath": "/content-zh/en_us/sitewide.json"
       }
     },
     "condition": {
-      "regexFilter": "^.*/content/api/snapshot/[^/]+/en_gb/sitewide\\.json(\\?.*)?$",
+      "regexFilter": "^.*/content/api/snapshot/[^/]+/[^/]+/sitewide\\.json(\\?.*)?$",
       "resourceTypes": [
         "xmlhttprequest",
         "other"

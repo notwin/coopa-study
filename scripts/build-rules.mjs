@@ -16,10 +16,14 @@ async function walkJson(dir, out = []) {
 
 const files = await walkJson(ZH);
 const redirectRules = files.map((f, i) => {
-  const rel = relative(ZH, f);
-  const extensionPath = '/content-zh/' + rel.replace(/\\/g, '/');
-  const escaped = rel.replace(/\\/g, '/').replace(/\./g, '\\.');
-  const regex = `^.*/content/api/snapshot/[^/]+/${escaped}(\\?.*)?$`;
+  const rel = relative(ZH, f).replace(/\\/g, '/');
+  const extensionPath = '/content-zh/' + rel;
+  // Google 会按页面 locale 切换 URL 里的语言段（曾经 en_gb，现在 en_us）。
+  // 我们只维护一套中文翻译，让 locale 段通配到任何语言上——用户无论落到哪条语言路径都命中同一份中文。
+  const parts = rel.split('/');
+  const escapedTail = parts.slice(1).join('/').replace(/\./g, '\\.');
+  const middle = parts.length > 1 ? `[^/]+/${escapedTail}` : rel.replace(/\./g, '\\.');
+  const regex = `^.*/content/api/snapshot/[^/]+/${middle}(\\?.*)?$`;
   return {
     id: i + 1,
     priority: 1,

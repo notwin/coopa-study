@@ -42,7 +42,7 @@ try {
 LOG(`   snapshot=${snapshotId}`);
 
 const base = `${API}/snapshot/${snapshotId}`;
-await mkdir(join(ROOT, 'en_gb'), { recursive: true });
+await mkdir(join(ROOT, 'en_us'), { recursive: true });
 
 LOG('2. fetch snapshot-level files');
 for (const name of SNAPSHOT_FILES) {
@@ -52,15 +52,15 @@ for (const name of SNAPSHOT_FILES) {
   LOG(`   + ${name}.json`);
 }
 
-LOG('3. fetch en_gb files');
+LOG('3. fetch en_us files');
 for (const name of LOCALE_FILES) {
-  const url = `${base}/en_gb/${name}.json`;
+  const url = `${base}/en_us/${name}.json`;
   try {
     const data = await fetchJson(url);
-    await writeFile(join(ROOT, 'en_gb', `${name}.json`), JSON.stringify(data, null, 2));
-    LOG(`   + en_gb/${name}.json`);
+    await writeFile(join(ROOT, 'en_us', `${name}.json`), JSON.stringify(data, null, 2));
+    LOG(`   + en_us/${name}.json`);
   } catch (e) {
-    LOG(`   - en_gb/${name}.json: ${e.message}`);
+    LOG(`   - en_us/${name}.json: ${e.message}`);
   }
 }
 

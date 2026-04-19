@@ -1,7 +1,7 @@
 import { test, expect } from './fixtures';
 
 test('Skye 开场字幕首条是中文', async ({ page }) => {
-  await page.goto('https://research.google/ai-quests/intl/en_gb');
+  await page.goto('https://research.google/ai-quests/intl/en_us');
   try { await page.locator('button:has-text("OK, got it")').click({ timeout: 3000 }); } catch {}
   await page.locator('button:has-text("接受任务")').click();
   const cue = await page.waitForFunction(() => {
