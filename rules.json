@@ -5,6 +5,23 @@
     "action": {
       "type": "redirect",
       "redirect": {
+        "extensionPath": "/content-zh/en_us/blindness_prevention.json"
+      }
+    },
+    "condition": {
+      "regexFilter": "^.*/content/api/snapshot/[^/]+/[^/]+/blindness_prevention\\.json(\\?.*)?$",
+      "resourceTypes": [
+        "xmlhttprequest",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
         "extensionPath": "/content-zh/en_us/flood_prediction.json"
       }
     },
@@ -17,7 +34,7 @@
     }
   },
   {
-    "id": 2,
+    "id": 3,
     "priority": 1,
     "action": {
       "type": "redirect",
@@ -34,7 +51,7 @@
     }
   },
   {
-    "id": 3,
+    "id": 4,
     "priority": 1,
     "action": {
       "type": "redirect",
@@ -51,7 +68,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 5,
     "priority": 1,
     "action": {
       "type": "redirect",
@@ -68,7 +85,7 @@
     }
   },
   {
-    "id": 5,
+    "id": 6,
     "priority": 1,
     "action": {
       "type": "redirect",
@@ -85,7 +102,7 @@
     }
   },
   {
-    "id": 6,
+    "id": 7,
     "priority": 1,
     "action": {
       "type": "modifyHeaders",

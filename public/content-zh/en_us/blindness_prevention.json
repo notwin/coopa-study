@@ -1,0 +1,2446 @@
+{
+  "collection_id": "BlindnessPrevention",
+  "document_id": "",
+  "general": {
+    "eye_cards": {
+      "patient": "患者",
+      "habitat": "栖息地",
+      "uv_rating": "UV 等级",
+      "diagnosis": "诊断",
+      "ai_diagnosis": "AI 诊断",
+      "ai": "AI"
+    },
+    "labels": {
+      "uv": "UV",
+      "region": "地区",
+      "habitat": "栖息地"
+    },
+    "habitat": {
+      "coastal": "沿海",
+      "forest": "森林",
+      "grassland": "草原",
+      "mangrove": "红树林",
+      "snowland": "雪原",
+      "desert": "沙漠",
+      "subterranean": "地下",
+      "valley": "山谷",
+      "volcano": "火山",
+      "wetland": "湿地"
+    },
+    "uv_rating": {
+      "low": "低",
+      "medium": "中",
+      "high": "高",
+      "very_high": "极高"
+    },
+    "diagnosis_severity": {
+      "healthy": "健康",
+      "early_signs": "早期迹象",
+      "moderate": "中度",
+      "severe": "重度",
+      "unknown": "?????"
+    },
+    "region": {
+      "caldera_crests": "火山冠脊",
+      "market_marshes": "集市沼泽",
+      "mineral_mines": "矿源深坑",
+      "polar_peaks": "极地之巅",
+      "roots_of_renewal": "新生之根",
+      "rustic_ravines": "古朴峡谷",
+      "sandy_seabeds": "沙底海床",
+      "the_heady_heights": "云峰高地",
+      "traders_tide": "商潮海岸",
+      "dusky_dunes": "暮色沙丘"
+    },
+    "field_test": {
+      "doctor_name": "维苏斯医生",
+      "volunteer_count": "志愿者",
+      "locate_eye_label": "对准眼睛",
+      "scan_retina_label": "扫描视网膜",
+      "scan_cta": "按空格键开始扫描",
+      "scan_success_cta": "漂亮！",
+      "scan_fail_cta": "再试一次",
+      "scan_eye_progress": "正在扫描眼睛",
+      "scan_retina_progress": "正在扫描视网膜",
+      "scan_complete_label": "眼部扫描完成",
+      "scan_complete_over_volunteer_label": "扫描完成",
+      "doctor_agrees": "医生认可",
+      "doctor_disagrees": "医生不认可"
+    },
+    "professor_skye_video_call": {
+      "media": {
+        "webm": {
+          "url": "quests/prof-skye-idle.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "quests/prof-skye-poster.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "quests/prof-skye-idle.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      },
+      "transmission_text": "视频传输",
+      "speaker": "斯凯教授"
+    }
+  },
+  "intro": {
+    "video": {
+      "webm": {
+        "url": "dunes/en_gb/DD_Intro.webm",
+        "file_name": ""
+      },
+      "poster": {
+        "url": "dunes/DD_Intro.webp",
+        "file_name": ""
+      },
+      "mp4": {
+        "url": "dunes/en_gb/DD_Intro.mp4",
+        "file_name": ""
+      },
+      "subtitles": "WEBVTT\n\n00:00:00.000 --&gt; 00:00:04.633\n你好，我是维苏斯医生，暮色沙丘的眼科专家。\n\n00:00:04.633 --&gt; 00:00:08.166\n越来越多的人出现眼部疾病，需要我的帮助。\n\n00:00:08.166 --&gt; 00:00:10.400\n你瞧，这些患者都在排队等着！\n\n00:00:10.400 --&gt; 00:00:15.666\n只要能判断出是什么病，我就能对症治疗——可这里只有我一个医生。\n\n00:00:15.666 --&gt; 00:00:20.600\n我需要有人帮我根据病情严重程度，决定先看哪些患者。\n\n00:00:20.600 --&gt; 00:00:23.233\n检查过程分三步：\n\n00:00:23.233 --&gt; 00:00:25.000\n扫描患者的眼睛\n\n00:00:25.000 --&gt; 00:00:28.666\n分析眼睛里叫作「视网膜」的部分，看有没有疾病迹象\n\n00:00:28.666 --&gt; 00:00:31.133\n把结果告诉患者\n\n00:00:31.133 --&gt; 00:00:33.033\n你觉得 AI 能帮上忙吗？\n\n00:00:33.033 --&gt; 00:00:37.033\n我工作中积累了成千上万份扫描图和对应的诊断。\n\n00:00:37.033 --&gt; 00:00:43.133\n你能用这些数据，搭建一个能从我的扫描里学习、帮我给患者排序的 AI 模型吗？\n\n00:00:43.133 --&gt; 00:00:46.533\n这是阿洛，我的助手——它可以一路帮你。\n\n00:00:46.533 --&gt; 00:00:54.733\n嗨，我是阿洛。跟你一起学会 AI 的本领，等你完成任务后，我也能继续帮暮色沙丘的居民。\n\n00:00:58.266 --&gt; 00:01:01.566\n啊，看来你已经见过维苏斯医生和阿洛了。\n\n00:01:01.566 --&gt; 00:01:06.233\n很棒！你可以帮他们用 AI 加快诊断速度。\n\n00:01:06.233 --&gt; 00:01:12.166\n在地球上，AI 已经在帮医生加快流程、让医疗做得更好。\n\n00:01:12.166 --&gt; 00:01:16.033\n我相信你也能帮维苏斯医生做到这件事……\n\n00:01:16.033 --&gt; 00:01:21.400\n那么，你准备好帮暮色沙丘的居民一起面对这个「大开眼界」的挑战了吗？"
+    },
+    "learning_ticket": [
+      {
+        "id": "dunes-intro-0",
+        "question": "很高兴你来了！开始之前，我们先理清任务：你的 AI 模型要解决的是什么问题？",
+        "answers": [
+          {
+            "text": "发明一种治愈眼部疾病的药",
+            "isCorrect": false
+          },
+          {
+            "text": "帮助预测眼部问题，让更多患者得到救治",
+            "isCorrect": true
+          },
+          {
+            "text": "给出医疗建议，让患者不再需要医生",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "答对了！",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "不太对！",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "dunes-intro-1",
+        "question": "你的 AI 模型会帮维苏斯医生找出最需要救治的患者。它会分析眼底扫描，学习与眼部问题相关的规律。",
+        "answers": [
+          {
+            "text": "开始吧！",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "dunes-intro-2",
+        "question": "先别急！在确保维苏斯医生患者的数据安全之前，我们还不能拿他们的眼底扫描去训练 AI 模型——否则私人的健康信息可能被泄露。我们先来检查隐私。",
+        "answers": [
+          {
+            "text": "我准备好了",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ]
+  },
+  "privacy": {
+    "objective_reminder": {
+      "heading_title": "任务 1",
+      "heading_description": "审查患者数据",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-magnifier.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "body": "判断一份病历能否使用时，用放大镜检查它。如果里面有全名、住址、出生日期或者正脸照片这样的私人信息，就盖上「拒绝」的章。",
+      "video": {
+        "webm": {
+          "url": "dunes/01_Privacy_Objective_UI.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "dunes/01-privacy-poster.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "dunes/01_Privacy_Objective_UI.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "labels": {
+      "record_progress": "第 {{ count }} 份，共 {{ total }} 份",
+      "correct": "正确！",
+      "incorrect": "还不太对，再试一次。",
+      "concerns_found": "已找出 {{ count }} 处隐私问题，共 {{ total }} 处",
+      "concerns_submit": "准备提交？",
+      "concerns_wrong": "还不太对，再试一次。",
+      "concerns_highlight": "圈出隐私数据",
+      "concerns_hint": "",
+      "concerns_hint_singular": "提示：有 {{ count }} 处",
+      "concerns_hint_plural": "提示：有 {{ count }} 处",
+      "submit_cta_label": "提交",
+      "approved_mark": {
+        "url": "dunes/en_gb/stamps/privacy-stamp-approved.webp",
+        "width": 0,
+        "height": 0
+      },
+      "denied_mark": {
+        "url": "dunes/en_gb/stamps/privacy-stamp-denied.webp",
+        "width": 0,
+        "height": 0
+      },
+      "medical_record": {
+        "medical_record": "病历",
+        "confidential": "机密",
+        "name": "姓名：",
+        "date_of_birth": "出生日期：",
+        "gender": "性别：",
+        "eye_colour": "瞳色：",
+        "home_address": "家庭住址：",
+        "profession": "职业：",
+        "left_eye_scan": "左眼扫描",
+        "right_eye_scan": "右眼扫描",
+        "doctors_notes": "医生备注：",
+        "doctors_signature": "医生签名：",
+        "sign_here": "请在此签名：",
+        "approve": "通过",
+        "deny": "拒绝"
+      }
+    },
+    "medical_records": [
+      {
+        "record_id": "record-01",
+        "left_eye_card": {
+          "patient_number": "1",
+          "eye_color": "green",
+          "habitat": "desert",
+          "uv_rating": "high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "right_eye_card": {
+          "patient_number": "1",
+          "eye_color": "green",
+          "habitat": "desert",
+          "uv_rating": "high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "name": {
+          "value": "阿洛·星",
+          "is_redacted": true
+        },
+        "date_of_birth": {
+          "value": "2015/01/24",
+          "is_redacted": true
+        },
+        "gender": {
+          "value": "女",
+          "is_redacted": true
+        },
+        "eye_colour": {
+          "value": "绿色",
+          "is_redacted": false
+        },
+        "home_address": {
+          "value": "暮色沙丘 沙海幻影街 23 号",
+          "is_redacted": true
+        },
+        "profession": {
+          "value": "沙丘测绘员",
+          "is_redacted": false
+        },
+        "patient_number": {
+          "value": "1",
+          "is_redacted": false
+        },
+        "doctors_notes": {
+          "value": "患者视力好得离谱！有这么棒的眼睛，去当深空摄影师都绰绰有余！",
+          "is_redacted": false
+        }
+      },
+      {
+        "record_id": "record-02",
+        "left_eye_card": {
+          "patient_number": "2",
+          "eye_color": "orange-light",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "doctor"
+        },
+        "right_eye_card": {
+          "patient_number": "2",
+          "eye_color": "orange-light",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "name": {
+          "value": "阿洛·星",
+          "is_redacted": true
+        },
+        "date_of_birth": {
+          "value": "2015/01/24",
+          "is_redacted": true
+        },
+        "gender": {
+          "value": "女",
+          "is_redacted": true
+        },
+        "eye_colour": {
+          "value": "橙色",
+          "is_redacted": false
+        },
+        "home_address": {
+          "value": "暮色沙丘 沙海幻影街 42 号",
+          "is_redacted": false
+        },
+        "profession": {
+          "value": "地质学家",
+          "is_redacted": true
+        },
+        "patient_number": {
+          "value": "2",
+          "is_redacted": false
+        },
+        "doctors_notes": {
+          "value": "我的天！过度的 UV 照射让患者出现了眼部损伤的早期迹象。",
+          "is_redacted": false
+        }
+      },
+      {
+        "record_id": "record-03",
+        "left_eye_card": {
+          "patient_number": "3",
+          "eye_color": "purple",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "moderate",
+          "diagnosis_type": "doctor"
+        },
+        "right_eye_card": {
+          "patient_number": "3",
+          "eye_color": "purple",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "name": {
+          "value": "阿洛·星",
+          "is_redacted": true
+        },
+        "date_of_birth": {
+          "value": "2015/01/24",
+          "is_redacted": true
+        },
+        "gender": {
+          "value": "男",
+          "is_redacted": true
+        },
+        "eye_colour": {
+          "value": "紫色",
+          "is_redacted": false
+        },
+        "home_address": {
+          "value": "暮色沙丘 沙海幻影街 24 号",
+          "is_redacted": true
+        },
+        "profession": {
+          "value": "首席岩浆分析师",
+          "is_redacted": false
+        },
+        "patient_number": {
+          "value": "3",
+          "is_redacted": false
+        },
+        "doctors_notes": {
+          "value": "多年从事岩浆分析，让患者的视网膜受到了让人眼泪汪汪的损伤！",
+          "is_redacted": false
+        }
+      },
+      {
+        "record_id": "record-04",
+        "left_eye_card": {
+          "patient_number": "4",
+          "eye_color": "multi",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "doctor"
+        },
+        "right_eye_card": {
+          "patient_number": "4",
+          "eye_color": "multi",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "name": {
+          "value": "阿洛·星",
+          "is_redacted": false
+        },
+        "date_of_birth": {
+          "value": "2020/03/22",
+          "is_redacted": true
+        },
+        "gender": {
+          "value": "男",
+          "is_redacted": true
+        },
+        "eye_colour": {
+          "value": "彩色",
+          "is_redacted": false
+        },
+        "home_address": {
+          "value": "暮色沙丘 岩石角 55 号",
+          "is_redacted": true
+        },
+        "profession": {
+          "value": "地质学家",
+          "is_redacted": true
+        },
+        "patient_number": {
+          "value": "4",
+          "is_redacted": false
+        },
+        "doctors_notes": {
+          "value": "戴着眼镜，视力还算不错。",
+          "is_redacted": false
+        }
+      },
+      {
+        "record_id": "record-05",
+        "left_eye_card": {
+          "patient_number": "5",
+          "eye_color": "yellow",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "right_eye_card": {
+          "patient_number": "5",
+          "eye_color": "yellow",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "name": {
+          "value": "阿洛·星",
+          "is_redacted": true
+        },
+        "date_of_birth": {
+          "value": "2020/02/18",
+          "is_redacted": true
+        },
+        "gender": {
+          "value": "女",
+          "is_redacted": true
+        },
+        "eye_colour": {
+          "value": "黄色",
+          "is_redacted": false
+        },
+        "home_address": {
+          "value": "暮色沙丘 沙海幻影街 21 号",
+          "is_redacted": true
+        },
+        "profession": {
+          "value": "园丁",
+          "is_redacted": false
+        },
+        "patient_number": {
+          "value": "5",
+          "is_redacted": false
+        },
+        "doctors_notes": {
+          "value": "视网膜看起来没问题。但那两只虹膜，得想点办法了。",
+          "is_redacted": false
+        }
+      }
+    ],
+    "teachable_agent": {
+      "speaker": "阿洛",
+      "intro": {
+        "id": "intro",
+        "question": "我一直在看你怎么做，感觉我也摸到门道了！剩下的扫描让我来检查。不过先帮我把步骤对一遍吧，免得我搞砸什么。",
+        "answers": [
+          {
+            "text": "那就来吧！",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      "fill_blanks": [
+        {
+          "heading": "填空",
+          "paragraph": "训练 AI 模型之前，我们要先清洗数据并 {{ remove }} 掉个人信息。",
+          "distractors": [
+            "share"
+          ],
+          "submit_cta_label": "继续",
+          "feedback_correct": "很棒！",
+          "feedback_incorrect": "不太对……"
+        },
+        {
+          "heading": "填空",
+          "paragraph": "个人信息比如包括姓名、出生日期，还有 {{ addresses }}。",
+          "distractors": [
+            "allergies",
+            "symptoms"
+          ],
+          "submit_cta_label": "继续",
+          "feedback_correct": "很棒！",
+          "feedback_incorrect": "不太对……"
+        },
+        {
+          "heading": "填空",
+          "paragraph": "如果我们泄露了隐私数据，就有人可能被 {{ identified | impersonated }}，或者被 {{ identified | impersonated }}。",
+          "distractors": [
+            "hidden"
+          ],
+          "submit_cta_label": "继续",
+          "feedback_correct": "很棒！",
+          "feedback_incorrect": "不太对……"
+        }
+      ],
+      "outro": {
+        "id": "outro",
+        "question": "明白了！剩下的我可以自己检查！",
+        "answers": [
+          {
+            "text": "加油，阿洛！",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    }
+  },
+  "model_training": {
+    "labels": {
+      "input": "TODO",
+      "ai_model_training": "模型训练",
+      "ai_machine": "模型测试",
+      "output": "TODO",
+      "drop_scans_here": "TODO",
+      "no_output": "TODO",
+      "generating": "TODO",
+      "eye_scans_to_check": "待检查的眼底扫描"
+    },
+    "learning_ticket": [
+      {
+        "id": "training-0",
+        "question": "我们已经检查过隐私，可以开始训练 AI 模型了！训练模型的方式就是给它看很多例子，让它在数据里找规律。",
+        "answers": [
+          {
+            "text": "好的",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "training-1",
+        "question": "训练之后，AI 模型就能检查新的眼底扫描，预测眼部疾病的严重程度。",
+        "answers": [
+          {
+            "text": "开始训练模型",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "training-2",
+        "question": "训练要从把输入数据交给模型开始。这些数据从哪儿来？",
+        "answers": [
+          {
+            "text": "维苏斯医生的眼底扫描",
+            "isCorrect": true
+          },
+          {
+            "text": "一本关于视觉的教科书",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "没错！我们用的是维苏斯医生患者的眼底扫描，每一张都标注了眼部疾病的严重程度。",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "不太对……还记得吗？我们用的是维苏斯医生患者的眼底扫描，每一张都标注了眼部疾病的严重程度。",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "training-3",
+        "question": "不过 AI 模型看扫描图和我们不一样。它只认数字这样的东西，所以我们要把输入和扫描转换成它能用的形式。",
+        "answers": [
+          {
+            "text": "有意思",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "training-4",
+        "question": "训练过程中，模型会看大量健康眼睛和有问题眼睛的扫描。一点一点地，它会学到这些扫描里能区分它们的规律。",
+        "answers": [
+          {
+            "text": "明白了",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "training-5",
+        "question": "这需要大量运算。但训练完成后，AI 模型就能预测一张眼底扫描是显示健康，还是早期、中度或重度的疾病迹象了。",
+        "answers": [
+          {
+            "text": "太好了",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "training-6",
+        "question": "既然模型能做预测了，是不是可以直接拿它给真患者看了？",
+        "answers": [
+          {
+            "text": "还不行，还得测试",
+            "isCorrect": true
+          },
+          {
+            "text": "可以了，准备好了",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "没错！在真正投入使用之前，我们要用新的眼底扫描去测试模型，确认它的预测是准确的。",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "还不太对。光能做预测还不够——预测可能是错的！我们必须确认模型在它没见过的眼底扫描上也能用。",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "testing-0",
+        "question": "是时候测试 AI 模型了！",
+        "answers": [
+          {
+            "text": "来吧",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "testing-1",
+        "question": "我们留了一些扫描专门用来测试。点击每张眼底扫描把它加到输入里。模型会用它学到的规律来做预测。",
+        "answers": [
+          {
+            "text": "明白了",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "testing-2",
+        "question": "接下来，我会把 AI 的预测和同一张扫描下医生的诊断作对比，看看 AI 模型准不准。",
+        "answers": [
+          {
+            "text": "懂了",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "testing-3",
+        "question": "很棒！AI 模型在测试扫描上做出了准确的预测！不过在医疗里，实验室测试只是第一步。我们得帮阿洛和维苏斯医生把它带到真患者面前测试，确保它对各种各样的人和情况都管用。这叫作实地测试。",
+        "answers": [
+          {
+            "text": "好的！",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ],
+    "video": [
+      {
+        "id": "intro-diagram",
+        "video": {
+          "webm": {
+            "url": "dunes/en_gb/training-01.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "dunes/en_gb/training-01.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "dunes/en_gb/training-01.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      },
+      {
+        "id": "training-2",
+        "video": {
+          "webm": {
+            "url": "dunes/en_gb/training-02.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "dunes/en_gb/training-02.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "dunes/en_gb/training-02.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      },
+      {
+        "id": "training-3",
+        "video": {
+          "webm": {
+            "url": "dunes/en_gb/training-03.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "dunes/en_gb/training-03.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "dunes/en_gb/training-03.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      },
+      {
+        "id": "training-4",
+        "video": {
+          "webm": {
+            "url": "dunes/en_gb/training-04.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "dunes/en_gb/training-04.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "dunes/en_gb/training-04.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      },
+      {
+        "id": "testing-processing",
+        "video": {
+          "webm": {
+            "url": "dunes/en_gb/training-05.webm",
+            "file_name": ""
+          },
+          "poster": {
+            "url": "dunes/en_gb/training-05.webp",
+            "file_name": ""
+          },
+          "mp4": {
+            "url": "dunes/en_gb/training-05.mp4",
+            "file_name": ""
+          },
+          "subtitles": null
+        }
+      }
+    ],
+    "eye_scans": [
+      {
+        "patient_number": "1",
+        "eye_color": "purple",
+        "habitat": "desert",
+        "uv_rating": "very_high",
+        "diagnosis_severity": "healthy",
+        "diagnosis_type": "doctor"
+      },
+      {
+        "patient_number": "2",
+        "eye_color": "pink",
+        "habitat": "forest",
+        "uv_rating": "medium",
+        "diagnosis_severity": "moderate",
+        "diagnosis_type": "doctor"
+      },
+      {
+        "patient_number": "3",
+        "eye_color": "green",
+        "habitat": "desert",
+        "uv_rating": "high",
+        "diagnosis_severity": "early_signs",
+        "diagnosis_type": "doctor"
+      }
+    ]
+  },
+  "field_test_1": {
+    "objective_reminder": {
+      "heading_title": "任务 2",
+      "heading_description": "扫描志愿者的眼睛",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-magnifier.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": "magnifier"
+      },
+      "body": "点击一位志愿者去扫描他的眼睛。设备里会出现一个瞄准框，对准眼睛后按空格键开始扫描。共有 3 位志愿者。",
+      "video": {
+        "webm": {
+          "url": "dunes/02_Field_testing_Objective_UI.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "dunes/02-task-2-objective-poster.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "dunes/02_Field_testing_Objective_UI.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "patients": [
+      {
+        "name": "villager1",
+        "region": "dusky_dunes",
+        "eye_card": {
+          "patient_number": "1",
+          "eye_color": "multi",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "severe",
+          "diagnosis_type": "doctor"
+        },
+        "avatar": {
+          "file": {
+            "url": "dunes/field-villager-1.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "villager-avatar"
+        },
+        "retina": {
+          "file": {
+            "url": "dunes/field-retina-1-yellow.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "retina"
+        },
+        "doctor_approves_diagnosis": true
+      },
+      {
+        "name": "villager2",
+        "region": "dusky_dunes",
+        "eye_card": {
+          "patient_number": "2",
+          "eye_color": "orange-light",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "doctor"
+        },
+        "avatar": {
+          "file": {
+            "url": "dunes/field-villager-2.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "villager-avatar"
+        },
+        "retina": {
+          "file": {
+            "url": "dunes/field-retina-2-red.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "retina"
+        },
+        "doctor_approves_diagnosis": true
+      },
+      {
+        "name": "cooper",
+        "region": "polar_peaks",
+        "eye_card": {
+          "patient_number": "3",
+          "eye_color": "purple",
+          "habitat": "snowland",
+          "uv_rating": "high",
+          "diagnosis_severity": "severe",
+          "diagnosis_type": "doctor"
+        },
+        "avatar": {
+          "file": {
+            "url": "dunes/field-villager-3.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "cooper-avatar"
+        },
+        "retina": {
+          "file": {
+            "url": "dunes/field-retina-3-blue.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": null
+        },
+        "doctor_approves_diagnosis": false
+      }
+    ],
+    "doctor_review": [
+      {
+        "id": "intro",
+        "question": "AI 模型的实地测试做得漂亮！所有志愿者都扫描完了。",
+        "answers": [
+          {
+            "text": "查看结果",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "diagnosis",
+        "question": "我们来把 AI 模型的预测和我自己的诊断做对比，看看它有多准……",
+        "answers": [
+          {
+            "text": "咨询维苏斯医生",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "result-success",
+        "question": "嗯！看起来 AI 模型对暮色沙丘本地人挺准，但对来自其他地方的访客就不行了。",
+        "answers": [
+          {
+            "text": "继续",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "review-4",
+        "question": "我们的 AI 模型答对了两个诊断，但漏掉了来自其他地区的那位。它得对所有人都管用才行。你觉得问题出在哪儿？",
+        "answers": [
+          {
+            "text": "软件没及时更新，处理不了这些数据",
+            "isCorrect": false
+          },
+          {
+            "text": "有些患者所在的地区根本没有这种疾病",
+            "isCorrect": false
+          },
+          {
+            "text": "我们的 AI 模型只用本地人的眼睛训练，没见过访客的眼睛",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "答对了，很好。",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "还不太对——我们的 AI 模型只用本地人的眼睛训练，没见过访客的眼睛。",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "review-5",
+        "question": "准备好继续了吗？",
+        "answers": [
+          {
+            "text": "准备好了！",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ]
+  },
+  "diverse_data_collection": {
+    "objective_reminder": {
+      "heading_title": "任务 3",
+      "heading_description": "收集多样的训练数据",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-magnifier.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "body": "AI 模型需要来自不同地方的数据才能做得好。UV 水平会影响视网膜的样子。试着加入不同 UV 水平地方的扫描。有些组合比其他组合更有帮助。",
+      "video": {
+        "webm": {
+          "url": "dunes/03_Globe_Objective_UI.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "dunes/03_Globe_Objective_UI.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "dunes/03_Globe_Objective_UI.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "objective_reminder_revisit": {
+      "heading_title": "任务 3",
+      "heading_description": "收集多样的训练数据",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-magnifier.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "body": "看起来数据还不够多样。你需要为每一档 UV 水平各找一份数据：低、中、高、极高。",
+      "video": {
+        "webm": {
+          "url": "dunes/03_Globe_Objective_UI.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "dunes/03_Globe_Objective_UI.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "dunes/03_Globe_Objective_UI.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "labels": {
+      "remove_data": "移除数据",
+      "learn_more": "了解更多",
+      "slots_full": "数据槽已满",
+      "spin_globe": "旋转地球",
+      "collected_data": "已收集的数据",
+      "slot_empty": "空槽",
+      "empty": "空",
+      "uv_rating": "UV 等级",
+      "continue_cta": "确认数据",
+      "collect_data": "收集扫描",
+      "collected_datasets": "已收集的数据",
+      "back": "返回",
+      "teachable_agent_speaker": "阿洛",
+      "about_this_data": "关于这份数据",
+      "habitat": "栖息地",
+      "rotate_left": "向左旋转",
+      "rotate_right": "向右旋转"
+    },
+    "default_collected_data": {
+      "uv_rating": "very_high",
+      "habitat": "desert",
+      "region": "dusky_dunes"
+    },
+    "globe_views": [
+      {
+        "uv_rating": "high",
+        "habitat": "forest",
+        "region": "the_heady_heights"
+      },
+      {
+        "uv_rating": "low",
+        "habitat": "wetland",
+        "region": "market_marshes"
+      },
+      {
+        "uv_rating": "high",
+        "habitat": "valley",
+        "region": "rustic_ravines"
+      },
+      {
+        "uv_rating": "low",
+        "habitat": "mangrove",
+        "region": "sandy_seabeds"
+      },
+      {
+        "uv_rating": "medium",
+        "habitat": "grassland",
+        "region": "roots_of_renewal"
+      },
+      {
+        "uv_rating": "medium",
+        "habitat": "subterranean",
+        "region": "mineral_mines"
+      },
+      {
+        "uv_rating": "low",
+        "habitat": "volcano",
+        "region": "caldera_crests"
+      },
+      {
+        "uv_rating": "medium",
+        "habitat": "coastal",
+        "region": "traders_tide"
+      },
+      {
+        "uv_rating": "high",
+        "habitat": "snowland",
+        "region": "polar_peaks"
+      }
+    ],
+    "teachable_agent": [
+      {
+        "id": "diverse-data-1",
+        "question": "我们的 AI 答对了两个诊断，但漏掉了来自其他地区的访客。维苏斯医生说，它必须对所有人都管用。你觉得问题出在哪儿？",
+        "answers": [
+          {
+            "text": "软件没及时更新，处理不了这些数据",
+            "isCorrect": false
+          },
+          {
+            "text": "有些患者所在的地区根本没有这种疾病",
+            "isCorrect": false
+          },
+          {
+            "text": "我们的 AI 只用本地人的眼睛训练过，没见过访客的眼睛",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "维苏斯医生说你答对了！如果 AI 只从一个地方的患者那儿学习，对其他地方的人就可能不管用。它需要更广泛的眼底扫描样本，才能做到公平和准确。",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "还不太对。维苏斯医生说，如果 AI 只从一个地方的患者那儿学习，对其他地方的人就做不好。它需要更多样的样本。",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "diverse-data-2",
+        "question": "我能去收集更多样本！这种眼疾到处都在冒头，维苏斯医生看到了 AI 能帮上百万人的潜力！我们的 AI 得看看其他地方的眼睛！对了！维苏斯医生还说，UV 照射会明显改变眼底扫描里视网膜的样子。我储备的燃料够去三个新地区收集数据。按我们现在掌握的情况，我该去哪几个地方？",
+        "answers": [
+          {
+            "text": "把地图给我看！",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ],
+    "learning_ticket": [
+      {
+        "id": "intro",
+        "question": "太棒了！这些新的眼底扫描可以帮我们重新训练 AI 模型。不过扫描还没有标签，得先让医生给出诊断。",
+        "answers": [],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "intro-2",
+        "question": "好几位医生都给出了自己的诊断，但他们对眼部疾病的严重程度并不总是一致。我们需要给每张扫描定一个最终标签。",
+        "answers": [
+          {
+            "text": "开始吧！",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ],
+    "uv_video": {
+      "webm": {
+        "url": "dunes/en_gb/DD_Cutscene.webm",
+        "file_name": ""
+      },
+      "poster": {
+        "url": "dunes/DD_Cutscene.webp",
+        "file_name": ""
+      },
+      "mp4": {
+        "url": "dunes/en_gb/DD_Cutscene.mp4",
+        "file_name": ""
+      },
+      "subtitles": "WEBVTT\n\n\n00:00:00.000 --&gt; 00:00:01.240\n感谢你的帮忙。\n\n\n00:00:01.240 --&gt; 00:00:02.600\n我们把 AI 模型拿去做了实地测试\n\n\n00:00:02.600 --&gt; 00:00:04.040\n给很多位患者做了诊断\n\n\n00:00:04.040 --&gt; 00:00:06.160\n不过我们碰上大问题了！\n\n\n00:00:06.160 --&gt; 00:00:09.280\n它在诊断暮色沙丘的人时表现不错，\n\n\n00:00:09.280 --&gt; 00:00:12.680\n但对来自其他地区（比如 Coop）的患者就不行了。\n\n\n00:00:12.680 --&gt; 00:00:14.200\n你觉得为什么会这样……？\n\n\n00:00:14.200 --&gt; 00:00:20.040\n是因为我们只用暮色沙丘患者的扫描训练了 AI 模型吗？\n\n\n00:00:20.040 --&gt; 00:00:25.240\n阿洛，有可能！我们的暮色沙丘患者扫描在年龄和瞳色上是多样的，\n\n\n00:00:25.240 --&gt; 00:00:28.240\n可视网膜也会受 UV 光线影响。\n\n\n00:00:28.240 --&gt; 00:00:31.600\n在暮色沙丘，UV 水平一直都很高，\n\n\n00:00:31.600 --&gt; 00:00:38.000\n所以要想改进 AI 的训练，我们得从其他 UV 水平不同的地区收集扫描，提升多样性。\n\n\n00:00:38.000 --&gt; 00:00:40.000\n你能帮忙收集更多扫描吗？"
+    }
+  },
+  "labelling": {
+    "objective_reminder": {
+      "heading_title": "任务 4",
+      "heading_description": "给新扫描打标签",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-magnifier.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": "放大镜"
+      },
+      "body": "用医生的诊断给每张扫描打标签。如果医生的意见不一致，就选多数医生认可的那个标签。",
+      "video": {
+        "webm": {
+          "url": "dunes/04_Data_labelling_Objective_UI.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "dunes/04_Data_labelling_Objective_UI.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "dunes/04_Data_labelling_Objective_UI.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "labels": {
+      "card_count": "第 {{ count }} 张，共 {{ total }} 张",
+      "correct": "正确！做得好！",
+      "incorrect": "不太对……再试一次。",
+      "labelling_remaining_scans": "正在给剩余扫描打标签……"
+    },
+    "video_call_labels": {
+      "title": "视频通话",
+      "doctors": [
+        {
+          "name": "亚亚医生",
+          "video_thinking": {
+            "webm": {
+              "url": "dunes/labelling-yaya-thinking.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-yaya-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-yaya-thinking.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_healthy": {
+            "webm": {
+              "url": "dunes/labelling-yaya-healthy.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-yaya-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-yaya-healthy.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_early_signs": {
+            "webm": {
+              "url": "dunes/labelling-yaya-early-signs.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-yaya-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-yaya-early-signs.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_moderate": {
+            "webm": {
+              "url": "dunes/labelling-yaya-moderate.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-yaya-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-yaya-moderate.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_severe": {
+            "webm": {
+              "url": "dunes/labelling-yaya-severe.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-yaya-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-yaya-severe.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          }
+        },
+        {
+          "name": "维苏斯医生",
+          "video_thinking": {
+            "webm": {
+              "url": "dunes/labelling-visus-thinking.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-visus-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-visus-thinking.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_healthy": {
+            "webm": {
+              "url": "dunes/labelling-visus-healthy.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-visus-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-visus-healthy.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_early_signs": {
+            "webm": {
+              "url": "dunes/labelling-visus-early-signs.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-visus-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-visus-early-signs.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_moderate": {
+            "webm": {
+              "url": "dunes/labelling-visus-moderate.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-visus-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-visus-moderate.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_severe": {
+            "webm": {
+              "url": "dunes/labelling-visus-severe.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-visus-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-visus-severe.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          }
+        },
+        {
+          "name": "皮帕医生",
+          "video_thinking": {
+            "webm": {
+              "url": "dunes/labelling-pipa-thinking.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-pipa-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-pipa-thinking.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_healthy": {
+            "webm": {
+              "url": "dunes/labelling-pipa-healthy.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-pipa-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-pipa-healthy.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_early_signs": {
+            "webm": {
+              "url": "dunes/labelling-pipa-early-signs.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-pipa-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-pipa-early-signs.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_moderate": {
+            "webm": {
+              "url": "dunes/labelling-pipa-moderate.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-pipa-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-pipa-moderate.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "video_showing_card_severe": {
+            "webm": {
+              "url": "dunes/labelling-pipa-severe.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-pipa-thinking.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-pipa-severe.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          }
+        }
+      ],
+      "thinking": "正在思考……"
+    },
+    "huddle_labels": {
+      "doctors_disagree": "看起来医生们意见不一致。",
+      "invite_to_discuss": "请医生们讨论一下",
+      "discussion_title": "医生们正在重新评估严重程度……"
+    },
+    "cards": [
+      {
+        "eye_card": {
+          "patient_number": "1",
+          "eye_color": "yellow",
+          "habitat": "mangrove",
+          "uv_rating": "medium",
+          "diagnosis_severity": "severe",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "severe"
+      },
+      {
+        "eye_card": {
+          "patient_number": "2",
+          "eye_color": "purple",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "healthy"
+      },
+      {
+        "eye_card": {
+          "patient_number": "3",
+          "eye_color": "pink",
+          "habitat": "forest",
+          "uv_rating": "medium",
+          "diagnosis_severity": "moderate",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "moderate"
+      },
+      {
+        "eye_card": {
+          "patient_number": "4",
+          "eye_color": "green",
+          "habitat": "desert",
+          "uv_rating": "high",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "early_signs"
+      },
+      {
+        "eye_card": {
+          "patient_number": "5",
+          "eye_color": "orange-dark",
+          "habitat": "wetland",
+          "uv_rating": "low",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "healthy"
+      },
+      {
+        "eye_card": {
+          "patient_number": "6",
+          "eye_color": "yellow",
+          "habitat": "mangrove",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "early_signs"
+      },
+      {
+        "eye_card": {
+          "patient_number": "7",
+          "eye_color": "pink",
+          "habitat": "desert",
+          "uv_rating": "medium",
+          "diagnosis_severity": "moderate",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "moderate"
+      },
+      {
+        "eye_card": {
+          "patient_number": "8",
+          "eye_color": "yellow",
+          "habitat": "mangrove",
+          "uv_rating": "high",
+          "diagnosis_severity": "severe",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "severe"
+      },
+      {
+        "eye_card": {
+          "patient_number": "9",
+          "eye_color": "green",
+          "habitat": "coastal",
+          "uv_rating": "medium",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "healthy"
+      },
+      {
+        "eye_card": {
+          "patient_number": "10",
+          "eye_color": "orange-light",
+          "habitat": "desert",
+          "uv_rating": "low",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "early_signs"
+      },
+      {
+        "eye_card": {
+          "patient_number": "11",
+          "eye_color": "yellow",
+          "habitat": "mangrove",
+          "uv_rating": "medium",
+          "diagnosis_severity": "severe",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "severe"
+      },
+      {
+        "eye_card": {
+          "patient_number": "12",
+          "eye_color": "purple",
+          "habitat": "desert",
+          "uv_rating": "very_high",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "healthy"
+      },
+      {
+        "eye_card": {
+          "patient_number": "13",
+          "eye_color": "pink",
+          "habitat": "forest",
+          "uv_rating": "medium",
+          "diagnosis_severity": "moderate",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "moderate"
+      },
+      {
+        "eye_card": {
+          "patient_number": "14",
+          "eye_color": "green",
+          "habitat": "desert",
+          "uv_rating": "high",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "early_signs"
+      },
+      {
+        "eye_card": {
+          "patient_number": "15",
+          "eye_color": "orange-dark",
+          "habitat": "wetland",
+          "uv_rating": "low",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "doctor"
+        },
+        "doctor_diagnosis_severity": "healthy"
+      }
+    ],
+    "teachable_agent": [
+      {
+        "id": "data-labelling-1",
+        "question": "好消息！我用新的扫描重新训练了 AI 模型，在测试数据上它的预测很准。要不要告诉维苏斯医生，我们的 AI 系统可以让真实世界的医生开始用了？",
+        "answers": [
+          {
+            "text": "还不行！我们得先用真正多样的患者再测试一次",
+            "isCorrect": true
+          },
+          {
+            "text": "可以了，我们加了更多数据，准备上线",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "答对了！斯凯教授说过，在投入使用之前，我们得用多样的患者群体去做真实世界的测试。",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "哎呀！斯凯教授说还没准备好。我们得先用多样的患者群体在真实世界里测试一下。",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "data-labelling-2",
+        "question": "准备好开始测试了吗？",
+        "answers": [
+          {
+            "text": "开始吧！",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ],
+    "teachable_agent_revisit": [
+      {
+        "id": "revisit-1",
+        "question": "好消息！我已经把 AI 训练和测试完毕，也给扫描打好了标签。",
+        "answers": [
+          {
+            "text": "太好了！",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "它的预测更准了。",
+          "media": {
+            "webm": {
+              "url": "dunes/labelling-revisit-success.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/labelling-revisit-success.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/labelling-revisit-success.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          },
+          "emoji": null
+        },
+        "failure_response": null
+      },
+      {
+        "id": "revisit-2",
+        "question": "斯凯教授说过，在投入使用之前，我们得用多样的人群在实地做测试。",
+        "answers": [
+          {
+            "text": "开始实地测试",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ],
+    "learning_ticket": [
+      {
+        "id": "globe-ticket-0",
+        "question": "阿洛看你训练和测试过 AI 模型了，这一轮交给阿洛帮忙来做。我们来看看效果！",
+        "answers": [
+          {
+            "text": "开始吧！",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ],
+    "teachable_agent_speaker": "阿洛"
+  },
+  "field_test_2": {
+    "objective_reminder": {
+      "heading_title": "任务 5",
+      "heading_description": "扫描志愿者的眼睛",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-magnifier.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": "放大镜"
+      },
+      "body": "点击一位志愿者去扫描他的眼睛。设备里会出现一个瞄准框，对准眼睛后按空格键开始扫描。共有 3 位志愿者。",
+      "video": {
+        "webm": {
+          "url": "dunes/05_Field_testing_2_Objective_UI.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "dunes/02-task-2-objective-poster.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "dunes/05_Field_testing_2_Objective_UI.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "patients": [
+      {
+        "name": "cooper",
+        "region": "polar_peaks",
+        "eye_card": {
+          "patient_number": "1",
+          "eye_color": "purple",
+          "habitat": "snowland",
+          "uv_rating": "high",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "ai"
+        },
+        "avatar": {
+          "file": {
+            "url": "dunes/field-villager-3.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "cooper-avatar"
+        },
+        "retina": {
+          "file": {
+            "url": "dunes/field-retina-3-blue.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "视网膜"
+        },
+        "doctor_approves_diagnosis": true
+      },
+      {
+        "name": "pip",
+        "region": "roots_of_renewal",
+        "eye_card": {
+          "patient_number": "2",
+          "eye_color": "green",
+          "habitat": "grassland",
+          "uv_rating": "medium",
+          "diagnosis_severity": "early_signs",
+          "diagnosis_type": "ai"
+        },
+        "avatar": {
+          "file": {
+            "url": "dunes/field-villager-4.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "pip-avatar"
+        },
+        "retina": {
+          "file": {
+            "url": "dunes/field-retina-4-green.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "视网膜"
+        },
+        "doctor_approves_diagnosis": true
+      },
+      {
+        "name": "rohan",
+        "region": "sandy_seabeds",
+        "eye_card": {
+          "patient_number": "3",
+          "eye_color": "pink",
+          "habitat": "mangrove",
+          "uv_rating": "low",
+          "diagnosis_severity": "healthy",
+          "diagnosis_type": "ai"
+        },
+        "avatar": {
+          "file": {
+            "url": "dunes/field-villager-5.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "rohan-avatar"
+        },
+        "retina": {
+          "file": {
+            "url": "dunes/field-retina-5-purple.webp",
+            "width": 0,
+            "height": 0
+          },
+          "alt": "视网膜"
+        },
+        "doctor_approves_diagnosis": true
+      }
+    ],
+    "doctor_review": [
+      {
+        "id": "intro",
+        "question": "我们已经拿到志愿者的眼底扫描了。",
+        "answers": [
+          {
+            "text": "看 AI 模型的预测",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "diagnosis",
+        "question": "让我把 AI 模型的预测和我的诊断对一下，检验它的准确度。",
+        "answers": [
+          {
+            "text": "看医生的诊断",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "intro-fail",
+        "question": "你的 AI 模型在部分患者身上管用，但并非所有人都行。训练里覆盖的 UV 差异可能还不够。",
+        "answers": [],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "result-fail",
+        "question": "派阿洛去采集覆盖全部四档 UV 水平的地区的扫描——极高、高、中和低。",
+        "answers": [
+          {
+            "text": "出发！",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "result-success",
+        "question": "太棒了！AI 模型对来自各地的受测者都管用了！它可以投入到全球使用！对这三位志愿者和我们测试过的更多人，它都给出了准确的预测。",
+        "answers": [
+          {
+            "text": "太好了！",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ]
+  },
+  "quest_complete": {
+    "objective_reminder": {
+      "heading_title": "任务 6",
+      "heading_description": "撰写报告",
+      "heading_thumbnail": {
+        "file": {
+          "url": "icons/objective-reminder-magnifier.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": null
+      },
+      "body": "按你在暮色沙丘完成各项任务的顺序，把它们依次加进来。",
+      "video": {
+        "webm": {
+          "url": "dunes/06_Field_report_Objective_UI.webm",
+          "file_name": ""
+        },
+        "poster": {
+          "url": "dunes/06_Field_report_Objective_UI.webp",
+          "file_name": ""
+        },
+        "mp4": {
+          "url": "dunes/06_Field_report_Objective_UI.mp4",
+          "file_name": ""
+        },
+        "subtitles": null
+      }
+    },
+    "pre_recap_learning_ticket": [
+      {
+        "id": "pre-recap-0",
+        "question": "在你离开之前，我们来快速写一份报告，记下你是怎么搭建 AI 的——这样其他玩家，甚至阿洛，必要时都能参考……",
+        "answers": [
+          {
+            "text": "开始写报告",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      }
+    ],
+    "post_recap_learning_ticket": [
+      {
+        "id": "post-recap-0",
+        "question": "最后一件事！把 AI 用到这种现实问题上时，你学到的最重要一件事是什么？",
+        "answers": [
+          {
+            "text": "AI 自己什么都能搞定，其实不需要人",
+            "isCorrect": false
+          },
+          {
+            "text": "像大规模诊断眼部疾病这种大问题，人完全可以自己搞定，不需要 AI",
+            "isCorrect": false
+          },
+          {
+            "text": "要让 AI 真正有用，人不可或缺。是我们决定 AI 该做什么、给它好数据、确保它被负责任地搭建出来，并用它的结果去帮助人",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "没错！要设计 AI 系统的目标、引导它们的发展、用它们的结果产生现实影响，都离不开人。",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "AI 最强大的力量，往往来自人和 AI 一起协作。人提供关键的方向和意义，让 AI 真正有用。",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "post-recap-1",
+        "question": "报告写好了！你搭建了一个能从数据里学习、对来自不同社区的不同患者都管用的 AI 模型！",
+        "answers": [],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "post-recap-2",
+        "question": "这个任务和 Google Research 在真实世界里的一个项目很像。他们现在正好在呼叫我们！",
+        "answers": [
+          {
+            "text": "看真实世界的视频",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "交给你们啦，团队！",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": null
+      }
+    ],
+    "recap_report": {
+      "submit_label": "提交",
+      "document_headline": "实地报告：暮色沙丘",
+      "badge_correct": {
+        "file": {
+          "url": "dunes/recap-sticker-correct.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": "徽章正确"
+      },
+      "badge_incorrect": {
+        "file": {
+          "url": "dunes/recap-sticker-incorrect.webp",
+          "width": 0,
+          "height": 0
+        },
+        "alt": "徽章错误"
+      },
+      "steps": [
+        {
+          "id": "privacy",
+          "slot_index": 1,
+          "label": "从已标注扫描中去掉了隐私信息",
+          "video": {
+            "webm": {
+              "url": "dunes/recap-1-privacy.webm",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/recap-1-privacy.webp",
+              "file_name": ""
+            },
+            "mp4": {
+              "url": "dunes/recap-1-privacy.mp4",
+              "file_name": ""
+            },
+            "subtitles": null
+          }
+        },
+        {
+          "id": "training-testing",
+          "slot_index": 2,
+          "label": "用维苏斯医生患者的扫描训练并测试了 AI 模型",
+          "video": {
+            "webm": {
+              "url": "",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/recap-2-training.webp",
+              "file_name": ""
+            },
+            "mp4": null,
+            "subtitles": null
+          }
+        },
+        {
+          "id": "field-test-1",
+          "slot_index": 3,
+          "label": "第一次在社区中实地测试",
+          "video": {
+            "webm": {
+              "url": "",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/recap-3-field-test-1.webp",
+              "file_name": ""
+            },
+            "mp4": null,
+            "subtitles": null
+          }
+        },
+        {
+          "id": "diverse-data",
+          "slot_index": 4,
+          "label": "收集了新的多样眼底扫描",
+          "video": {
+            "webm": {
+              "url": "",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/recap-4-diverse-data.webp",
+              "file_name": ""
+            },
+            "mp4": null,
+            "subtitles": null
+          }
+        },
+        {
+          "id": "data-labelling",
+          "slot_index": 5,
+          "label": "在医生协助下给新扫描打了标签",
+          "video": {
+            "webm": {
+              "url": "",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/recap-5-data-labelling.webp",
+              "file_name": ""
+            },
+            "mp4": null,
+            "subtitles": null
+          }
+        },
+        {
+          "id": "field-test-2",
+          "slot_index": 6,
+          "label": "重新训练，在各社区都取得了高准确度",
+          "video": {
+            "webm": {
+              "url": "",
+              "file_name": ""
+            },
+            "poster": {
+              "url": "dunes/recap-6-field-testing-2.webp",
+              "file_name": ""
+            },
+            "mp4": null,
+            "subtitles": null
+          }
+        }
+      ]
+    },
+    "exit_video": {
+      "webm": {
+        "url": "dunes/en_gb/DD_Outro.webm",
+        "file_name": ""
+      },
+      "poster": {
+        "url": "dunes/DD_Outro.webp",
+        "file_name": ""
+      },
+      "mp4": {
+        "url": "dunes/en_gb/DD_Outro.mp4",
+        "file_name": ""
+      },
+      "subtitles": "WEBVTT\n\n00:00:03.866 --&gt; 00:00:07.466\n哇，你的 AI 模型产生了很大的影响！\n\n00:00:07.466 --&gt; 00:00:10.000\n它让我们的筛查变得更快、更轻松，\n\n00:00:10.000 --&gt; 00:00:12.433\n也帮我判断哪些患者需要先得到救治。\n\n00:00:12.433 --&gt; 00:00:17.100\n而且不止暮色沙丘！它正在帮全球各地的医生。\n\n00:00:20.633 --&gt; 00:00:21.766\n干得漂亮。\n\n00:00:21.766 --&gt; 00:00:25.733\n看起来你真的帮到了暮色沙丘的居民\n\n00:00:25.733 --&gt; 00:00:27.966\n——还有其他社区。\n\n00:00:27.966 --&gt; 00:00:33.066\n记住！我们始终要依靠像维苏斯医生这样的医学专家，\n\n00:00:33.066 --&gt; 00:00:36.533\n才能确保 AI 被安全、公平地使用。\n\n00:00:36.533 --&gt; 00:00:40.733\n你用覆盖广泛的患者数据训练和测试了 AI 模型，\n\n00:00:40.733 --&gt; 00:00:43.666\n干得真不错。\n\n00:00:43.666 --&gt; 00:00:47.433\n好像还有几位也想说声谢谢……\n\n00:00:50.500 --&gt; 00:00:53.400\n现在我们的筛查效率高多了。\n\n00:00:53.400 --&gt; 00:00:58.033\n我们帮助更多患者及时治疗了眼睛。\n\n00:00:58.766 --&gt; 00:01:02.666\n谢谢你。我学到了很多，接下来我自己也能接着做了。\n\n00:01:02.666 --&gt; 00:01:06.633\n祝你下一次任务好运！"
+    },
+    "learning_ticket": [
+      {
+        "id": "learning_recap_pre",
+        "question": "干得漂亮！你开发出了一个能帮助世界各地医生和患者的 AI 模型。",
+        "answers": [],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "learning_recap_0",
+        "question": "在你离开之前，我们快速写一份报告，帮阿洛和其他人以后搭建更好的 AI 系统。",
+        "answers": [
+          {
+            "text": "开始吧！",
+            "isCorrect": true
+          }
+        ],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "learning_recap_1",
+        "question": "好……那就从头说起。你搭建模型的第一步是什么？",
+        "answers": [
+          {
+            "text": "用已标注的数据训练和测试 AI 模型",
+            "isCorrect": false
+          },
+          {
+            "text": "拿到维苏斯医生已标注的眼底扫描，并去除隐私信息",
+            "isCorrect": true
+          },
+          {
+            "text": "在社区里测试以检验准确度",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "没错！第一步就是拿到维苏斯医生的数据。",
+          "media": null,
+          "emoji": {
+            "file": {
+              "url": "",
+              "width": 0,
+              "height": 0
+            },
+            "alt": "eyes-emoji"
+          }
+        },
+        "failure_response": {
+          "text": "还不太对……第一步我们得先从维苏斯医生那儿拿到数据并准备好。",
+          "media": null,
+          "emoji": {
+            "file": {
+              "url": "",
+              "width": 0,
+              "height": 0
+            },
+            "alt": "eyes-emoji"
+          }
+        }
+      },
+      {
+        "id": "learning_recap_2",
+        "question": "接下来，我们用已标注的数据训练并测试了 AI 模型，然后在社区里测试。一开始，它对暮色沙丘以外的人不管用。之后我们做的第一件事是什么？",
+        "answers": [
+          {
+            "text": "给新扫描打标签",
+            "isCorrect": false
+          },
+          {
+            "text": "在不同 UV 等级下收集更多样的眼底扫描",
+            "isCorrect": true
+          },
+          {
+            "text": "用新数据重新训练并测试 AI 模型",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "没错！我们得去收集更多样的数据。",
+          "media": null,
+          "emoji": {
+            "file": {
+              "url": "",
+              "width": 0,
+              "height": 0
+            },
+            "alt": "eyes-emoji"
+          }
+        },
+        "failure_response": {
+          "text": "还不太对。最先要做的一步，是收集更多样的眼底扫描。",
+          "media": null,
+          "emoji": {
+            "file": {
+              "url": "",
+              "width": 0,
+              "height": 0
+            },
+            "alt": "eyes-emoji"
+          }
+        }
+      },
+      {
+        "id": "learning_recap_2b",
+        "question": "拿到新扫描之后，我们下一步做了什么？",
+        "answers": [
+          {
+            "text": "给新扫描打标签",
+            "isCorrect": true
+          },
+          {
+            "text": "用新数据重新训练并测试 AI 模型",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "没错！给数据打标签能让 AI 模型学会区分健康眼睛和有病的眼睛。",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "不完全对……只有专家把新数据正确标注为健康眼睛或有病的眼睛之后，我们才能训练 AI 模型。",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "learning_recap_3a",
+        "question": "给数据打完标签之后，我们做了什么？",
+        "answers": [
+          {
+            "text": "用新数据重新训练并测试 AI 模型",
+            "isCorrect": true
+          },
+          {
+            "text": "实地测试以检验准确度",
+            "isCorrect": false
+          }
+        ],
+        "success_response": {
+          "text": "没错！我们得用收集到的全部新标注数据重新训练并测试 AI 模型。之后才能在社区里测试。最后一次实地测试表明，我们的 AI 模型对所有人都管用！棒极了！",
+          "media": null,
+          "emoji": {
+            "file": {
+              "url": "",
+              "width": 0,
+              "height": 0
+            },
+            "alt": "eyes-emoji"
+          }
+        },
+        "failure_response": {
+          "text": "",
+          "media": null,
+          "emoji": {
+            "file": {
+              "url": "",
+              "width": 0,
+              "height": 0
+            },
+            "alt": "eyes-emoji"
+          }
+        }
+      },
+      {
+        "id": "learning_recap_3b",
+        "question": "最后一件事！把 AI 用到这种现实问题上时，你学到的最重要一件事是什么？",
+        "answers": [
+          {
+            "text": "AI 自己什么都能搞定，其实不需要人",
+            "isCorrect": false
+          },
+          {
+            "text": "像大规模诊断眼部疾病这种大问题，人完全可以自己搞定，不需要 AI",
+            "isCorrect": false
+          },
+          {
+            "text": "要让 AI 真正有用，人不可或缺。是我们决定 AI 该做什么、给它好数据、确保它被负责任地搭建出来，并用它的结果去帮助人。",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "没错！要设计 AI 系统的目标、引导它们的发展、用它们的结果产生现实影响，都离不开人。",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": {
+          "text": "AI 最强大的力量，往往来自人和 AI 一起协作。人提供关键的方向和意义，让 AI 真正有用。",
+          "media": null,
+          "emoji": null
+        }
+      },
+      {
+        "id": "learning_recap_3c",
+        "question": "报告完成啦！你搭建了一个能从数据里学习、对来自不同社区的不同患者都管用的 AI 模型！",
+        "answers": [],
+        "success_response": null,
+        "failure_response": null
+      },
+      {
+        "id": "learning_recap_3d",
+        "question": "这个任务和 Google Research 在真实世界里的一个项目很像。他们现在正好在呼叫我们！",
+        "answers": [
+          {
+            "text": "加入通话！",
+            "isCorrect": true
+          }
+        ],
+        "success_response": {
+          "text": "交给你们啦，团队！",
+          "media": null,
+          "emoji": null
+        },
+        "failure_response": null
+      }
+    ],
+    "quest_complete_eyebrow": "TODO",
+    "badge_earned_title": "TODO",
+    "body": "TODO",
+    "next_quest_cta_label": "完成任务",
+    "case_study_video": {
+      "webm": {
+        "url": "dunes/Researcher_Interviews_ARDA.webm",
+        "file_name": ""
+      },
+      "poster": {
+        "url": "dunes/Researcher_Interviews_ARDA.webp",
+        "file_name": ""
+      },
+      "mp4": {
+        "url": "dunes/Researcher_Interviews_ARDA.mp4",
+        "file_name": ""
+      },
+      "subtitles": "WEBVTT\n\n00:00:05.000 --&gt; 00:00:06.000 line:60%\n感谢，斯凯教授。\n\n00:00:06.000 --&gt; 00:00:08.000 line:60%\n大家好，我是 Preeti，\n\n00:00:08.000 --&gt; 00:00:09.000 line:60%\n我是 Jon，\n\n00:00:09.000 --&gt; 00:00:11.000 line:60%\n我们在 Google Research 工作。\n\n00:00:11.000 --&gt; 00:00:18.000\n我们团队用 AI 帮助预防失明，方法是及早发现一种叫作「糖尿病视网膜病变」的疾病。\n\n00:00:18.000 --&gt; 00:00:20.000\n你刚完成的这个任务就是受我们的工作启发的。\n\n00:00:20.000 --&gt; 00:00:31.000\n在这个团队里工作最棒的一点，就是我们用 AI 解决了现实问题，帮成千上万的人及时得到他们需要的救治。\n\n00:00:31.000 --&gt; 00:00:45.000\n在我们的模型创建并投入使用之前，很多住在偏远地区的患者要长途跋涉——有时要好几个小时——才能到大城市让眼科专家筛查和诊断。\n\n00:00:45.000 --&gt; 00:00:51.000\n现在他们可以在当地诊所轻松筛查，并立刻拿到 AI 的反馈。\n\n00:00:51.000 --&gt; 00:00:56.000\n如果 AI 发现值得留意的问题，患者就会被转诊给眼科专家。\n\n00:00:57.000 --&gt; 00:00:59.000\n那么它是怎么运作的？\n\n00:00:59.000 --&gt; 00:01:05.000\n我们用了世界各地诊所拍摄的 12.8 万多张眼底视网膜影像来训练 AI 模型。\n\n00:01:05.000 --&gt; 00:01:12.000\n从这些影像中，AI 学会了识别 20 多种提示患者有失明风险的迹象。\n\n00:01:12.000 --&gt; 00:01:19.000\n模型训练和测试完成之后，我们先在印度、后来又在泰国的诊所里开始使用它。\n\n00:01:19.000 --&gt; 00:01:27.000\n就像你在任务里体会到的——搭建由 AI 驱动的方案时，一定要确保它对每一个人都管用。\n\n00:01:27.000 --&gt; 00:01:31.000\n这项工作有力地说明了 AI 可以怎样支持、而不是取代医生。\n\n00:01:31.000 --&gt; 00:01:40.000\n它帮医生更快地工作、覆盖更多人，也让他们把时间和注意力集中在他们最能帮到的人身上。\n\n00:01:40.000 --&gt; 00:01:41.000\n接下来交给你啦，\n\n00:01:41.000 --&gt; 00:01:42.000\n斯凯教授。"
+    },
+    "badge_media": {
+      "file": {
+        "url": "dunes/badge.gif",
+        "width": 0,
+        "height": 0
+      },
+      "alt": "徽章"
+    },
+    "badge_description": "出色的工作！你的报告写完啦，我们的 AI 也准备好帮助世界各地的人了。你搭建出的这个 AI，能学习、能适应，对每个人都管用。"
+  }
+}
